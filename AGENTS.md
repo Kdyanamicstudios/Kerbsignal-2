@@ -1,0 +1,5 @@
+# KerbSignal project workflow
+
+Read race_engineer/MASTER_CHECKLIST.md before changes and every release. It is the canonical list of the user’s requests. Keep it and KerbSignal_Master_Checklist.md synchronized. Preserve the selected Pit Wall design with primary and secondary navigation down the left side. Update the same checklist after work; record source, packaged-build and actual Windows/iRacing validation separately. Do not claim preview/source work is already in the installer. Never describe personal reference laps as universal optimal/world-record laps or unavailable tire/opponent channels as measured. The user expects all building/coding done here.
+
+The user requires uninterrupted task work: queue new requests while continuing the current task. At each completed-task checkpoint, update the same master checklist with completed work, incoming requests, validation limits and the next task; send its refreshed link and continue. Do not stop implementation just to log each incoming item. Never imply work continues after ending a turn.

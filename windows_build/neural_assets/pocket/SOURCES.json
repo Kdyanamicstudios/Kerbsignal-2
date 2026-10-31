@@ -1,0 +1,81 @@
+{
+  "engine": "Kyutai Pocket TTS",
+  "release": "v4.0.1",
+  "binary_version": "3.3.0",
+  "model_revision": "a7056f505a4a8ca72d8b5fb1440071d6f1a35739",
+  "model_license": "CC-BY-4.0",
+  "files": [
+    {
+      "file": "config.yaml",
+      "size": 1368,
+      "sha256": "9344f06224db6c2c783bf6bc7a09ebc15e4fed0058c89482c9f71b3c544a52e8"
+    },
+    {
+      "file": "pocket-tts.exe",
+      "size": 22080000,
+      "sha256": "813cabfc2f8fc7a4e5310deda6025426b3164610dd9f3c3098a6078e5cc1895a"
+    },
+    {
+      "file": "model.safetensors",
+      "size": 219029196,
+      "sha256": "4c56cbd171c63e8a26ea61f5d48b8a0cd8f3c51f4652c0ab9a19bfcced8c931d"
+    },
+    {
+      "file": "tokenizer.json",
+      "size": 245020,
+      "sha256": "f498428e1eafee50492f7be13dc9bfafcfc12e508cd0eb1b01c92ecd5d8c6687"
+    },
+    {
+      "file": "voices/michael.safetensors",
+      "size": 7128888,
+      "sha256": "9f6538650ed3b664ab847d05244f51f04db22ce7ea00e2b285f51d91d6308ce0"
+    },
+    {
+      "file": "voices/bill_boerst.safetensors",
+      "size": 6539064,
+      "sha256": "a4510681c5ca6ac978b9fee83fc8a0d6569f7627b380caab0c5d23c53e4c0607"
+    },
+    {
+      "file": "voices/peter_yearsley.safetensors",
+      "size": 3639088,
+      "sha256": "f0eb3f23bb8e2ce5203a27ee4369ebeba07eda564cecebd84ccbdb4d9507cbca"
+    }
+  ],
+  "sources": [
+    {
+      "file": "model.safetensors",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/resolve/a7056f505a4a8ca72d8b5fb1440071d6f1a35739/languages/english/model.safetensors",
+      "size": 219029196,
+      "sha256": "4c56cbd171c63e8a26ea61f5d48b8a0cd8f3c51f4652c0ab9a19bfcced8c931d"
+    },
+    {
+      "file": "tokenizer.json",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/resolve/a7056f505a4a8ca72d8b5fb1440071d6f1a35739/languages/english/tokenizer.json",
+      "size": 245020,
+      "sha256": "f498428e1eafee50492f7be13dc9bfafcfc12e508cd0eb1b01c92ecd5d8c6687"
+    },
+    {
+      "file": "voices/bill_boerst.safetensors",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/resolve/a7056f505a4a8ca72d8b5fb1440071d6f1a35739/languages/english/embeddings/bill_boerst.safetensors",
+      "size": 6539064,
+      "sha256": "a4510681c5ca6ac978b9fee83fc8a0d6569f7627b380caab0c5d23c53e4c0607"
+    },
+    {
+      "file": "voices/peter_yearsley.safetensors",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/resolve/a7056f505a4a8ca72d8b5fb1440071d6f1a35739/languages/english/embeddings/peter_yearsley.safetensors",
+      "size": 3639088,
+      "sha256": "f0eb3f23bb8e2ce5203a27ee4369ebeba07eda564cecebd84ccbdb4d9507cbca"
+    },
+    {
+      "file": "voices/michael.safetensors",
+      "url": "https://huggingface.co/kyutai/pocket-tts-without-voice-cloning/resolve/a7056f505a4a8ca72d8b5fb1440071d6f1a35739/languages/english/embeddings/michael.safetensors",
+      "size": 7128888,
+      "sha256": "9f6538650ed3b664ab847d05244f51f04db22ce7ea00e2b285f51d91d6308ce0"
+    }
+  ],
+  "binary_archive": {
+    "url": "https://github.com/kyutai-labs/pocket-tts/releases/download/v4.0.1/pocket-tts-3.3.0-x86_64-pc-windows-msvc.zip",
+    "sha256": "98753041f2e65744b989776f87bccb93f1f574a08afe1890c5427ec94cd6309c",
+    "member": "pocket-tts-3.3.0-x86_64-pc-windows-msvc/pocket-tts.exe"
+  }
+}

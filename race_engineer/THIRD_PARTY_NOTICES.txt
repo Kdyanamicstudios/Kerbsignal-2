@@ -1,0 +1,34 @@
+KerbSignal 0.14
+
+Application source is provided under GNU GPL version 3 or later; see LICENSE.txt.
+Third-party components retain their respective licenses and notices.
+
+Kokoro-82M model and selected English voice styles: Apache License 2.0.
+https://huggingface.co/hexgrad/Kokoro-82M
+ONNX conversion/quantization assets: https://github.com/thewh1teagle/kokoro-onnx
+The redistributed voice bank contains am_michael and bm_george only.
+
+kokoro-onnx 0.4.7: MIT, source archive and wheel license included.
+phonemizer-fork 3.3.1: GPLv3, source archive and wheel license included.
+eSpeak NG 1.52.0: GPLv3 or later, corresponding source archive included.
+espeakng-loader 0.2.4: MIT wrapper, loader source/build scripts included.
+https://github.com/thewh1teagle/espeakng-loader
+The loader's upstream build workflow specifies eSpeak NG tag 1.52.0.
+
+ONNX Runtime: MIT. Optional runtime telemetry disabled at initialization.
+NumPy: BSD and bundled third-party licenses; retained in distribution metadata.
+Python: PSF license; Tcl/Tk: their original license terms.
+Other Python packages retain license files in Lib/site-packages/*.dist-info.
+
+Application_Source.zip inside the EXE payload contains the application source.
+The companion download ZIP also exposes the source and third-party archives.
+No third-party racing telemetry, paid data pack, or API credential is bundled.
+
+PyYAML 6.0.3: MIT; original wheel license retained in distribution metadata.
+Coaching video links are informational; no creator recordings or transcripts are redistributed.
+
+Circuit geometry: derived from SIMRacingAppsServer Tracks, Copyright (C) 2015–2024 Jeffrey Gilliam, Apache License 2.0. Original JSON/GPX files and license are included in Third_Party/SIMRacingApps_tracks. Map conversion retains geographic coordinates and resamples lap fractions. GPX-based fractions are estimates. Source: https://github.com/SIMRacingApps/SIMRacingAppsServer
+
+Supertonic 3 by Supertone Inc. (2026). Preset voice models under BigScience OpenRAIL-M; inference helper code under MIT. Full license/model card/source hashes included in Third_Party/Supertonic3 and neural_assets/supertonic. No model-weight modifications; app wrapper limits CPU threads, disables ORT telemetry and retries/rejects silent output. https://huggingface.co/Supertone/supertonic-3
+
+Pocket TTS by Kyutai: new bundled offline CPU engine and three licensed male voice embeddings. Official runtime release v4.0.1 (binary 3.3.0), MIT code. English model at pinned revision a7056f505a4a8ca72d8b5fb1440071d6f1a35739 under CC BY 4.0. Bill Boerst / Peter Yearsley source voice recordings: Voice-Zero CC0. Michael: VCTK p360, CC BY 4.0. Attribution, license, source URLs and asset hashes are bundled under Third_Party/PocketTTS and neural_assets/pocket/SOURCES.json. Voices are synthetic, with no implied speaker endorsement. No user voice cloning. Supertonic voice weights are retired from this build after the user rejected their delivery; existing voice preferences fall back to the new default when unavailable.

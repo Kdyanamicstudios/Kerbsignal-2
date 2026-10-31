@@ -1,0 +1,13 @@
+{
+  "installer": "KerbSignal_0.15.exe",
+  "extraction_passed": true,
+  "repair_fresh_runtime": true,
+  "previous_runtime_preserved": true,
+  "launcher_check_passed": true,
+  "files_sha256_matched": 6968,
+  "extracted_native_gui_passed": true,
+  "runtime": "C:\\Users\\rakie\\Documents\\Codex\\2026-10-30\\go-x20\\work\\final-install-check\\versions\\0.15.0-cc0be7c2a19c-e184801e",
+  "user_installation_modified": false,
+  "iracing_tested": false,
+  "live_driver_speech_tested": false
+}

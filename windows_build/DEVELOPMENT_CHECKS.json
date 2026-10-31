@@ -1,0 +1,13 @@
+{
+  "version": "0.14.0",
+  "installer": "KerbSignal_0.14.exe",
+  "size": 365250251,
+  "sha256": "5347a0abe4e4caf6a5f773b3ea09c015d2d4ed508fcc95570d30ded27ef4768a",
+  "tests_passed": 182,
+  "short_clips_checked": 90,
+  "render_combinations": 20,
+  "native_binaries_checked": 89,
+  "production_source_and_logo_matches": 49,
+  "format": "NSIS Unicode / Deflate",
+  "windows_iracing_hardware_tested": false
+}

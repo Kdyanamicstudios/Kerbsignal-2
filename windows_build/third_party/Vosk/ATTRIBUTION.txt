@@ -1,0 +1,3 @@
+Vosk API by Alpha Cephei Inc., version0.3.45, Apache License2.0. https://github.com/alphacep/vosk-api
+English model vosk-model-small-en-us-0.15 by Alpha Cephei, Apache License2.0. https://alphacephei.com/vosk/models
+Model and platform wheel hashes/source URLs are pinned in speech_assets/SOURCES.json. KerbSignal uses an explicit bundled model path, never language-based model downloads or a remote recognition service. The original wheel licenses are retained in site-packages.

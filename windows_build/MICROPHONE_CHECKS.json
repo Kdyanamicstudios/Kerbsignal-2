@@ -1,0 +1,25 @@
+{
+  "automated_tests_passed": 194,
+  "recorded_audio_checks": [
+    {
+      "rate": 16000,
+      "recognized": [
+        "engineer microphone check"
+      ]
+    },
+    {
+      "rate": 44100,
+      "recognized": [
+        "engineer microphone check"
+      ]
+    },
+    {
+      "rate": 48000,
+      "recognized": [
+        "engineer microphone check"
+      ]
+    }
+  ],
+  "real_microphone_tested": false,
+  "windows_runtime_tested": false
+}

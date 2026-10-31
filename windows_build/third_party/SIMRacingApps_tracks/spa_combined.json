@@ -1,0 +1,22 @@
+{
+    "Copyright":   "Copyright (C) 2015 - 2024 Jeffrey Gilliam",
+    "License":     "Apache License 2.0",
+    "Config":      "Endurance",
+    "Latitude":    50.43582,
+    "Longitude":   5.96561,
+    "North":       40.0,
+    "Resolution":  7.0,
+    "MergePoint":  22.1,
+    "Images": {
+        "SAT":     "spa-map.png",
+        "MAP":     "spa-sat.png"
+    },
+    "DistanceUOM": "km",
+    "TempUOM":     "C",
+    "SpeedUOM":    "kph",
+    "FinishLine":  280.0,
+    "GPX": {
+        "ONTRACK": "spa_combined-ONTRACK.gpx",
+        "ONPITROAD": "spa_combined-ONPITROAD.gpx"
+    }
+}

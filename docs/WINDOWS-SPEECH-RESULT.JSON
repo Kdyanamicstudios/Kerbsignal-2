@@ -1,0 +1,37 @@
+{
+  "generated_speech": [
+    {
+      "phrase": "Engineer microphone check.",
+      "recognized": [
+        "engineer microphone check"
+      ],
+      "sample_rate": 24000
+    },
+    {
+      "phrase": "Hey Kerby, can you hear me?",
+      "recognized": [
+        "hey kirby can you hear me"
+      ],
+      "sample_rate": 24000
+    }
+  ],
+  "microphone": {
+    "opened": true,
+    "device": "Microphone (G435 Wireless Gamin [MME]",
+    "sample_rate": 44100,
+    "blocks": 47,
+    "error": "",
+    "live_audio_saved": false,
+    "live_speech_transcription_tested": false
+  },
+  "output": {
+    "opened": true,
+    "label": "System default",
+    "headset_listening_tested": false
+  },
+  "wake_response": {
+    "question": "can you hear me",
+    "response": "Loud and clear. Your microphone and local recognition are working.",
+    "speech_generated": true
+  }
+}

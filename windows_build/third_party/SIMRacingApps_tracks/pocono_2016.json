@@ -1,0 +1,23 @@
+{
+    "Copyright":   "Copyright (C) 2015 - 2024 Jeffrey Gilliam",
+    "License":     "Apache License 2.0",
+    "Resolution":  3.8,
+    "North":       248.0,
+    "MergePoint":  16.7,
+    "Images": {
+        "SAT":     "pocono-sat.png",
+        "MAP":     "pocono-map.png"
+    },
+    "DistanceUOM": "mile",
+    "TempUOM":     "F",
+    "SpeedUOM":    "mph",
+    "FinishLine":  270.0,
+    "COMMENT9":    "GPX is the file saved from http://www.gpxeditor.co.uk of the GPS coordinates.",
+    "COMMENT9a":   "Right Click, Draw New, Route. Draw the points starting at the finish line and ending at the finish line",
+    "COMMENT9b":   "Save as GPX file associated to the names here",
+    "COMMENT9c":   "ONTRACK should have at least one of the points named MergePoint. But you can have multiple, Bristol for example",
+    "GPX": {
+        "ONTRACK":   "pocono_oval-ONTRACK.gpx",
+        "ONPITROAD": "pocono_oval-ONPITROAD.gpx"        
+    }
+}

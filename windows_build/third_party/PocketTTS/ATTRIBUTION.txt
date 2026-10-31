@@ -1,0 +1,5 @@
+Pocket TTS by Kyutai: https://github.com/kyutai-labs/pocket-tts
+Official Windows binary from release v4.0.1 (binary 3.3.0); SHA256 verified against official SHA256SUMS. Code MIT.
+Model: kyutai/pocket-tts-without-voice-cloning, commit a7056f505a4a8ca72d8b5fb1440071d6f1a35739, languages/english/model.safetensors. License CC BY 4.0.
+Bill Boerst and Peter Yearsley voice embeddings: Kyutai/Voice-Zero, source recordings CC0. Michael voice embedding: VCTK p360, University of Edinburgh VCTK corpus, CC BY 4.0.
+These are synthetic voices generated from the publisher-provided licensed embeddings, not recordings of a human race engineer speaking live. KerbSignal makes no claim of speaker endorsement. No user voice cloning or remote speech service is used.

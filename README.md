@@ -22,6 +22,8 @@ Start with [the development handoff](WORK_IN_PROGRESS.md) and [the full requirem
 
 The new chat path runs locally and requires no account, API key or ChatGPT/Codex allowance. Optional extended chat has a one-time free model/runtime download of about 632 MiB. It is a small local model, not this hosted Codex conversation or a coding agent. Fast racing answers use local lessons/telemetry; driving cues remain independent. See the checklist for uncompleted work.
 
+Repository: [Kdyanamicstudios/Kerbsignal-2](https://github.com/Kdyanamicstudios/Kerbsignal-2).
+
 ## Colleague setup
 
 See [DEVELOPMENT.md](docs/DEVELOPMENT.md), [BUILD.md](docs/BUILD.md) and [GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md). The user is not expected to perform developer setup.

@@ -1,0 +1,20 @@
+[
+  {
+    "sample_rate": 16000,
+    "recognized": [
+      "hey kirby can you hear me"
+    ]
+  },
+  {
+    "sample_rate": 44100,
+    "recognized": [
+      "hey kirby can you hear me"
+    ]
+  },
+  {
+    "sample_rate": 48000,
+    "recognized": [
+      "hey kirby can you hear me"
+    ]
+  }
+]

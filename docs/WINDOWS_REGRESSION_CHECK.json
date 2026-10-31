@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-31",
+  "platform": "Windows/Python 3.14.10",
+  "tests": 208,
+  "result": "passed",
+  "native_gui_tested": true,
+  "microphone_capture_tested": true,
+  "live_human_speech_tested": false,
+  "iracing_tested": false
+}

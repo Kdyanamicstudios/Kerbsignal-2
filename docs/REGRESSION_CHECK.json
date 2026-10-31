@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-31",
+  "platform": "Linux/Python 3.12",
+  "command": "PYTHONPATH=race_engineer python3 -m unittest discover -s race_engineer/tests",
+  "tests": 203,
+  "result": "passed",
+  "windows_runtime_tested": false,
+  "iracing_hardware_tested": false
+}

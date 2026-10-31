@@ -1,0 +1,761 @@
+{
+  "clips": 126,
+  "checks": [
+    {
+      "voice": "st3_m2",
+      "key": "three",
+      "duration_s": 0.398,
+      "peak": 24028
+    },
+    {
+      "voice": "st3_m2",
+      "key": "two",
+      "duration_s": 0.4445,
+      "peak": 17741
+    },
+    {
+      "voice": "st3_m2",
+      "key": "one",
+      "duration_s": 0.3968,
+      "peak": 21423
+    },
+    {
+      "voice": "st3_m2",
+      "key": "brake",
+      "duration_s": 0.7021,
+      "peak": 18498
+    },
+    {
+      "voice": "st3_m2",
+      "key": "hold",
+      "duration_s": 0.8097,
+      "peak": 22174
+    },
+    {
+      "voice": "st3_m2",
+      "key": "release",
+      "duration_s": 0.5601,
+      "peak": 13321
+    },
+    {
+      "voice": "st3_m2",
+      "key": "turn",
+      "duration_s": 0.5139,
+      "peak": 17454
+    },
+    {
+      "voice": "st3_m2",
+      "key": "unwind",
+      "duration_s": 0.6826,
+      "peak": 15386
+    },
+    {
+      "voice": "st3_m2",
+      "key": "throttle",
+      "duration_s": 0.8171,
+      "peak": 16851
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_left",
+      "duration_s": 1.1063,
+      "peak": 16688
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_right",
+      "duration_s": 1.3869,
+      "peak": 15912
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_both",
+      "duration_s": 1.2507,
+      "peak": 15025
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_two_left",
+      "duration_s": 1.556,
+      "peak": 18063
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_two_right",
+      "duration_s": 1.5763,
+      "peak": 16392
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_clear_left",
+      "duration_s": 0.5945,
+      "peak": 17528
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_clear_right",
+      "duration_s": 0.6747,
+      "peak": 16446
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_clear",
+      "duration_s": 0.8989,
+      "peak": 16972
+    },
+    {
+      "voice": "st3_m2",
+      "key": "traffic_still",
+      "duration_s": 1.3308,
+      "peak": 14849
+    },
+    {
+      "voice": "st3_m1",
+      "key": "three",
+      "duration_s": 0.5322,
+      "peak": 9724
+    },
+    {
+      "voice": "st3_m1",
+      "key": "two",
+      "duration_s": 0.4397,
+      "peak": 13093
+    },
+    {
+      "voice": "st3_m1",
+      "key": "one",
+      "duration_s": 0.4844,
+      "peak": 16366
+    },
+    {
+      "voice": "st3_m1",
+      "key": "brake",
+      "duration_s": 0.6694,
+      "peak": 20634
+    },
+    {
+      "voice": "st3_m1",
+      "key": "hold",
+      "duration_s": 0.8934,
+      "peak": 16955
+    },
+    {
+      "voice": "st3_m1",
+      "key": "release",
+      "duration_s": 0.7103,
+      "peak": 13930
+    },
+    {
+      "voice": "st3_m1",
+      "key": "turn",
+      "duration_s": 0.4984,
+      "peak": 15808
+    },
+    {
+      "voice": "st3_m1",
+      "key": "unwind",
+      "duration_s": 0.5493,
+      "peak": 12950
+    },
+    {
+      "voice": "st3_m1",
+      "key": "throttle",
+      "duration_s": 0.9516,
+      "peak": 13906
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_left",
+      "duration_s": 1.2595,
+      "peak": 13970
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_right",
+      "duration_s": 1.4163,
+      "peak": 12967
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_both",
+      "duration_s": 1.5787,
+      "peak": 10645
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_two_left",
+      "duration_s": 1.5637,
+      "peak": 12731
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_two_right",
+      "duration_s": 1.8119,
+      "peak": 11585
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_clear_left",
+      "duration_s": 0.6072,
+      "peak": 14460
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_clear_right",
+      "duration_s": 0.6849,
+      "peak": 15674
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_clear",
+      "duration_s": 1.02,
+      "peak": 14388
+    },
+    {
+      "voice": "st3_m1",
+      "key": "traffic_still",
+      "duration_s": 1.5236,
+      "peak": 11318
+    },
+    {
+      "voice": "st3_m3",
+      "key": "three",
+      "duration_s": 0.4677,
+      "peak": 10809
+    },
+    {
+      "voice": "st3_m3",
+      "key": "two",
+      "duration_s": 0.4158,
+      "peak": 12742
+    },
+    {
+      "voice": "st3_m3",
+      "key": "one",
+      "duration_s": 0.4264,
+      "peak": 10681
+    },
+    {
+      "voice": "st3_m3",
+      "key": "brake",
+      "duration_s": 0.5458,
+      "peak": 13328
+    },
+    {
+      "voice": "st3_m3",
+      "key": "hold",
+      "duration_s": 0.7766,
+      "peak": 16479
+    },
+    {
+      "voice": "st3_m3",
+      "key": "release",
+      "duration_s": 0.5757,
+      "peak": 9576
+    },
+    {
+      "voice": "st3_m3",
+      "key": "turn",
+      "duration_s": 0.5089,
+      "peak": 13681
+    },
+    {
+      "voice": "st3_m3",
+      "key": "unwind",
+      "duration_s": 0.526,
+      "peak": 10504
+    },
+    {
+      "voice": "st3_m3",
+      "key": "throttle",
+      "duration_s": 0.8393,
+      "peak": 12477
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_left",
+      "duration_s": 1.3718,
+      "peak": 11594
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_right",
+      "duration_s": 1.2448,
+      "peak": 11050
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_both",
+      "duration_s": 1.1901,
+      "peak": 9615
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_two_left",
+      "duration_s": 1.5149,
+      "peak": 10871
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_two_right",
+      "duration_s": 1.4993,
+      "peak": 11645
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_clear_left",
+      "duration_s": 0.6657,
+      "peak": 11608
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_clear_right",
+      "duration_s": 0.5869,
+      "peak": 14931
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_clear",
+      "duration_s": 0.9439,
+      "peak": 13267
+    },
+    {
+      "voice": "st3_m3",
+      "key": "traffic_still",
+      "duration_s": 1.4233,
+      "peak": 10542
+    },
+    {
+      "voice": "st3_m4",
+      "key": "three",
+      "duration_s": 0.4884,
+      "peak": 10580
+    },
+    {
+      "voice": "st3_m4",
+      "key": "two",
+      "duration_s": 0.4761,
+      "peak": 8192
+    },
+    {
+      "voice": "st3_m4",
+      "key": "one",
+      "duration_s": 0.4752,
+      "peak": 11179
+    },
+    {
+      "voice": "st3_m4",
+      "key": "brake",
+      "duration_s": 0.5694,
+      "peak": 11878
+    },
+    {
+      "voice": "st3_m4",
+      "key": "hold",
+      "duration_s": 0.9068,
+      "peak": 9549
+    },
+    {
+      "voice": "st3_m4",
+      "key": "release",
+      "duration_s": 0.6244,
+      "peak": 8512
+    },
+    {
+      "voice": "st3_m4",
+      "key": "turn",
+      "duration_s": 0.5346,
+      "peak": 7753
+    },
+    {
+      "voice": "st3_m4",
+      "key": "unwind",
+      "duration_s": 0.6024,
+      "peak": 7170
+    },
+    {
+      "voice": "st3_m4",
+      "key": "throttle",
+      "duration_s": 0.9428,
+      "peak": 8658
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_left",
+      "duration_s": 1.42,
+      "peak": 10461
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_right",
+      "duration_s": 1.4161,
+      "peak": 8843
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_both",
+      "duration_s": 1.3663,
+      "peak": 8550
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_two_left",
+      "duration_s": 1.7025,
+      "peak": 9996
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_two_right",
+      "duration_s": 1.615,
+      "peak": 9214
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_clear_left",
+      "duration_s": 0.7321,
+      "peak": 8263
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_clear_right",
+      "duration_s": 0.6669,
+      "peak": 8887
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_clear",
+      "duration_s": 1.0658,
+      "peak": 8505
+    },
+    {
+      "voice": "st3_m4",
+      "key": "traffic_still",
+      "duration_s": 1.5019,
+      "peak": 8682
+    },
+    {
+      "voice": "st3_m5",
+      "key": "three",
+      "duration_s": 0.5676,
+      "peak": 12299
+    },
+    {
+      "voice": "st3_m5",
+      "key": "two",
+      "duration_s": 0.509,
+      "peak": 13399
+    },
+    {
+      "voice": "st3_m5",
+      "key": "one",
+      "duration_s": 0.4572,
+      "peak": 12020
+    },
+    {
+      "voice": "st3_m5",
+      "key": "brake",
+      "duration_s": 0.6408,
+      "peak": 13720
+    },
+    {
+      "voice": "st3_m5",
+      "key": "hold",
+      "duration_s": 0.8671,
+      "peak": 13803
+    },
+    {
+      "voice": "st3_m5",
+      "key": "release",
+      "duration_s": 0.7202,
+      "peak": 9655
+    },
+    {
+      "voice": "st3_m5",
+      "key": "turn",
+      "duration_s": 0.6715,
+      "peak": 12258
+    },
+    {
+      "voice": "st3_m5",
+      "key": "unwind",
+      "duration_s": 0.6415,
+      "peak": 10230
+    },
+    {
+      "voice": "st3_m5",
+      "key": "throttle",
+      "duration_s": 0.9651,
+      "peak": 13733
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_left",
+      "duration_s": 1.3774,
+      "peak": 9885
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_right",
+      "duration_s": 1.3962,
+      "peak": 11915
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_both",
+      "duration_s": 1.5044,
+      "peak": 10773
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_two_left",
+      "duration_s": 1.8,
+      "peak": 9257
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_two_right",
+      "duration_s": 1.9298,
+      "peak": 11448
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_clear_left",
+      "duration_s": 0.8154,
+      "peak": 11868
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_clear_right",
+      "duration_s": 0.6627,
+      "peak": 12121
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_clear",
+      "duration_s": 1.1066,
+      "peak": 9742
+    },
+    {
+      "voice": "st3_m5",
+      "key": "traffic_still",
+      "duration_s": 1.6609,
+      "peak": 10327
+    },
+    {
+      "voice": "am_michael",
+      "key": "three",
+      "duration_s": 0.5136,
+      "peak": 19330
+    },
+    {
+      "voice": "am_michael",
+      "key": "two",
+      "duration_s": 0.4698,
+      "peak": 15777
+    },
+    {
+      "voice": "am_michael",
+      "key": "one",
+      "duration_s": 0.4404,
+      "peak": 25247
+    },
+    {
+      "voice": "am_michael",
+      "key": "brake",
+      "duration_s": 0.7007,
+      "peak": 16760
+    },
+    {
+      "voice": "am_michael",
+      "key": "hold",
+      "duration_s": 0.9055,
+      "peak": 15575
+    },
+    {
+      "voice": "am_michael",
+      "key": "release",
+      "duration_s": 0.6263,
+      "peak": 18355
+    },
+    {
+      "voice": "am_michael",
+      "key": "turn",
+      "duration_s": 0.6124,
+      "peak": 18085
+    },
+    {
+      "voice": "am_michael",
+      "key": "unwind",
+      "duration_s": 0.676,
+      "peak": 16063
+    },
+    {
+      "voice": "am_michael",
+      "key": "throttle",
+      "duration_s": 0.9517,
+      "peak": 19800
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_left",
+      "duration_s": 1.3328,
+      "peak": 15214
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_right",
+      "duration_s": 1.3588,
+      "peak": 13081
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_both",
+      "duration_s": 1.4228,
+      "peak": 14107
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_two_left",
+      "duration_s": 1.6535,
+      "peak": 14747
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_two_right",
+      "duration_s": 1.6026,
+      "peak": 13391
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_clear_left",
+      "duration_s": 0.7368,
+      "peak": 18855
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_clear_right",
+      "duration_s": 0.7128,
+      "peak": 23940
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_clear",
+      "duration_s": 1.0294,
+      "peak": 19532
+    },
+    {
+      "voice": "am_michael",
+      "key": "traffic_still",
+      "duration_s": 1.3212,
+      "peak": 14706
+    },
+    {
+      "voice": "bm_george",
+      "key": "three",
+      "duration_s": 0.597,
+      "peak": 15975
+    },
+    {
+      "voice": "bm_george",
+      "key": "two",
+      "duration_s": 0.562,
+      "peak": 19242
+    },
+    {
+      "voice": "bm_george",
+      "key": "one",
+      "duration_s": 0.5857,
+      "peak": 13326
+    },
+    {
+      "voice": "bm_george",
+      "key": "brake",
+      "duration_s": 0.7874,
+      "peak": 16450
+    },
+    {
+      "voice": "bm_george",
+      "key": "hold",
+      "duration_s": 0.9561,
+      "peak": 13654
+    },
+    {
+      "voice": "bm_george",
+      "key": "release",
+      "duration_s": 0.8038,
+      "peak": 12661
+    },
+    {
+      "voice": "bm_george",
+      "key": "turn",
+      "duration_s": 0.7262,
+      "peak": 16324
+    },
+    {
+      "voice": "bm_george",
+      "key": "unwind",
+      "duration_s": 0.7551,
+      "peak": 13501
+    },
+    {
+      "voice": "bm_george",
+      "key": "throttle",
+      "duration_s": 1.1415,
+      "peak": 17293
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_left",
+      "duration_s": 1.5183,
+      "peak": 16422
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_right",
+      "duration_s": 1.4374,
+      "peak": 15662
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_both",
+      "duration_s": 1.6525,
+      "peak": 15976
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_two_left",
+      "duration_s": 1.8719,
+      "peak": 17452
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_two_right",
+      "duration_s": 1.8289,
+      "peak": 16663
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_clear_left",
+      "duration_s": 0.8333,
+      "peak": 14795
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_clear_right",
+      "duration_s": 0.8009,
+      "peak": 15362
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_clear",
+      "duration_s": 1.1625,
+      "peak": 15584
+    },
+    {
+      "voice": "bm_george",
+      "key": "traffic_still",
+      "duration_s": 1.5254,
+      "peak": 16904
+    }
+  ]
+}

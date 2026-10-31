@@ -1,0 +1,31 @@
+KERBSIGNAL 0.13 — NEW DESKTOP LAYOUT
+
+Close KerbSignal, then open KerbSignal.exe to update and launch it.
+No Python, coding or building is required. Windows 10/11 x64.
+Your history and settings are kept in the existing data location.
+
+Check the title bar: it must say 0.13.
+Open DRIVE in the left rail. G-FORCE is a dedicated large circle beside the
+circuit map. It is visible even before connection; a moving dot requires
+fresh lateral/longitudinal acceleration telemetry. The compact overlay has
+its own smaller G circle.
+
+DRIVE: lap timing, best/delta, MPH/gear, full-width engineer call, circuit map,
+G-force circle and speed/brake/throttle/steering graph.
+ANALYZE: corner analysis, session recap, laps, racing line and references.
+RACECRAFT: searchable technique library.
+GARAGE: controlled setup tests.
+ENGINEER: voice studio, coaching/timing, YouTube and radio transcript.
+SETTINGS: general, voice/audio/microphone test, overlay, devices and updates.
+HELP: tutorial. Returning users start on Drive.
+
+Five new free local male voices are included. Critical calls use cached WAVs.
+Practice/qualifying/race and pit-stop reports use available telemetry.
+Exact corner calls still need a matching clean reference or authored guide;
+no universal expert-lap library is bundled. Tire readings retain their
+reported/pit freshness limits.
+
+This is a Windows test build. Live Windows/iRacing hardware and audio timing
+need validation. Native DLL checks and automated tests have passed.
+The in-app release feed is awaiting public-read authorization. For this
+update, close the old app and open the new KerbSignal.exe once.

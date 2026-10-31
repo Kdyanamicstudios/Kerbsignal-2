@@ -1,0 +1,98 @@
+{
+  "engine": "Vosk",
+  "version": "0.3.45",
+  "model": "vosk-model-small-en-us-0.15",
+  "license": "Apache-2.0",
+  "downloads": [
+    {
+      "file": "vosk-0.3.45-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
+      "url": "https://files.pythonhosted.org/packages/fc/ca/83398cfcd557360a3d7b2d732aee1c5f6999f68618d1645f38d53e14c9ff/vosk-0.3.45-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
+      "size": 7173758,
+      "sha256": "25e025093c4399d7278f543568ed8cc5460ac3a4bf48c23673ace1e25d26619f"
+    },
+    {
+      "file": "vosk-0.3.45-py3-none-win_amd64.whl",
+      "url": "https://files.pythonhosted.org/packages/c0/4c/deb0861f7da9696f8a255f1731bb73e9412cca29c4b3888a3fcb2a930a59/vosk-0.3.45-py3-none-win_amd64.whl",
+      "size": 13997596,
+      "sha256": "6994ddc68556c7e5730c3b6f6bad13320e3519b13ce3ed2aa25a86724e7c10ac"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15.zip",
+      "url": "https://alphacephei.com/vosk/models/vosk-model-small-en-us-0.15.zip",
+      "size": 41205931,
+      "sha256": "30f26242c4eb449f948e42cb302dd7a686cb29a3423a8367f99ff41780942498"
+    }
+  ],
+  "files": [
+    {
+      "file": "vosk-model-small-en-us-0.15/README",
+      "size": 199,
+      "sha256": "c0cf286e4f7783306c5f6469b37db69228fb16803b03cae661edb2d7bba64ebb"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/conf/model.conf",
+      "size": 290,
+      "sha256": "8f14cb1eeb07c762c371db648c6be688d347236155ca0f64fb13b6567a8ce81f"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/conf/mfcc.conf",
+      "size": 131,
+      "sha256": "1e2228006d01d805ad1c267fee9f79709ca87ac51bd82b0e3f5c69ba543f0fc4"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/am/final.mdl",
+      "size": 15962575,
+      "sha256": "75370a0137f9daf8f469dedd7daa4513ae7a621f03240c6e512e2b50b656a7b6"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/graph/HCLr.fst",
+      "size": 22416994,
+      "sha256": "5caafba3081e1646545ac6bff0dd7a318e53dcbdc86f237909ce1d2ac1293d34"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/graph/Gr.fst",
+      "size": 24013795,
+      "sha256": "023c8b7e30704a9e37765c635c252e608a02f361235bf94abdcf2a5225d85b20"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/graph/disambig_tid.int",
+      "size": 102,
+      "sha256": "9ad87cc166d0998f08f758f47a6223a120dfffcbee805c4849c3aa5e6bb3c0fc"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/ivector/splice.conf",
+      "size": 35,
+      "sha256": "9f0c5f7c82d18eaf25d8bce470efa9f7741f88411fe428774bc0a9bb69a24756"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/ivector/final.ie",
+      "size": 8288887,
+      "sha256": "3f37faf90c375b9e4740b569398b5829ed9cc07d19be6d441f72c3b71d7efcc6"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/ivector/online_cmvn.conf",
+      "size": 95,
+      "sha256": "a2f3571754b64297cb7efb2e7ca3df61995c5a45fcbb97188f90613552bb2dfe"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/ivector/final.mat",
+      "size": 44975,
+      "sha256": "ddd83586dc5f928cda8738b922c85ffe38fc789cb5f9151a712ca12f37265382"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/ivector/global_cmvn.stats",
+      "size": 1080,
+      "sha256": "33be09afcc80059847a275c3d043b51f1ab954c7c2438ddbbf4745e8ba144ff9"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/ivector/final.dubm",
+      "size": 168048,
+      "sha256": "8c5d7dd69d2122313baaf19f61f35dd3fa18b70c62ac0687e311e1c46e6daca7"
+    },
+    {
+      "file": "vosk-model-small-en-us-0.15/graph/phones/word_boundary.int",
+      "size": 1761,
+      "sha256": "da199d9c991e0e84681ddbb34627b915b26302d50a8fdaa23c51e2bc3a50b5c3"
+    }
+  ]
+}

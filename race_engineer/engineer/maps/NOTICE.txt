@@ -1,0 +1,1 @@
+Derived from SIMRacingAppsServer track data. Copyright (C) 2015–2024 Jeffrey Gilliam. Apache License 2.0. Source: https://github.com/SIMRacingApps/SIMRacingAppsServer . Original survey and GPX files included in Third_Party/SIMRacingApps_tracks. GPX fraction positions are estimates, not optimal racing lines.
