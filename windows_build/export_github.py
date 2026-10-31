@@ -1,7 +1,9 @@
 """Export a source-only GitHub handoff; never include runtime/user data."""
 from pathlib import Path
-import hashlib,json,shutil,zipfile
+import ast,hashlib,json,shutil,zipfile
 ROOT=Path(__file__).resolve().parents[1]
+version=next(ast.literal_eval(node.value) for node in ast.parse((ROOT/'race_engineer/engineer/updater.py').read_text(encoding='utf8')).body
+ if isinstance(node,ast.Assign) and any(isinstance(target,ast.Name) and target.id=='VERSION' for target in node.targets))
 stage=ROOT/'github_handoff/KerbSignal'
 assert stage.resolve().is_relative_to(ROOT.resolve()) and stage.name=='KerbSignal'
 if stage.exists():shutil.rmtree(stage)
@@ -9,6 +11,7 @@ stage.mkdir(parents=True)
 for folder in ('race_engineer','windows_build','docs','previews'):
  for p in (ROOT/folder).rglob('*'):
   if not p.is_file():continue
+  if p.name.startswith('.'):continue # incomplete hidden download fragments
   rel=p.relative_to(ROOT)
   if 'speech_assets' in rel.parts and p.name!='SOURCES.json':continue
   if any(x in rel.parts for x in ('__pycache__','payload','generated','downloads','tools','vc_runtime','wheels314','neural_wheels','speech_wheels','linux_speech_wheels')):continue
@@ -21,12 +24,21 @@ for name in ('KerbSignal_New_UI.png','KerbSignal_Pit_Wall_Sidebar_Preview.png','
  if p.exists():
   q=stage/'previews'/name;q.parent.mkdir(exist_ok=True);shutil.copy2(p,q)
 files=[]
+binary_ext={'.png','.wav','.gif','.mp4','.gz','.zip','.ico','.pdf','.jpg','.jpeg','.woff2','.rtf'}
 for p in sorted(stage.rglob('*')):
  if not p.is_file():continue
  assert p.stat().st_size<25*1024*1024,str(p)
  assert p.name not in ('auth.json','credentials.json','.env'),str(p)
+ data=p.read_bytes()
+ if p.suffix.lower() not in binary_ext and b'\0' not in data:
+  try:data.decode('utf8')
+  except UnicodeDecodeError:pass
+  else:
+   data=data.replace(b'\r\n',b'\n')
+   if p.suffix.lower() in ('.ps1','.bat'):data=data.replace(b'\n',b'\r\n')
+   p.write_bytes(data)
  files.append({'path':p.relative_to(stage).as_posix(),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
-(stage/'FILE_MANIFEST.json').write_text(json.dumps({'version':'0.15-working-source','files':files},indent=2)+'\n')
+(stage/'FILE_MANIFEST.json').write_text(json.dumps({'version':version+'-windows-test-source','files':files},indent=2)+'\n',encoding='utf8',newline='\n')
 archive=ROOT/'KerbSignal_GitHub_Ready.zip'
 with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
  for p in sorted(stage.rglob('*')):

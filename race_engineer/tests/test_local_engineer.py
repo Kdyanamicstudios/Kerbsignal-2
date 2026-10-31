@@ -7,6 +7,11 @@ from engineer.voice import Speech
 
 
 class LocalDialogueTests(unittest.TestCase):
+    def test_draft_alias_routes_to_the_offline_slipstream_lesson(self):
+        reply=LocalEngineer().answer('explain draft',{})
+        self.assertEqual(reply.topic,'Drafting / slipstream')
+        self.assertIn('drag',reply.text)
+
     def test_wake_is_anchored_accepts_homophone_and_expires(self):
         now=[100.];w=WakeController(lambda:now[0])
         self.assertIsNone(w.route('someone said hey kerby before'))

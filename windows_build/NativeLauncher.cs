@@ -6,8 +6,8 @@ using System.Windows.Forms;
 
 [assembly: System.Reflection.AssemblyTitle("KerbSignal")]
 [assembly: System.Reflection.AssemblyProduct("KerbSignal")]
-[assembly: System.Reflection.AssemblyVersion("0.15.0.0")]
-[assembly: System.Reflection.AssemblyFileVersion("0.15.0.0")]
+[assembly: System.Reflection.AssemblyVersion("__APP_VERSION__.0")]
+[assembly: System.Reflection.AssemblyFileVersion("__APP_VERSION__.0")]
 
 internal static class NativeLauncher {
     [STAThread] private static int Main(string[] args) {

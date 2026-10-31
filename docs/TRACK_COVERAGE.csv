@@ -1,0 +1,524 @@
+key,official_name,official_path,kind,map_status,map_file,map_source,map_points,identity_review_candidates,source_lines,reference_status
+adelaide,Adelaide Street Circuit,\adelaide,layout,missing_exact_map,,,0,,19,requires matching runtime reference or guide
+algarve,Algarve International Circuit,\algarve,container,container_not_layout,,,0,,20,requires matching runtime reference or guide
+algarve_gp,Algarve International Circuit - Grand Prix,\algarve\gp,layout,exact_map_valid,algarve_gp.json.gz,GPX distance estimate,1000,,21,requires matching runtime reference or guide
+algarve_gpchicane,Algarve International Circuit - Grand Prix - Chicanes,\algarve\gpchicane,layout,exact_map_valid,algarve_gpchicane.json.gz,GPX distance estimate,1000,,22,requires matching runtime reference or guide
+algarve_moto,Algarve International Circuit - Moto,\algarve\moto,layout,exact_map_valid,algarve_moto.json.gz,GPX distance estimate,1000,,23,requires matching runtime reference or guide
+algarve_motochicane,Algarve International Circuit - Moto - Chicanes,\algarve\motochicane,layout,exact_map_valid,algarve_motochicane.json.gz,GPX distance estimate,1000,,24,requires matching runtime reference or guide
+aragon,MotorLand Aragón,\aragon,container,container_not_layout,,,0,,315,requires matching runtime reference or guide
+aragon_gp,MotorLand Aragón - Grand Prix,\aragon\gp,layout,exact_map_valid,aragon_gp.json.gz,GPX distance estimate,1000,,316,requires matching runtime reference or guide
+aragon_moto,MotorLand Aragón - Motorcycle Grand Prix,\aragon\moto,layout,exact_map_valid,aragon_moto.json.gz,GPX distance estimate,1000,,317,requires matching runtime reference or guide
+aragon_national,MotorLand Aragón - National,\aragon\national,layout,exact_map_valid,aragon_national.json.gz,GPX distance estimate,1000,,319,requires matching runtime reference or guide
+aragon_nationalmoto,MotorLand Aragón - Motorcycle National,\aragon\nationalmoto,layout,exact_map_valid,aragon_nationalmoto.json.gz,GPX distance estimate,1000,,318,requires matching runtime reference or guide
+aragon_outer,MotorLand Aragón - Outer,\aragon\outer,layout,exact_map_valid,aragon_outer.json.gz,GPX distance estimate,1000,,320,requires matching runtime reference or guide
+aragon_tc,MotorLand Aragón - Touring Car,\aragon\tc,layout,exact_map_valid,aragon_tc.json.gz,GPX distance estimate,1000,,321,requires matching runtime reference or guide
+aragon_west,MotorLand Aragón - West,\aragon\west,layout,exact_map_valid,aragon_west.json.gz,GPX distance estimate,1000,,322,requires matching runtime reference or guide
+atlanta,EchoPark Speedway (Atlanta),\atlanta,container,container_not_layout,,,0,,176,requires matching runtime reference or guide
+atlanta_2022_oval,EchoPark Speedway (Atlanta) - Oval,\atlanta\2022\oval,layout,exact_map_valid,atlanta_2022_oval.json.gz,surveyed lap fraction,1000,,177,requires matching runtime reference or guide
+atlanta_legendsoval,EchoPark Speedway (Atlanta) - Legends Oval - 2008,\atlanta\legendsoval,layout,exact_map_valid,atlanta_legendsoval.json.gz,surveyed lap fraction,1000,,181,requires matching runtime reference or guide
+atlanta_quadoval,EchoPark Speedway (Atlanta) - Oval - 2008,\atlanta\quadoval,layout,exact_map_valid,atlanta_quadoval.json.gz,surveyed lap fraction,1000,,180,requires matching runtime reference or guide
+atlanta_rallycross_long,EchoPark Speedway (Atlanta) - Rallycross Long,\atlanta\rallycross\long,layout,exact_map_valid,atlanta_rallycross_long.json.gz,GPX distance estimate,1000,,178,requires matching runtime reference or guide
+atlanta_rallycross_short,EchoPark Speedway (Atlanta) - Rallycross Short,\atlanta\rallycross\short,layout,exact_map_valid,atlanta_rallycross_short.json.gz,GPX distance estimate,1000,,179,requires matching runtime reference or guide
+atlanta_roadcourse,EchoPark Speedway (Atlanta) - Road Course - 2008,\atlanta\roadcourse,layout,exact_map_valid,atlanta_roadcourse.json.gz,surveyed lap fraction,1000,,182,requires matching runtime reference or guide
+barber,Barber Motorsports Park,\barber,container,container_not_layout,,,0,,55,requires matching runtime reference or guide
+barber_full,Barber Motorsports Park - Full Course,\barber\full,layout,exact_map_valid,barber_full.json.gz,surveyed lap fraction,1000,,56,requires matching runtime reference or guide
+barber_shorta,Barber Motorsports Park - Short A,\barber\shorta,layout,exact_map_valid,barber_shorta.json.gz,surveyed lap fraction,1000,,57,requires matching runtime reference or guide
+barber_shortb,Barber Motorsports Park - Short B,\barber\shortb,layout,exact_map_valid,barber_shortb.json.gz,surveyed lap fraction,1000,,58,requires matching runtime reference or guide
+barcelona,Circuit de Barcelona Catalunya,\barcelona,container,container_not_layout,,,0,,101,requires matching runtime reference or guide
+barcelona_club,Circuit de Barcelona-Catalunya - Club,\barcelona\club,layout,exact_map_valid,barcelona_club.json.gz,GPX distance estimate,1000,,105,requires matching runtime reference or guide
+barcelona_gp,Circuit de Barcelona-Catalunya - Grand Prix,\barcelona\gp,layout,exact_map_valid,barcelona_gp.json.gz,GPX distance estimate,1000,,102,requires matching runtime reference or guide
+barcelona_historic,Circuit de Barcelona-Catalunya - Historic,\barcelona\historic,layout,exact_map_valid,barcelona_historic.json.gz,GPX distance estimate,1000,,106,requires matching runtime reference or guide
+barcelona_moto,Circuit de Barcelona-Catalunya - Moto,\barcelona\moto,layout,exact_map_valid,barcelona_moto.json.gz,GPX distance estimate,1000,,104,requires matching runtime reference or guide
+barcelona_national,Circuit de Barcelona-Catalunya - National,\barcelona\national,layout,exact_map_valid,barcelona_national.json.gz,GPX distance estimate,1000,,103,requires matching runtime reference or guide
+barcelona_rallycross,Circuit de Barcelona-Catalunya - Rallycross,\barcelona\rallycross,layout,exact_map_valid,barcelona_rallycross.json.gz,GPX distance estimate,1000,,107,requires matching runtime reference or guide
+barkriver,Bark River International Raceway,\barkriver,layout,missing_exact_map,,,0,,59,requires matching runtime reference or guide
+bathurst,Mount Panorama Circuit,\bathurst,layout,exact_map_valid,bathurst.json.gz,surveyed lap fraction,1000,,328,requires matching runtime reference or guide
+belleisle,Detroit Grand Prix at Belle Isle,\belleisle,layout,exact_map_valid,belleisle.json.gz,GPX distance estimate,1000,,171,requires matching runtime reference or guide
+brandshatch,Brands Hatch Circuit,\brandshatch,container,container_not_layout,,,0,,60,requires matching runtime reference or guide
+brandshatch_grandprix,Brands Hatch Circuit - Grand Prix,\brandshatch\grandprix,layout,exact_map_valid,brandshatch_grandprix.json.gz,surveyed lap fraction,1000,,61,requires matching runtime reference or guide
+brandshatch_indy,Brands Hatch Circuit - Indy,\brandshatch\indy,layout,exact_map_valid,brandshatch_indy.json.gz,surveyed lap fraction,1000,,62,requires matching runtime reference or guide
+brandshatch_rallycross,Brands Hatch Circuit - Rallycross,\brandshatch\rallycross,layout,exact_map_valid,brandshatch_rallycross.json.gz,GPX distance estimate,1000,,63,requires matching runtime reference or guide
+bristol,Bristol Motor Speedway - Dual Pit Roads,\bristol,layout,exact_map_valid,bristol.json.gz,surveyed lap fraction,1000,,64;65,requires matching runtime reference or guide
+bristol_dirt,Bristol Motor Speedway - Dirt - 2021,\bristol\dirt,container,container_not_layout,bristol_dirt.json.gz,surveyed lap fraction,1000,,68,requires matching runtime reference or guide
+bristol_dirt_2022,Bristol Motor Speedway - Dirt,\bristol\dirt\2022,layout,exact_map_valid,bristol_dirt_2022.json.gz,surveyed lap fraction,1000,,67,requires matching runtime reference or guide
+bristol_fullpit,Bristol Motor Speedway - Single Pit Road,\bristol\fullpit,layout,exact_map_valid,bristol_fullpit.json.gz,surveyed lap fraction,1000,,66,requires matching runtime reference or guide
+bullring,The Bullring,\bullring,layout,exact_map_valid,bullring.json.gz,GPX distance estimate,1000,,479,requires matching runtime reference or guide
+cadwell,Cadwell Park Circuit,\cadwell,container,container_not_layout,,,0,,69,requires matching runtime reference or guide
+cadwell_club,Cadwell Park Circuit - Club,\cadwell\club,layout,exact_map_valid,cadwell_club.json.gz,GPX distance estimate,1000,,71,requires matching runtime reference or guide
+cadwell_full,Cadwell Park Circuit - Full,\cadwell\full,layout,exact_map_valid,cadwell_full.json.gz,GPX distance estimate,1000,,70,requires matching runtime reference or guide
+cadwell_moto,Cadwell Park Circuit - Moto,\cadwell\moto,layout,exact_map_valid,cadwell_moto.json.gz,GPX distance estimate,1000,,72,requires matching runtime reference or guide
+cadwell_woodlands,Cadwell Park Circuit - Woodlands,\cadwell\woodlands,layout,exact_map_valid,cadwell_woodlands.json.gz,GPX distance estimate,1000,,73,requires matching runtime reference or guide
+california,Auto Club Speedway,\california,container,container_not_layout,,,0,,25,requires matching runtime reference or guide
+california_competition,Auto Club Speedway - Competition,\california\competition,layout,exact_map_valid,california_competition.json.gz,surveyed lap fraction,1000,,27,requires matching runtime reference or guide
+california_interior,Auto Club Speedway - Interior,\california\interior,layout,identity_review_no_exact_map,,,0,california_interiora,28,requires matching runtime reference or guide
+california_moto,Auto Club Speedway - Moto,\california\moto,layout,exact_map_valid,california_moto.json.gz,surveyed lap fraction,1000,,29,requires matching runtime reference or guide
+california_oval,Auto Club Speedway - Oval,\california\oval,layout,exact_map_valid,california_oval.json.gz,surveyed lap fraction,1000,,26,requires matching runtime reference or guide
+cedarlake,Cedar Lake Speedway,\cedarlake,layout,exact_map_valid,cedarlake.json.gz,GPX distance estimate,1000,,75,requires matching runtime reference or guide
+charlotte,[Legacy] Charlotte Motor Speedway - 2008,\charlotte,container,container_not_layout,,,0,,522,requires matching runtime reference or guide
+charlotte_2018,Charlotte Motor Speedway,\charlotte\2018,container,container_not_layout,,,0,,77,requires matching runtime reference or guide
+charlotte_2018_2019_rallycrosslong,Charlotte Motor Speedway - Rallycross,\charlotte\2018\2019\rallycrosslong,layout,exact_map_valid,charlotte_2018_2019_rallycrosslong.json.gz,GPX distance estimate,1000,,86,requires matching runtime reference or guide
+charlotte_2018_2019_roval,Charlotte Motor Speedway - Roval,\charlotte\2018\2019\roval,layout,exact_map_valid,charlotte_2018_2019_roval.json.gz,GPX distance estimate,1000,,79,requires matching runtime reference or guide
+charlotte_2018_legendsoval,Charlotte Motor Speedway - Legends Oval,\charlotte\2018\legendsoval,layout,exact_map_valid,charlotte_2018_legendsoval.json.gz,surveyed lap fraction,1000,,82,requires matching runtime reference or guide
+charlotte_2018_legendsrclong,Charlotte Motor Speedway - Legends RC Oval Long,\charlotte\2018\legendsrclong,layout,exact_map_valid,charlotte_2018_legendsrclong.json.gz,GPX distance estimate,1000,,83,requires matching runtime reference or guide
+charlotte_2018_legendsrcmed,Charlotte Motor Speedway - Legends RC Oval Medium,\charlotte\2018\legendsrcmed,layout,exact_map_valid,charlotte_2018_legendsrcmed.json.gz,GPX distance estimate,1000,,84,requires matching runtime reference or guide
+charlotte_2018_legendsrcshort,Charlotte Motor Speedway - Legends RC Oval Short,\charlotte\2018\legendsrcshort,layout,exact_map_valid,charlotte_2018_legendsrcshort.json.gz,GPX distance estimate,1000,,85,requires matching runtime reference or guide
+charlotte_2018_oval,Charlotte Motor Speedway - Oval - 2018,\charlotte\2018\oval,layout,exact_map_valid,charlotte_2018_oval.json.gz,surveyed lap fraction,1000,,78,requires matching runtime reference or guide
+charlotte_2018_roval,Charlotte Motor Speedway - Roval - 2018,\charlotte\2018\roval,layout,exact_map_valid,charlotte_2018_roval.json.gz,GPX distance estimate,1000,,81,requires matching runtime reference or guide
+charlotte_2018_rovallong,Charlotte Motor Speedway - Roval Long,\charlotte\2018\rovallong,layout,exact_map_valid,charlotte_2018_rovallong.json.gz,GPX distance estimate,1000,,80,requires matching runtime reference or guide
+charlotte_2025_legendsoval,Charlotte Motor Speedway - Legends Oval,\charlotte\2025\legendsoval,layout,missing_exact_map,,,0,,91,requires matching runtime reference or guide
+charlotte_2025_legendsrc2025,Charlotte Motor Speedway - Legends RC Oval Medium,\charlotte\2025\legendsrc2025,layout,missing_exact_map,,,0,,93,requires matching runtime reference or guide
+charlotte_2025_legendsrclong,Charlotte Motor Speedway - Legends RC Oval Long,\charlotte\2025\legendsrclong,layout,missing_exact_map,,,0,,92,requires matching runtime reference or guide
+charlotte_2025_legendsrcshort,Charlotte Motor Speedway - Legends RC Oval Short,\charlotte\2025\legendsrcshort,layout,missing_exact_map,,,0,,94,requires matching runtime reference or guide
+charlotte_2025_oval,Charlotte Motor Speedway - Oval - 2018,\charlotte\2025\oval,layout,missing_exact_map,,,0,,87,requires matching runtime reference or guide
+charlotte_2025_rallycrosslong,Charlotte Motor Speedway - Rallycross,\charlotte\2025\rallycrosslong,layout,missing_exact_map,,,0,,95,requires matching runtime reference or guide
+charlotte_2025_roval2019,Charlotte Motor Speedway - Roval - 2018,\charlotte\2025\roval2019,layout,missing_exact_map,,,0,,90,requires matching runtime reference or guide
+charlotte_2025_roval2025,Charlotte Motor Speedway - Roval,\charlotte\2025\roval2025,layout,missing_exact_map,,,0,,88,requires matching runtime reference or guide
+charlotte_2025_rovalnochicanes,Charlotte Motor Speedway - Roval Long,\charlotte\2025\rovalnochicanes,layout,missing_exact_map,,,0,,89,requires matching runtime reference or guide
+charlotte_fullroadcourse,[Legacy] Charlotte Motor Speedway - 2008 - Road Course,\charlotte\fullroadcourse,layout,exact_map_valid,charlotte_fullroadcourse.json.gz,surveyed lap fraction,1000,,526,requires matching runtime reference or guide
+charlotte_infieldrc,[Legacy] Charlotte Motor Speedway - 2008 - Infield Road Course,\charlotte\infieldrc,layout,exact_map_valid,charlotte_infieldrc.json.gz,surveyed lap fraction,1000,,523,requires matching runtime reference or guide
+charlotte_legendsoval,[Legacy] Charlotte Motor Speedway - 2008 - Legends Oval,\charlotte\legendsoval,layout,exact_map_valid,charlotte_legendsoval.json.gz,surveyed lap fraction,1000,,524,requires matching runtime reference or guide
+charlotte_quadoval,[Legacy] Charlotte Motor Speedway - 2008 - Oval,\charlotte\quadoval,layout,exact_map_valid,charlotte_quadoval.json.gz,surveyed lap fraction,1000,,525,requires matching runtime reference or guide
+charlottedirt,The Dirt Track at Charlotte,\charlottedirt,layout,exact_map_valid,charlottedirt.json.gz,GPX distance estimate,1000,,480,requires matching runtime reference or guide
+chicago,Chicago Street Course - Prototype,\chicago,layout,exact_map_valid,chicago.json.gz,GPX distance estimate,1000,,96;98,requires matching runtime reference or guide
+chicago_2023,Chicago Street Course - 2023 Cup,\chicago\2023,layout,exact_map_valid,chicago_2023.json.gz,GPX distance estimate,1000,,97,requires matching runtime reference or guide
+chicagoland,Chicagoland Speedway,\chicagoland,layout,exact_map_valid,chicagoland.json.gz,surveyed lap fraction,1000,,99,requires matching runtime reference or guide
+chilibowl,Chili Bowl,\chilibowl,layout,exact_map_valid,chilibowl.json.gz,GPX distance estimate,1000,,100,requires matching runtime reference or guide
+concordhalf,Concord Speedway,\concordhalf,layout,exact_map_valid,concordhalf.json.gz,GPX distance estimate,1000,,151,requires matching runtime reference or guide
+cota,Circuit of the Americas,\cota,container,container_not_layout,,,0,,123,requires matching runtime reference or guide
+cota_east,Circuit of the Americas - East,\cota\east,layout,exact_map_valid,cota_east.json.gz,GPX distance estimate,1000,,125,requires matching runtime reference or guide
+cota_gp,Circuit of the Americas - Grand Prix,\cota\gp,layout,exact_map_valid,cota_gp.json.gz,GPX distance estimate,1000,,124,requires matching runtime reference or guide
+cota_west,Circuit of the Americas - West,\cota\west,layout,exact_map_valid,cota_west.json.gz,GPX distance estimate,1000,,126,requires matching runtime reference or guide
+crandon,Crandon International Raceway - Full,\crandon,layout,identity_review_no_exact_map,,,0,crandon_full,152;153,requires matching runtime reference or guide
+crandon_short,Crandon International Raceway - Short,\crandon\short,layout,exact_map_valid,crandon_short.json.gz,GPX distance estimate,1000,,154,requires matching runtime reference or guide
+darlington,Darlington Raceway,\darlington,layout,exact_map_valid,darlington.json.gz,surveyed lap fraction,1000,,155,requires matching runtime reference or guide
+daytona,Daytona Rallycross and Dirt Road,\daytona,container,container_not_layout,,,0,,166,requires matching runtime reference or guide
+daytona_2011,Daytona International Speedway,\daytona\2011,container,container_not_layout,,,0,,156,requires matching runtime reference or guide
+daytona_2011_bike,Daytona International Speedway - Moto,\daytona\2011\bike,layout,exact_map_valid,daytona_2011_bike.json.gz,surveyed lap fraction,1000,,160,requires matching runtime reference or guide
+daytona_2011_oval,Daytona International Speedway - Oval,\daytona\2011\oval,layout,exact_map_valid,daytona_2011_oval.json.gz,surveyed lap fraction,1000,,157,requires matching runtime reference or guide
+daytona_2011_road,Daytona International Speedway - Road Course,\daytona\2011\road,layout,exact_map_valid,daytona_2011_road.json.gz,surveyed lap fraction,1000,,158,requires matching runtime reference or guide
+daytona_2011_roadnascar2020,Daytona International Speedway - NASCAR Road Course,\daytona\2011\roadnascar2020,layout,exact_map_valid,daytona_2011_roadnascar2020.json.gz,GPX distance estimate,1000,,159,requires matching runtime reference or guide
+daytona_2011_short,Daytona International Speedway - Short,\daytona\2011\short,layout,exact_map_valid,daytona_2011_short.json.gz,surveyed lap fraction,1000,,161,requires matching runtime reference or guide
+daytona_bike,Daytona International Speedway - Moto - 2008,\daytona\bike,layout,exact_map_valid,daytona_bike.json.gz,surveyed lap fraction,1000,,164,requires matching runtime reference or guide
+daytona_oval,Daytona International Speedway - Oval - 2008,\daytona\oval,layout,exact_map_valid,daytona_oval.json.gz,surveyed lap fraction,1000,,162,requires matching runtime reference or guide
+daytona_rallycross_long,Daytona Rallycross and Dirt Road - Rallycross Long,\daytona\rallycross\long,container,container_not_layout,daytona_rallycross_long.json.gz,GPX distance estimate,1000,,169,requires matching runtime reference or guide
+daytona_rallycross_long_nojoker,Daytona Rallycross and Dirt Road - Dirt Road Long,\daytona\rallycross\long\nojoker,layout,exact_map_valid,daytona_rallycross_long_nojoker.json.gz,GPX distance estimate,1000,,167,requires matching runtime reference or guide
+daytona_rallycross_short,Daytona Rallycross and Dirt Road - Rallycross Short,\daytona\rallycross\short,container,container_not_layout,daytona_rallycross_short.json.gz,GPX distance estimate,1000,,170,requires matching runtime reference or guide
+daytona_rallycross_short_nojoker,Daytona Rallycross and Dirt Road - Dirt Road Short,\daytona\rallycross\short\nojoker,layout,exact_map_valid,daytona_rallycross_short_nojoker.json.gz,GPX distance estimate,1000,,168,requires matching runtime reference or guide
+daytona_road,Daytona International Speedway - Road Course - 2008,\daytona\road,layout,exact_map_valid,daytona_road.json.gz,surveyed lap fraction,1000,,163,requires matching runtime reference or guide
+daytona_short,Daytona International Speedway - Short - 2008,\daytona\short,layout,exact_map_valid,daytona_short.json.gz,surveyed lap fraction,1000,,165,requires matching runtime reference or guide
+donington,Donington Park Racing Circuit,\donington,container,container_not_layout,,,0,,172,requires matching runtime reference or guide
+donington_gp,Donington Park Racing Circuit - Grand Prix,\donington\gp,layout,exact_map_valid,donington_gp.json.gz,surveyed lap fraction,1000,,173,requires matching runtime reference or guide
+donington_national,Donington Park Racing Circuit - National,\donington\national,layout,exact_map_valid,donington_national.json.gz,surveyed lap fraction,1000,,174,requires matching runtime reference or guide
+dover,Dover Motor Speedway,\dover,layout,exact_map_valid,dover.json.gz,surveyed lap fraction,1000,,175,requires matching runtime reference or guide
+eldora,Eldora Speedway,\eldora,layout,exact_map_valid,eldora.json.gz,GPX distance estimate,1000,,183,requires matching runtime reference or guide
+fairbury,Fairbury Speedway,\fairbury,layout,exact_map_valid,fairbury.json.gz,GPX distance estimate,1000,,184,requires matching runtime reference or guide
+fiveflags,Five Flags Speedway,\fiveflags,layout,exact_map_valid,fiveflags.json.gz,GPX distance estimate,1000,,187,requires matching runtime reference or guide
+fuji,Fuji International Speedway,\fuji,container,container_not_layout,,,0,,188,requires matching runtime reference or guide
+fuji_gp,Fuji International Speedway - Grand Prix,\fuji\gp,layout,exact_map_valid,fuji_gp.json.gz,GPX distance estimate,1000,,189,requires matching runtime reference or guide
+fuji_nochicane,Fuji International Speedway - No Chicane,\fuji\nochicane,layout,exact_map_valid,fuji_nochicane.json.gz,GPX distance estimate,1000,,190,requires matching runtime reference or guide
+gateway,World Wide Technology Raceway (Gateway),\gateway,container,container_not_layout,,,0,,518,requires matching runtime reference or guide
+gateway_2025_oval,World Wide Technology Raceway (Gateway) - 2025 - Oval,\gateway\2025\oval,layout,missing_exact_map,,,0,,521,requires matching runtime reference or guide
+gateway_oval,World Wide Technology Raceway (Gateway) - Oval,\gateway\oval,layout,exact_map_valid,gateway_oval.json.gz,surveyed lap fraction,1000,,519,requires matching runtime reference or guide
+gateway_road,World Wide Technology Raceway (Gateway) - Road Course,\gateway\road,layout,exact_map_valid,gateway_road.json.gz,surveyed lap fraction,1000,,520,requires matching runtime reference or guide
+hickory,Hickory Motor Speedway,\hickory,layout,exact_map_valid,hickory.json.gz,GPX distance estimate,1000,,191,requires matching runtime reference or guide
+hockenheim,Hockenheimring Baden-Württemberg,\hockenheim,container,container_not_layout,,,0,,192,requires matching runtime reference or guide
+hockenheim_gp,Hockenheimring Baden-Württemberg - Grand Prix,\hockenheim\gp,layout,exact_map_valid,hockenheim_gp.json.gz,GPX distance estimate,1000,,193,requires matching runtime reference or guide
+hockenheim_nationala,Hockenheimring Baden-Württemberg - National A,\hockenheim\nationalA,layout,exact_map_valid,hockenheim_nationala.json.gz,GPX distance estimate,1000,,194,requires matching runtime reference or guide
+hockenheim_nationalb,Hockenheimring Baden-Württemberg - National B,\hockenheim\nationalB,layout,exact_map_valid,hockenheim_nationalb.json.gz,GPX distance estimate,1000,,195,requires matching runtime reference or guide
+hockenheim_outer,Hockenheimring Baden-Württemberg - Outer,\hockenheim\outer,layout,exact_map_valid,hockenheim_outer.json.gz,GPX distance estimate,1000,,196,requires matching runtime reference or guide
+hockenheim_peceast,Hockenheimring Baden-Württemberg - PEC - East,\hockenheim\peceast,layout,identity_review_no_exact_map,,,0,hockenheim_pec_peceast,197,requires matching runtime reference or guide
+hockenheim_pechandling,Hockenheimring Baden-Württemberg - PEC - Handling,\hockenheim\pechandling,layout,identity_review_no_exact_map,,,0,hockenheim_pec_pechandling,198,requires matching runtime reference or guide
+hockenheim_pecouter,Hockenheimring Baden-Württemberg - PEC - Outer,\hockenheim\pecouter,layout,identity_review_no_exact_map,,,0,hockenheim_pec_pecouter,199,requires matching runtime reference or guide
+hockenheim_pecwest,Hockenheimring Baden-Württemberg - PEC - West,\hockenheim\pecwest,layout,identity_review_no_exact_map,,,0,hockenheim_pec_pecwest,200,requires matching runtime reference or guide
+hockenheim_shorta,Hockenheimring Baden-Württemberg - Short A,\hockenheim\shortA,layout,exact_map_valid,hockenheim_shorta.json.gz,GPX distance estimate,1000,,201,requires matching runtime reference or guide
+hockenheim_shortb,Hockenheimring Baden-Württemberg - Short B,\hockenheim\shortB,layout,exact_map_valid,hockenheim_shortb.json.gz,GPX distance estimate,1000,,202,requires matching runtime reference or guide
+homestead,Homestead Miami Speedway,\homestead,container,container_not_layout,,,0,,203,requires matching runtime reference or guide
+homestead_oval,Homestead Miami Speedway - Oval,\homestead\oval,layout,exact_map_valid,homestead_oval.json.gz,surveyed lap fraction,1000,,204,requires matching runtime reference or guide
+homestead_ovalindy,Homestead Miami Speedway - Open Wheel Oval,\homestead\ovalindy,layout,exact_map_valid,homestead_ovalindy.json.gz,surveyed lap fraction,1000,,205,requires matching runtime reference or guide
+homestead_roada,Homestead Miami Speedway - Road Course A,\homestead\roada,layout,exact_map_valid,homestead_roada.json.gz,surveyed lap fraction,1000,,206,requires matching runtime reference or guide
+homestead_roadb,Homestead Miami Speedway - Road Course B,\homestead\roadb,layout,exact_map_valid,homestead_roadb.json.gz,surveyed lap fraction,1000,,207,requires matching runtime reference or guide
+hungaroring,Hungaroring Circuit,\hungaroring,layout,exact_map_valid,hungaroring.json.gz,GPX distance estimate,1000,,208,requires matching runtime reference or guide
+husets,Huset's Speedway,\husets,layout,missing_exact_map,,,0,,209,requires matching runtime reference or guide
+imola,Autodromo Internazionale Enzo e Dino Ferrari,\imola,container,container_not_layout,,,0,,39,requires matching runtime reference or guide
+imola_gp,Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix,\imola\gp,layout,exact_map_valid,imola_gp.json.gz,GPX distance estimate,1000,,40,requires matching runtime reference or guide
+imola_moto,Autodromo Internazionale Enzo e Dino Ferrari - Moto,\imola\moto,layout,exact_map_valid,imola_moto.json.gz,GPX distance estimate,1000,,41,requires matching runtime reference or guide
+indianapolis,Indianapolis Motor Speedway,\indianapolis,container,container_not_layout,indianapolis.json.gz,surveyed lap fraction,1000,,210,requires matching runtime reference or guide
+indianapolis_2022_oval,Indianapolis Motor Speedway - Open Wheel Oval,\indianapolis\2022\oval,layout,exact_map_valid,indianapolis_2022_oval.json.gz,surveyed lap fraction,1000,,212,requires matching runtime reference or guide
+indianapolis_2022_ovalnascar,Indianapolis Motor Speedway - Oval,\indianapolis\2022\ovalnascar,layout,exact_map_valid,indianapolis_2022_ovalnascar.json.gz,surveyed lap fraction,1000,,211,requires matching runtime reference or guide
+indianapolis_2022_road,Indianapolis Motor Speedway - Road Course,\indianapolis\2022\road,layout,exact_map_valid,indianapolis_2022_road.json.gz,GPX distance estimate,1000,,213,requires matching runtime reference or guide
+indianapolis_motogp,Indianapolis Motor Speedway - Bike,\indianapolis\motogp,layout,exact_map_valid,indianapolis_motogp.json.gz,surveyed lap fraction,1000,,214,requires matching runtime reference or guide
+indianapolis_oval,Indianapolis Motor Speedway - Oval - 2009,\indianapolis\oval,layout,exact_map_valid,indianapolis_oval.json.gz,surveyed lap fraction,1000,,215,requires matching runtime reference or guide
+indianapolis_ovalindypit,Indianapolis Motor Speedway - Open Wheel Oval - 2009,\indianapolis\ovalindypit,layout,exact_map_valid,indianapolis_ovalindypit.json.gz,surveyed lap fraction,1000,,216,requires matching runtime reference or guide
+indianapolis_road,Indianapolis Motor Speedway - Road Course - 2009,\indianapolis\road,layout,exact_map_valid,indianapolis_road.json.gz,surveyed lap fraction,1000,,217,requires matching runtime reference or guide
+interlagos,Autódromo José Carlos Pace,\interlagos,container,container_not_layout,,,0,,42,requires matching runtime reference or guide
+interlagos_gp,Autódromo José Carlos Pace - Grand Prix,\interlagos\gp,layout,exact_map_valid,interlagos_gp.json.gz,surveyed lap fraction,1000,,43,requires matching runtime reference or guide
+interlagos_moto,Autódromo José Carlos Pace - Moto,\interlagos\moto,layout,exact_map_valid,interlagos_moto.json.gz,surveyed lap fraction,1000,,44,requires matching runtime reference or guide
+iowa,Iowa Speedway,\iowa,container,container_not_layout,,,0,,218,requires matching runtime reference or guide
+iowa_2025_oval,Iowa Speedway - Oval,\iowa\2025\oval,layout,missing_exact_map,,,0,,219,requires matching runtime reference or guide
+iowa_inflegends,Iowa Speedway - Infield Legends,\iowa\inflegends,layout,exact_map_valid,iowa_inflegends.json.gz,surveyed lap fraction,1000,,224,requires matching runtime reference or guide
+iowa_infroad,Iowa Speedway - Infield Road Course,\iowa\infroad,layout,missing_exact_map,,,0,,222,requires matching runtime reference or guide
+iowa_legends,Iowa Speedway - Legends,\iowa\legends,layout,exact_map_valid,iowa_legends.json.gz,surveyed lap fraction,1000,,223,requires matching runtime reference or guide
+iowa_oval,Iowa Speedway - Oval - 2011,\iowa\oval,layout,exact_map_valid,iowa_oval.json.gz,GPX distance estimate,1000,,220,requires matching runtime reference or guide
+iowa_rallycross,Iowa Speedway - Rallycross,\iowa\rallycross,layout,exact_map_valid,iowa_rallycross.json.gz,GPX distance estimate,1000,,225,requires matching runtime reference or guide
+iowa_road,Iowa Speedway - Road Course,\iowa\road,layout,exact_map_valid,iowa_road.json.gz,surveyed lap fraction,1000,,221,requires matching runtime reference or guide
+iracingss,iRacing Superspeedway,\iracingss,layout,exact_map_valid,iracingss.json.gz,surveyed lap fraction,1000,,226,requires matching runtime reference or guide
+irp,Lucas Oil Indianapolis Raceway Park - Oval,\irp,layout,exact_map_valid,irp.json.gz,surveyed lap fraction,1000,,283;284,requires matching runtime reference or guide
+irp_rallycross,Lucas Oil Indianapolis Raceway Park - Rallycross,\irp\rallycross,layout,exact_map_valid,irp_rallycross.json.gz,GPX distance estimate,1000,,285,requires matching runtime reference or guide
+irwindale,Irwindale Speedway,\irwindale,container,container_not_layout,,,0,,227,requires matching runtime reference or guide
+irwindale_figureeight,Irwindale Speedway - Figure Eight,\irwindale\figureeight,layout,exact_map_valid,irwindale_figureeight.json.gz,surveyed lap fraction,1000,,231,requires matching runtime reference or guide
+irwindale_figureeightjump,Irwindale Speedway - Figure Eight Jump,\irwindale\figureeightjump,layout,exact_map_valid,irwindale_figureeightjump.json.gz,surveyed lap fraction,1000,,232,requires matching runtime reference or guide
+irwindale_inner,Irwindale Speedway - Inner,\irwindale\inner,layout,exact_map_valid,irwindale_inner.json.gz,surveyed lap fraction,1000,,229,requires matching runtime reference or guide
+irwindale_outer,Irwindale Speedway - Outer,\irwindale\outer,layout,exact_map_valid,irwindale_outer.json.gz,surveyed lap fraction,1000,,228,requires matching runtime reference or guide
+irwindale_outerinner,Irwindale Speedway - Outer - Inner,\irwindale\outerinner,layout,exact_map_valid,irwindale_outerinner.json.gz,surveyed lap fraction,1000,,230,requires matching runtime reference or guide
+jerez,Circuito de Jerez - Ángel Nieto,\jerez,container,container_not_layout,,,0,,144,requires matching runtime reference or guide
+jerez_gp,Circuito de Jerez - Ángel Nieto - Grand Prix,\jerez\gp,layout,exact_map_valid,jerez_gp.json.gz,GPX distance estimate,1000,,145,requires matching runtime reference or guide
+jerez_moto,Circuito de Jerez - Ángel Nieto - Moto,\jerez\moto,layout,exact_map_valid,jerez_moto.json.gz,GPX distance estimate,1000,,146,requires matching runtime reference or guide
+kansas,Kansas Speedway,\kansas,container,container_not_layout,,,0,,233,requires matching runtime reference or guide
+kansas_full,Kansas Speedway - Road Course,\kansas\full,layout,exact_map_valid,kansas_full.json.gz,surveyed lap fraction,1000,,235,requires matching runtime reference or guide
+kansas_oval,Kansas Speedway - Oval,\kansas\oval,layout,exact_map_valid,kansas_oval.json.gz,surveyed lap fraction,1000,,234,requires matching runtime reference or guide
+kansas_short,Kansas Speedway - Infield Road Course,\kansas\short,layout,exact_map_valid,kansas_short.json.gz,surveyed lap fraction,1000,,236,requires matching runtime reference or guide
+kentucky,[Legacy] Kentucky Speedway - 2011,\kentucky,container,container_not_layout,,,0,,527,requires matching runtime reference or guide
+kentucky_2020,Kentucky Speedway,\kentucky\2020,container,container_not_layout,,,0,,237,requires matching runtime reference or guide
+kentucky_2020_oval,Kentucky Speedway - Oval,\kentucky\2020\oval,layout,exact_map_valid,kentucky_2020_oval.json.gz,surveyed lap fraction,1000,,238,requires matching runtime reference or guide
+kentucky_legend,[Legacy] Kentucky Speedway - Legends,\kentucky\legend,layout,exact_map_valid,kentucky_legend.json.gz,surveyed lap fraction,1000,,528,requires matching runtime reference or guide
+kentucky_oval,[Legacy] Kentucky Speedway - Oval,\kentucky\oval,layout,exact_map_valid,kentucky_oval.json.gz,surveyed lap fraction,1000,,529,requires matching runtime reference or guide
+kern,Kevin Harvick's Kern Raceway,\kern,container,container_not_layout,,,0,,239,requires matching runtime reference or guide
+kern_dirt,Kevin Harvick's Kern Raceway - Dirt Track,\kern\dirt,layout,exact_map_valid,kern_dirt.json.gz,GPX distance estimate,1000,,242,requires matching runtime reference or guide
+kern_dirtmini,Kevin Harvick's Kern Raceway - Dirt Mini Oval,\kern\dirtmini,layout,exact_map_valid,kern_dirtmini.json.gz,GPX distance estimate,1000,,243,requires matching runtime reference or guide
+kern_legends,Kevin Harvick's Kern Raceway - Legends,\kern\legends,layout,exact_map_valid,kern_legends.json.gz,GPX distance estimate,1000,,241,requires matching runtime reference or guide
+kern_oval,Kevin Harvick's Kern Raceway - Asphalt Track,\kern\oval,layout,exact_map_valid,kern_oval.json.gz,GPX distance estimate,1000,,240,requires matching runtime reference or guide
+knockhill,Knockhill Racing Circuit,\knockhill,container,container_not_layout,,,0,,244,requires matching runtime reference or guide
+knockhill_international,Knockhill Racing Circuit - International,\knockhill\international,layout,exact_map_valid,knockhill_international.json.gz,GPX distance estimate,1000,,245,requires matching runtime reference or guide
+knockhill_internationalrev,Knockhill Racing Circuit - International Reverse,\knockhill\internationalrev,layout,exact_map_valid,knockhill_internationalrev.json.gz,GPX distance estimate,1000,,246,requires matching runtime reference or guide
+knockhill_national,Knockhill Racing Circuit - National,\knockhill\national,layout,exact_map_valid,knockhill_national.json.gz,GPX distance estimate,1000,,247,requires matching runtime reference or guide
+knockhill_nationalrev,Knockhill Racing Circuit - National Reverse,\knockhill\nationalrev,layout,exact_map_valid,knockhill_nationalrev.json.gz,GPX distance estimate,1000,,248,requires matching runtime reference or guide
+knockhill_rallycross,Knockhill Racing Circuit - Rallycross,\knockhill\rallycross,layout,exact_map_valid,knockhill_rallycross.json.gz,GPX distance estimate,1000,,250,requires matching runtime reference or guide
+knockhill_trioval,Knockhill Racing Circuit - Tri-Oval,\knockhill\trioval,layout,exact_map_valid,knockhill_trioval.json.gz,GPX distance estimate,1000,,249,requires matching runtime reference or guide
+knoxville,Knoxville Raceway,\knoxville,layout,exact_map_valid,knoxville.json.gz,GPX distance estimate,1000,,251,requires matching runtime reference or guide
+kokomo,Kokomo Speedway - Tires In,\kokomo,layout,exact_map_valid,kokomo.json.gz,GPX distance estimate,1000,,252;253,requires matching runtime reference or guide
+kokomo_tiresout,Kokomo Speedway - Tires Out,\kokomo\tiresout,layout,exact_map_valid,kokomo_tiresout.json.gz,GPX distance estimate,1000,,254,requires matching runtime reference or guide
+lacoliseum,Los Angeles Memorial Coliseum,\lacoliseum,layout,exact_map_valid,lacoliseum.json.gz,GPX distance estimate,1000,,282,requires matching runtime reference or guide
+lagunaseca,WeatherTech Raceway Laguna Seca,\lagunaseca,needs_review,layout_classification_review,lagunaseca.json.gz,surveyed lap fraction,1000,,507;508,requires matching runtime reference or guide
+lagunaseca_school,WeatherTech Raceway Laguna Seca - School,\lagunaseca\school,layout,exact_map_valid,lagunaseca_school.json.gz,surveyed lap fraction,1000,,509,requires matching runtime reference or guide
+lakeland,USA International Speedway - Asphalt,\lakeland,layout,exact_map_valid,lakeland.json.gz,surveyed lap fraction,1000,,492;493,requires matching runtime reference or guide
+lakeland_dirt,USA International Speedway - Dirt,\lakeland\dirt,layout,exact_map_valid,lakeland_dirt.json.gz,surveyed lap fraction,1000,,494,requires matching runtime reference or guide
+langley,Langley Speedway,\langley,layout,exact_map_valid,langley.json.gz,GPX distance estimate,1000,,255,requires matching runtime reference or guide
+lanier,Lanier National Speedway - Asphalt,\lanier,layout,exact_map_valid,lanier.json.gz,surveyed lap fraction,1000,,256;257,requires matching runtime reference or guide
+lanier_dirt,Lanier National Speedway - Dirt,\lanier\dirt,layout,exact_map_valid,lanier_dirt.json.gz,surveyed lap fraction,1000,,258,requires matching runtime reference or guide
+lankebanen,Lånkebanen (Hell RX),\lankebanen,container,container_not_layout,,,0,,259,requires matching runtime reference or guide
+lankebanen_club,Lånkebanen (Hell RX) - Club,\lankebanen\club,layout,exact_map_valid,lankebanen_club.json.gz,GPX distance estimate,1000,,260,requires matching runtime reference or guide
+lankebanen_hellrx,Lånkebanen (Hell RX) - Hell Rallycross,\lankebanen\hellrx,layout,exact_map_valid,lankebanen_hellrx.json.gz,GPX distance estimate,1000,,261,requires matching runtime reference or guide
+lankebanen_rallyshort,Lånkebanen (Hell RX) - Rallycross Short,\lankebanen\rallyshort,layout,exact_map_valid,lankebanen_rallyshort.json.gz,GPX distance estimate,1000,,262,requires matching runtime reference or guide
+lankebanen_road_roadlong,Lånkebanen (Hell RX) - Road Long,\lankebanen\road\roadlong,layout,exact_map_valid,lankebanen_road_roadlong.json.gz,GPX distance estimate,1000,,263,requires matching runtime reference or guide
+lankebanen_road_roadshort,Lånkebanen (Hell RX) - Road Short,\lankebanen\road\roadshort,layout,exact_map_valid,lankebanen_road_roadshort.json.gz,GPX distance estimate,1000,,264,requires matching runtime reference or guide
+ledenon,Circuit de Lédenon,\ledenon,layout,exact_map_valid,ledenon.json.gz,GPX distance estimate,1000,,108,requires matching runtime reference or guide
+lemans,Circuit des 24 Heures du Mans,\lemans,container,container_not_layout,,,0,,119,requires matching runtime reference or guide
+lemans_full,Circuit des 24 Heures du Mans - 24 Heures du Man,\lemans\full,layout,exact_map_valid,lemans_full.json.gz,GPX distance estimate,1000,,120,requires matching runtime reference or guide
+lemans_nochicane,Circuit des 24 Heures du Mans - Historic,\lemans\nochicane,layout,exact_map_valid,lemans_nochicane.json.gz,GPX distance estimate,1000,,121,requires matching runtime reference or guide
+lernerville,Lernerville Speedway,\lernerville,layout,exact_map_valid,lernerville.json.gz,GPX distance estimate,1000,,272,requires matching runtime reference or guide
+limaland,Limaland Motorsports Park,\limaland,layout,exact_map_valid,limaland.json.gz,GPX distance estimate,1000,,273,requires matching runtime reference or guide
+limerock_2019,Lime Rock Park,\limerock\2019,container,container_not_layout,,,0,,274,requires matching runtime reference or guide
+limerock_2019_chicanes,Lime Rock Park - Chicanes,\limerock\2019\chicanes,layout,exact_map_valid,limerock_2019_chicanes.json.gz,GPX distance estimate,1000,,275,requires matching runtime reference or guide
+limerock_2019_chicanewestb,Lime Rock Park - West Bend Chicane,\limerock\2019\chicanewestb,layout,exact_map_valid,limerock_2019_chicanewestb.json.gz,GPX distance estimate,1000,,279,requires matching runtime reference or guide
+limerock_2019_classic,Lime Rock Park - Classic,\limerock\2019\classic,layout,exact_map_valid,limerock_2019_classic.json.gz,surveyed lap fraction,1000,,276,requires matching runtime reference or guide
+limerock_2019_gp,Lime Rock Park - Grand Prix,\limerock\2019\gp,layout,exact_map_valid,limerock_2019_gp.json.gz,GPX distance estimate,1000,,277,requires matching runtime reference or guide
+limerock_2019_school,Lime Rock Park - School,\limerock\2019\school,layout,exact_map_valid,limerock_2019_school.json.gz,surveyed lap fraction,1000,,278,requires matching runtime reference or guide
+lincoln,Lincoln Speedway,\lincoln,layout,exact_map_valid,lincoln.json.gz,GPX distance estimate,1000,,280,requires matching runtime reference or guide
+longbeach,Long Beach Street Circuit,\longbeach,layout,exact_map_valid,longbeach.json.gz,GPX distance estimate,1000,,281,requires matching runtime reference or guide
+magnycours,Circuit de Nevers Magny-Cours,\magnycours,container,container_not_layout,,,0,,109,requires matching runtime reference or guide
+magnycours_grandprix,Circuit de Nevers Magny-Cours - Grand Prix,\magnycours\grandprix,layout,identity_review_no_exact_map,,,0,magnycours_gp,110,requires matching runtime reference or guide
+martinsville,Martinsville Speedway,\martinsville,layout,exact_map_valid,martinsville.json.gz,surveyed lap fraction,1000,,289,requires matching runtime reference or guide
+mexicocity,Autódromo Hermanos Rodríguez (Mexico City),\mexicocity,container,container_not_layout,,,0,,30,requires matching runtime reference or guide
+mexicocity_ev,Autódromo Hermanos Rodríguez (Mexico City) - EV Circuit,\mexicocity\ev,layout,missing_exact_map,,,0,,35,requires matching runtime reference or guide
+mexicocity_gp,Autódromo Hermanos Rodríguez (Mexico City) - Grand Prix,\mexicocity\gp,layout,missing_exact_map,,,0,,31,requires matching runtime reference or guide
+mexicocity_gphistoric,Autódromo Hermanos Rodríguez (Mexico City) - Grand Prix Historic,\mexicocity\gphistoric,layout,missing_exact_map,,,0,,32,requires matching runtime reference or guide
+mexicocity_national,Autódromo Hermanos Rodríguez (Mexico City) - National,\mexicocity\national,layout,missing_exact_map,,,0,,33,requires matching runtime reference or guide
+mexicocity_nationalhistoric,Autódromo Hermanos Rodríguez (Mexico City) - National Historic,\mexicocity\nationalhistoric,layout,missing_exact_map,,,0,,34,requires matching runtime reference or guide
+mexicocity_oval,Autódromo Hermanos Rodríguez (Mexico City) - Oval,\mexicocity\oval,layout,missing_exact_map,,,0,,36,requires matching runtime reference or guide
+mexicocity_ovalstadium,Autódromo Hermanos Rodríguez (Mexico City) - Oval Stadium,\mexicocity\ovalstadium,layout,missing_exact_map,,,0,,37,requires matching runtime reference or guide
+miami,Miami International Autodrome,\miami,container,container_not_layout,,,0,,290,requires matching runtime reference or guide
+miami_exmarinaloop,Miami International Autodrome - Extended Marina Loop,\miami\exmarinaloop,layout,missing_exact_map,,,0,,295,requires matching runtime reference or guide
+miami_extendedmialoop,Miami International Autodrome - Extended MIA Loop,\miami\extendedmialoop,layout,missing_exact_map,,,0,,294,requires matching runtime reference or guide
+miami_gp,Miami International Autodrome - Grand Prix,\miami\gp,layout,missing_exact_map,,,0,,291,requires matching runtime reference or guide
+miami_marinaloop,Miami International Autodrome - Marina Loop,\miami\marinaloop,layout,missing_exact_map,,,0,,292,requires matching runtime reference or guide
+miami_mialoop,Miami International Autodrome - MIA Loop,\miami\mialoop,layout,missing_exact_map,,,0,,293,requires matching runtime reference or guide
+michigan2014,[Legacy] Michigan International Speedway - 2009,\michigan2014,layout,identity_review_no_exact_map,,,0,michigan;michigan_2015,530,requires matching runtime reference or guide
+michigan2018,Michigan International Speedway,\michigan2018,layout,identity_review_no_exact_map,,,0,michigan_2018,296,requires matching runtime reference or guide
+midohio,Mid-Ohio Sports Car Course,\midohio,container,container_not_layout,,,0,,297,requires matching runtime reference or guide
+midohio_altoval,Mid-Ohio Sports Car Course - Alt Oval,\midohio\altoval,layout,exact_map_valid,midohio_altoval.json.gz,surveyed lap fraction,1000,,298,requires matching runtime reference or guide
+midohio_chicane,Mid-Ohio Sports Car Course - Chicane,\midohio\chicane,layout,exact_map_valid,midohio_chicane.json.gz,surveyed lap fraction,1000,,299,requires matching runtime reference or guide
+midohio_full,Mid-Ohio Sports Car Course - Full Course,\midohio\full,layout,exact_map_valid,midohio_full.json.gz,surveyed lap fraction,1000,,300,requires matching runtime reference or guide
+midohio_oval,Mid-Ohio Sports Car Course - Oval,\midohio\oval,layout,exact_map_valid,midohio_oval.json.gz,surveyed lap fraction,1000,,301,requires matching runtime reference or guide
+midohio_short,Mid-Ohio Sports Car Course - Short,\midohio\short,layout,exact_map_valid,midohio_short.json.gz,surveyed lap fraction,1000,,302,requires matching runtime reference or guide
+millbridge,Millbridge Speedway,\millbridge,layout,exact_map_valid,millbridge.json.gz,GPX distance estimate,1000,,303,requires matching runtime reference or guide
+milwaukee,The Milwaukee Mile,\milwaukee,layout,exact_map_valid,milwaukee.json.gz,surveyed lap fraction,1000,,481,requires matching runtime reference or guide
+misano,Misano World Circuit Marco Simoncelli,\misano,container,container_not_layout,,,0,,304,requires matching runtime reference or guide
+misano_club,Misano World Circuit Marco Simoncelli - Club,\misano\club,layout,exact_map_valid,misano_club.json.gz,GPX distance estimate,1000,,305,requires matching runtime reference or guide
+misano_gp,Misano World Circuit Marco Simoncelli - Grand Prix,\misano\gp,layout,exact_map_valid,misano_gp.json.gz,GPX distance estimate,1000,,306,requires matching runtime reference or guide
+misano_gp2007,Misano World Circuit Marco Simoncelli - Grand Prix 2007,\misano\gp2007,layout,exact_map_valid,misano_gp2007.json.gz,GPX distance estimate,1000,,308,requires matching runtime reference or guide
+misano_historicgp,Misano World Circuit Marco Simoncelli - Grand Prix - Historic,\misano\historicgp,layout,exact_map_valid,misano_historicgp.json.gz,GPX distance estimate,1000,,307,requires matching runtime reference or guide
+misano_truck,Misano World Circuit Marco Simoncelli - Truck,\misano\truck,layout,exact_map_valid,misano_truck.json.gz,GPX distance estimate,1000,,309,requires matching runtime reference or guide
+montreal,Circuit Gilles Villeneuve,\montreal,layout,exact_map_valid,montreal.json.gz,surveyed lap fraction,1000,,122,requires matching runtime reference or guide
+monza,Autodromo Nazionale Monza,\monza,container,container_not_layout,,,0,,45,requires matching runtime reference or guide
+monza_combinedchicanes,Autodromo Nazionale Monza - Combined,\monza\combinedchicanes,layout,exact_map_valid,monza_combinedchicanes.json.gz,surveyed lap fraction,1000,,49,requires matching runtime reference or guide
+monza_full,Autodromo Nazionale Monza - Grand Prix,\monza\full,layout,exact_map_valid,monza_full.json.gz,surveyed lap fraction,1000,,46,requires matching runtime reference or guide
+monza_gpsecondchicane,Autodromo Nazionale Monza - GP without first chicane,\monza\gpSecondChicane,layout,exact_map_valid,monza_gpsecondchicane.json.gz,surveyed lap fraction,1000,,48,requires matching runtime reference or guide
+monza_historic,Autodromo Nazionale Monza - Combined without chicanes,\monza\historic,layout,exact_map_valid,monza_historic.json.gz,surveyed lap fraction,1000,,50,requires matching runtime reference or guide
+monza_historicsecondchicane,Autodromo Nazionale Monza - Combined without first chicane,\monza\historicSecondChicane,layout,exact_map_valid,monza_historicsecondchicane.json.gz,surveyed lap fraction,1000,,51,requires matching runtime reference or guide
+monza_junior,Autodromo Nazionale Monza - Junior,\monza\junior,layout,exact_map_valid,monza_junior.json.gz,surveyed lap fraction,1000,,52,requires matching runtime reference or guide
+monza_nochicane,Autodromo Nazionale Monza - GP without chicanes,\monza\nochicane,layout,exact_map_valid,monza_nochicane.json.gz,surveyed lap fraction,1000,,47,requires matching runtime reference or guide
+monza_oval,Autodromo Nazionale Monza - Oval - Right turning,\monza\oval,layout,exact_map_valid,monza_oval.json.gz,surveyed lap fraction,1000,,54,requires matching runtime reference or guide
+monza_ovalleft,Autodromo Nazionale Monza - Oval - Left turning,\monza\ovalLeft,layout,exact_map_valid,monza_ovalleft.json.gz,surveyed lap fraction,1000,,53,requires matching runtime reference or guide
+mosport,Canadian Tire Motorsports Park,\mosport,layout,exact_map_valid,mosport.json.gz,surveyed lap fraction,1000,,74,requires matching runtime reference or guide
+mtwashington,Mount Washington Auto Road,\mtwashington,container,container_not_layout,,,0,,329,requires matching runtime reference or guide
+mtwashington_climb,Mount Washington Auto Road - Hillclimb,\mtwashington\climb,layout,exact_map_valid,mtwashington_climb.json.gz,GPX distance estimate,1000,,331,requires matching runtime reference or guide
+mtwashington_reverse,Mount Washington Auto Road - Descent,\mtwashington\reverse,layout,exact_map_valid,mtwashington_reverse.json.gz,GPX distance estimate,1000,,330,requires matching runtime reference or guide
+mugello_short,Autodromo Internazionale del Mugello - Short,\mugello\short,layout,exact_map_valid,mugello_short.json.gz,GPX distance estimate,1000,,38,requires matching runtime reference or guide
+myrtlebeach,Myrtle Beach Speedway,\myrtlebeach,layout,exact_map_valid,myrtlebeach.json.gz,GPX distance estimate,1000,,332,requires matching runtime reference or guide
+nashville,Nashville Fairgrounds Speedway,\nashville,container,container_not_layout,,,0,,333,requires matching runtime reference or guide
+nashville_mini,Nashville Fairgrounds Speedway - Mini,\nashville\mini,layout,exact_map_valid,nashville_mini.json.gz,GPX distance estimate,1000,,334,requires matching runtime reference or guide
+nashville_oval,Nashville Fairgrounds Speedway - Oval,\nashville\oval,layout,exact_map_valid,nashville_oval.json.gz,GPX distance estimate,1000,,335,requires matching runtime reference or guide
+nashvilless,Nashville Superspeedway,\nashvilless,layout,exact_map_valid,nashvilless.json.gz,GPX distance estimate,1000,,336,requires matching runtime reference or guide
+navarra,Circuito de Navarra,\navarra,container,container_not_layout,,,0,,147,requires matching runtime reference or guide
+navarra_speedlong,Circuito de Navarra - Speed Circuit,\navarra\speedlong,layout,exact_map_valid,navarra_speedlong.json.gz,GPX distance estimate,1000,,148,requires matching runtime reference or guide
+navarra_speedmedium,Circuito de Navarra - Speed Circuit - Medium,\navarra\speedmedium,layout,exact_map_valid,navarra_speedmedium.json.gz,GPX distance estimate,1000,,149,requires matching runtime reference or guide
+navarra_speedshort,Circuito de Navarra - Speed Circuit - Short,\navarra\speedshort,layout,exact_map_valid,navarra_speedshort.json.gz,GPX distance estimate,1000,,150,requires matching runtime reference or guide
+newhampshire,New Hampshire Motor Speedway,\newhampshire,container,container_not_layout,,,0,,337,requires matching runtime reference or guide
+newhampshire_chicane,New Hampshire Motor Speedway - Road Course,\newhampshire\chicane,layout,exact_map_valid,newhampshire_chicane.json.gz,surveyed lap fraction,1000,,340,requires matching runtime reference or guide
+newhampshire_legends,New Hampshire Motor Speedway - Legends,\newhampshire\legends,layout,exact_map_valid,newhampshire_legends.json.gz,surveyed lap fraction,1000,,338,requires matching runtime reference or guide
+newhampshire_northoval,New Hampshire Motor Speedway - Road Course with North Oval,\newhampshire\northoval,layout,exact_map_valid,newhampshire_northoval.json.gz,surveyed lap fraction,1000,,341,requires matching runtime reference or guide
+newhampshire_oval,New Hampshire Motor Speedway - Oval,\newhampshire\oval,layout,exact_map_valid,newhampshire_oval.json.gz,surveyed lap fraction,1000,,339,requires matching runtime reference or guide
+newhampshire_southoval,New Hampshire Motor Speedway - Road Course with South Oval,\newhampshire\southoval,layout,exact_map_valid,newhampshire_southoval.json.gz,surveyed lap fraction,1000,,342,requires matching runtime reference or guide
+newjersey,New Jersey Motorsports Park,\newjersey,container,container_not_layout,,,0,,343,requires matching runtime reference or guide
+newjersey_chicane,New Jersey Motorsports Park - Thunderbolt w/both chicanes,\newjersey\chicane,layout,exact_map_valid,newjersey_chicane.json.gz,GPX distance estimate,1000,,345,requires matching runtime reference or guide
+newjersey_firstchicane,New Jersey Motorsports Park - Thunderbolt w/first chicane,\newjersey\firstchicane,layout,exact_map_valid,newjersey_firstchicane.json.gz,GPX distance estimate,1000,,346,requires matching runtime reference or guide
+newjersey_full,New Jersey Motorsports Park - Thunderbolt,\newjersey\full,layout,exact_map_valid,newjersey_full.json.gz,GPX distance estimate,1000,,344,requires matching runtime reference or guide
+newjersey_secondchicane,New Jersey Motorsports Park - Thunderbolt w/second chicane,\newjersey\secondchicane,layout,exact_map_valid,newjersey_secondchicane.json.gz,GPX distance estimate,1000,,347,requires matching runtime reference or guide
+newsmyrna,New Smyrna Speedway,\newsmyrna,layout,exact_map_valid,newsmyrna.json.gz,surveyed lap fraction,1000,,348,requires matching runtime reference or guide
+northwilkesboro,North Wilkesboro Speedway - 1987,\northwilkesboro,layout,exact_map_valid,northwilkesboro.json.gz,GPX distance estimate,1000,,349;351,requires matching runtime reference or guide
+northwilkesboro_2025,North Wilkesboro Speedway,\northwilkesboro\2025,layout,missing_exact_map,,,0,,350,requires matching runtime reference or guide
+nurburgring,Nürburgring,\nurburgring,container,container_not_layout,,,0,,352,requires matching runtime reference or guide
+nurburgring_combined,Nürburgring Combined - Gesamtstrecke 24h,\nurburgring\combined,layout,exact_map_valid,nurburgring_combined.json.gz,GPX distance estimate,1000,,353;354,requires matching runtime reference or guide
+nurburgring_combinedlong,Nürburgring Combined - Gesamtstrecke Long,\nurburgring\combinedLong,layout,exact_map_valid,nurburgring_combinedlong.json.gz,GPX distance estimate,1000,,355,requires matching runtime reference or guide
+nurburgring_combinedshorta,Nürburgring Combined - Gesamtstrecke Short w/o Arena,\nurburgring\combinedShortA,layout,exact_map_valid,nurburgring_combinedshorta.json.gz,GPX distance estimate,1000,,356,requires matching runtime reference or guide
+nurburgring_combinedshortb,Nürburgring Combined - Gesamtstrecke VLN,\nurburgring\combinedShortB,layout,exact_map_valid,nurburgring_combinedshortb.json.gz,GPX distance estimate,1000,,357,requires matching runtime reference or guide
+nurburgring_gp,Nürburgring Grand-Prix-Strecke - Grand Prix,\nurburgring\gp,layout,exact_map_valid,nurburgring_gp.json.gz,GPX distance estimate,1000,,358;360,requires matching runtime reference or guide
+nurburgring_gpnochicane,Nürburgring Grand-Prix-Strecke - BES/WEC,nurburgring\gpnochicane,layout,exact_map_valid,nurburgring_gpnochicane.json.gz,GPX distance estimate,1000,,359,requires matching runtime reference or guide
+nurburgring_gpshort,Nürburgring Grand-Prix-Strecke - Grand Prix w/out Arena,nurburgring\gpshort,layout,exact_map_valid,nurburgring_gpshort.json.gz,GPX distance estimate,1000,,361,requires matching runtime reference or guide
+nurburgring_mullenbachschleife,Nürburgring Grand-Prix-Strecke - Müllenbachschleife,nurburgring\mullenbachschleife,layout,exact_map_valid,nurburgring_mullenbachschleife.json.gz,GPX distance estimate,1000,,363,requires matching runtime reference or guide
+nurburgring_nordschleife,Nürburgring Nordschleife - Industriefahrten,\nurburgring\nordschleife,layout,exact_map_valid,nurburgring_nordschleife.json.gz,GPX distance estimate,1000,,365;366,requires matching runtime reference or guide
+nurburgring_nordschleifetourist,Nürburgring Nordschleife - Touristenfahrten,\nurburgring\nordschleifetourist,layout,exact_map_valid,nurburgring_nordschleifetourist.json.gz,GPX distance estimate,1000,,367,requires matching runtime reference or guide
+nurburgring_sprintchicane,Nürburgring Grand-Prix-Strecke - Sprintstrecke,nurburgring\sprintchicane,layout,exact_map_valid,nurburgring_sprintchicane.json.gz,GPX distance estimate,1000,,364,requires matching runtime reference or guide
+nurburgring_sprintshort,Nürburgring Grand-Prix-Strecke - Kurzanbindung w/out Arena,nurburgring\sprintshort,layout,exact_map_valid,nurburgring_sprintshort.json.gz,GPX distance estimate,1000,,362,requires matching runtime reference or guide
+okayama,Okayama International Circuit,\okayama,container,container_not_layout,,,0,,368,requires matching runtime reference or guide
+okayama_full,Okayama International Circuit - Full Course,\okayama\full,layout,exact_map_valid,okayama_full.json.gz,surveyed lap fraction,1000,,369,requires matching runtime reference or guide
+okayama_short,Okayama International Circuit - Short,\okayama\short,layout,exact_map_valid,okayama_short.json.gz,surveyed lap fraction,1000,,370,requires matching runtime reference or guide
+oran,Oran Park Raceway,\oran,container,container_not_layout,,,0,,371,requires matching runtime reference or guide
+oran_gp,Oran Park Raceway - Grand Prix,\oran\gp,layout,exact_map_valid,oran_gp.json.gz,surveyed lap fraction,1000,,372,requires matching runtime reference or guide
+oran_moto,Oran Park Raceway - Moto,\oran\moto,layout,exact_map_valid,oran_moto.json.gz,surveyed lap fraction,1000,,373,requires matching runtime reference or guide
+oran_north,Oran Park Raceway - North,\oran\north,layout,exact_map_valid,oran_north.json.gz,surveyed lap fraction,1000,,374,requires matching runtime reference or guide
+oran_northa,Oran Park Raceway - North A,\oran\northa,layout,exact_map_valid,oran_northa.json.gz,surveyed lap fraction,1000,,375,requires matching runtime reference or guide
+oran_northb,Oran Park Raceway - North B,\oran\northb,layout,exact_map_valid,oran_northb.json.gz,surveyed lap fraction,1000,,376,requires matching runtime reference or guide
+oran_south,Oran Park Raceway - South,\oran\south,layout,exact_map_valid,oran_south.json.gz,surveyed lap fraction,1000,,377,requires matching runtime reference or guide
+oschersleben,Motorsport Arena Oschersleben,\oschersleben,container,container_not_layout,,,0,,323,requires matching runtime reference or guide
+oschersleben_alt,Motorsport Arena Oschersleben - Alternate,\oschersleben\alt,layout,exact_map_valid,oschersleben_alt.json.gz,GPX distance estimate,1000,,324,requires matching runtime reference or guide
+oschersleben_bcourse,Motorsport Arena Oschersleben - B Course,\oschersleben\bcourse,layout,exact_map_valid,oschersleben_bcourse.json.gz,GPX distance estimate,1000,,325,requires matching runtime reference or guide
+oschersleben_ccourse,Motorsport Arena Oschersleben - C Course,\oschersleben\ccourse,layout,exact_map_valid,oschersleben_ccourse.json.gz,GPX distance estimate,1000,,326,requires matching runtime reference or guide
+oschersleben_gp,Motorsport Arena Oschersleben - Grand Prix,\oschersleben\gp,layout,exact_map_valid,oschersleben_gp.json.gz,GPX distance estimate,1000,,327,requires matching runtime reference or guide
+oswego,Oswego Speedway,\oswego,container,container_not_layout,,,0,,378,requires matching runtime reference or guide
+oswego_dirtoval,Oswego Speedway - Dirt,\oswego\dirtoval,layout,identity_review_no_exact_map,,,0,oswego_dirt,379,requires matching runtime reference or guide
+oswego_mini,Oswego Speedway - Mini Oval,\oswego\mini,layout,exact_map_valid,oswego_mini.json.gz,GPX distance estimate,1000,,380,requires matching runtime reference or guide
+oswego_oval,Oswego Speedway - Oval,\oswego\oval,layout,exact_map_valid,oswego_oval.json.gz,GPX distance estimate,1000,,381,requires matching runtime reference or guide
+oulton,Oulton Park Circuit,\oulton,container,container_not_layout,,,0,,382,requires matching runtime reference or guide
+oulton_fosters,Oulton Park Circuit - Fosters,\oulton\fosters,layout,exact_map_valid,oulton_fosters.json.gz,surveyed lap fraction,1000,,383,requires matching runtime reference or guide
+oulton_fosterswithhislop,Oulton Park Circuit - Fosters w/Hislop,\oulton\fosterswithhislop,layout,exact_map_valid,oulton_fosterswithhislop.json.gz,surveyed lap fraction,1000,,384,requires matching runtime reference or guide
+oulton_intbrittens,Oulton Park Circuit - Intl w/out Brittens,\oulton\intbrittens,layout,exact_map_valid,oulton_intbrittens.json.gz,surveyed lap fraction,1000,,386,requires matching runtime reference or guide
+oulton_international,Oulton Park Circuit - International,\oulton\international,layout,exact_map_valid,oulton_international.json.gz,surveyed lap fraction,1000,,385,requires matching runtime reference or guide
+oulton_inthislop,Oulton Park Circuit - Intl w/out Hislop,\oulton\inthislop,layout,exact_map_valid,oulton_inthislop.json.gz,surveyed lap fraction,1000,,388,requires matching runtime reference or guide
+oulton_intnochicane,Oulton Park Circuit - Intl w/out Chicane,\oulton\intnochicane,layout,exact_map_valid,oulton_intnochicane.json.gz,surveyed lap fraction,1000,,387,requires matching runtime reference or guide
+oulton_island,Oulton Park Circuit - Island,\oulton\island,layout,exact_map_valid,oulton_island.json.gz,surveyed lap fraction,1000,,389,requires matching runtime reference or guide
+oulton_islandhistoric,Oulton Park Circuit - Island Historic,\oulton\islandhistoric,layout,exact_map_valid,oulton_islandhistoric.json.gz,surveyed lap fraction,1000,,390,requires matching runtime reference or guide
+oxford_oval,Oxford Plains Speedway,\oxford\oval,layout,exact_map_valid,oxford_oval.json.gz,surveyed lap fraction,1000,,391,requires matching runtime reference or guide
+pevely,Federated Auto Parts Raceway at I-55,\pevely,layout,exact_map_valid,pevely.json.gz,GPX distance estimate,1000,,185,requires matching runtime reference or guide
+phillipisland,Phillip Island Circuit,\phillipisland,layout,exact_map_valid,phillipisland.json.gz,surveyed lap fraction,1000,,392,requires matching runtime reference or guide
+phoenix,[Legacy] Phoenix Raceway - 2008,\phoenix,container,container_not_layout,,,0,,531,requires matching runtime reference or guide
+phoenix_2021,Phoenix Raceway,\phoenix\2021,container,container_not_layout,,,0,,393,requires matching runtime reference or guide
+phoenix_2021_oval,Phoenix Raceway - Oval,\phoenix\2021\oval,layout,exact_map_valid,phoenix_2021_oval.json.gz,GPX distance estimate,1000,,394,requires matching runtime reference or guide
+phoenix_2021_ovalopen,Phoenix Raceway - Oval w/open Dogleg,\phoenix\2021\ovalopen,layout,exact_map_valid,phoenix_2021_ovalopen.json.gz,GPX distance estimate,1000,,395,requires matching runtime reference or guide
+phoenix_oval,[Legacy] Phoenix Raceway - 2008 - Oval,\phoenix\oval,layout,exact_map_valid,phoenix_oval.json.gz,surveyed lap fraction,1000,,533,requires matching runtime reference or guide
+phoenix_rallycross,[Legacy] Phoenix Raceway - 2008 - Rallycross,\phoenix\rallycross,container,container_not_layout,phoenix_rallycross.json.gz,GPX distance estimate,1000,,534,requires matching runtime reference or guide
+phoenix_rallycross_nojoker,[Legacy] Phoenix Raceway - 2008 - Dirt Road,\phoenix\rallycross\nojoker,layout,exact_map_valid,phoenix_rallycross_nojoker.json.gz,GPX distance estimate,1000,,532,requires matching runtime reference or guide
+phoenix_road,[Legacy] Phoenix Raceway - 2008 - Road Course,\phoenix\road,layout,exact_map_valid,phoenix_road.json.gz,surveyed lap fraction,1000,,535,requires matching runtime reference or guide
+pocono,[Legacy] Pocono Raceway - 2009,\pocono,container,container_not_layout,,,0,,536,requires matching runtime reference or guide
+pocono_2016,Pocono Raceway,\pocono\2016,layout,exact_map_valid,pocono_2016.json.gz,GPX distance estimate,1000,,396,requires matching runtime reference or guide
+pocono_east,[Legacy] Pocono Raceway - 2009 - East,\pocono\east,layout,exact_map_valid,pocono_east.json.gz,surveyed lap fraction,1000,,537,requires matching runtime reference or guide
+pocono_international,[Legacy] Pocono Raceway - 2009 - International,\pocono\international,layout,exact_map_valid,pocono_international.json.gz,surveyed lap fraction,1000,,538,requires matching runtime reference or guide
+pocono_north,[Legacy] Pocono Raceway - 2009 - North,\pocono\north,layout,exact_map_valid,pocono_north.json.gz,surveyed lap fraction,1000,,539,requires matching runtime reference or guide
+pocono_oval,[Legacy] Pocono Raceway - 2009 - Oval,\pocono\oval,layout,exact_map_valid,pocono_oval.json.gz,GPX distance estimate,1000,,540,requires matching runtime reference or guide
+pocono_south,[Legacy] Pocono Raceway - 2009 - South,\pocono\south,layout,exact_map_valid,pocono_south.json.gz,surveyed lap fraction,1000,,541,requires matching runtime reference or guide
+portland,Portland International Raceway,\portland,container,container_not_layout,,,0,,397,requires matching runtime reference or guide
+portland_full,Portland International Raceway - Full,\portland\full,layout,missing_exact_map,,,0,,398,requires matching runtime reference or guide
+portland_nochicane,Portland International Raceway - No Chicane,\portland\nochicane,layout,missing_exact_map,,,0,,399,requires matching runtime reference or guide
+portroyal,Port Royal Speedway,\portroyal,layout,exact_map_valid,portroyal.json.gz,GPX distance estimate,1000,,400,requires matching runtime reference or guide
+richmond_2025,Richmond Raceway,\richmond\2025,layout,missing_exact_map,,,0,,405,requires matching runtime reference or guide
+roadamerica,Road America,\roadamerica,container,container_not_layout,,,0,,406,requires matching runtime reference or guide
+roadamerica_bend,Road America - Bend,\roadamerica\bend,layout,exact_map_valid,roadamerica_bend.json.gz,surveyed lap fraction,1000,,407,requires matching runtime reference or guide
+roadamerica_full,Road America - Full,\roadamerica\full,layout,exact_map_valid,roadamerica_full.json.gz,surveyed lap fraction,1000,,408,requires matching runtime reference or guide
+roadatlanta,Road Atlanta,\roadatlanta,container,container_not_layout,,,0,,409,requires matching runtime reference or guide
+roadatlanta_club,Road Atlanta - Club,\roadatlanta\club,layout,exact_map_valid,roadatlanta_club.json.gz,surveyed lap fraction,1000,,410,requires matching runtime reference or guide
+roadatlanta_full,Road Atlanta - Full Course,\roadatlanta\full,layout,exact_map_valid,roadatlanta_full.json.gz,surveyed lap fraction,1000,,411,requires matching runtime reference or guide
+roadatlanta_short,Road Atlanta - Short,\roadatlanta\short,layout,exact_map_valid,roadatlanta_short.json.gz,surveyed lap fraction,1000,,412,requires matching runtime reference or guide
+rockingham,Rockingham Speedway,\rockingham,container,container_not_layout,,,0,,413,requires matching runtime reference or guide
+rockingham_2025_oval,Rockingham Speedway - Oval,\rockingham\2025\oval,layout,missing_exact_map,,,0,,414,requires matching runtime reference or guide
+rockingham_infroad,Rockingham Speedway - Infield Road Course,\rockingham\infroad,layout,exact_map_valid,rockingham_infroad.json.gz,surveyed lap fraction,1000,,415,requires matching runtime reference or guide
+rockingham_oval,Rockingham Speedway - Oval,\rockingham\oval,layout,exact_map_valid,rockingham_oval.json.gz,surveyed lap fraction,1000,,416,requires matching runtime reference or guide
+rockingham_road,Rockingham Speedway - Road Course,\rockingham\road,layout,exact_map_valid,rockingham_road.json.gz,surveyed lap fraction,1000,,417,requires matching runtime reference or guide
+rockingham_shortroad,Rockingham Speedway - Short Road Course,\rockingham\shortroad,layout,exact_map_valid,rockingham_shortroad.json.gz,surveyed lap fraction,1000,,418,requires matching runtime reference or guide
+rudskogen,Rudskogen Motorsenter,\rudskogen,layout,exact_map_valid,rudskogen.json.gz,GPX distance estimate,1000,,419,requires matching runtime reference or guide
+sachsenring,Sachsenring,\sachsenring,layout,exact_map_valid,sachsenring.json.gz,GPX distance estimate,1000,,420,requires matching runtime reference or guide
+sandown,Sandown International Motor Raceway,\sandown,layout,exact_map_valid,sandown.json.gz,GPX distance estimate,1000,,421,requires matching runtime reference or guide
+sebring,Sebring International Raceway,\sebring,container,container_not_layout,,,0,,422,requires matching runtime reference or guide
+sebring_club,Sebring International Raceway - Club,\sebring\club,layout,exact_map_valid,sebring_club.json.gz,surveyed lap fraction,1000,,423,requires matching runtime reference or guide
+sebring_international,Sebring International Raceway - International,\sebring\international,layout,exact_map_valid,sebring_international.json.gz,surveyed lap fraction,1000,,424,requires matching runtime reference or guide
+sebring_modified,Sebring International Raceway - Modified,\sebring\modified,layout,exact_map_valid,sebring_modified.json.gz,surveyed lap fraction,1000,,425,requires matching runtime reference or guide
+silverstone,[Legacy] Silverstone Circuit - 2008,\silverstone,container,container_not_layout,,,0,,542,requires matching runtime reference or guide
+silverstone_2019,Silverstone Circuit,\silverstone\2019,container,container_not_layout,,,0,,426,requires matching runtime reference or guide
+silverstone_2019_gp,Silverstone Circuit - Grand Prix,\silverstone\2019\gp,layout,exact_map_valid,silverstone_2019_gp.json.gz,GPX distance estimate,1000,,427,requires matching runtime reference or guide
+silverstone_2019_international,Silverstone Circuit - International,\silverstone\2019\international,layout,exact_map_valid,silverstone_2019_international.json.gz,GPX distance estimate,1000,,428,requires matching runtime reference or guide
+silverstone_2019_national,Silverstone Circuit - National,\silverstone\2019\national,layout,exact_map_valid,silverstone_2019_national.json.gz,GPX distance estimate,1000,,429,requires matching runtime reference or guide
+silverstone_gp,[Legacy] Silverstone Circuit - 2008 - Grand Prix,\silverstone\gp,layout,exact_map_valid,silverstone_gp.json.gz,GPX distance estimate,1000,,543,requires matching runtime reference or guide
+silverstone_historicgp,[Legacy] Silverstone Circuit - 2008 - Historical Grand Prix,\silverstone\historicgp,layout,exact_map_valid,silverstone_historicgp.json.gz,GPX distance estimate,1000,,544,requires matching runtime reference or guide
+silverstone_international,[Legacy] Silverstone Circuit - 2008 - International,\silverstone\international,layout,exact_map_valid,silverstone_international.json.gz,GPX distance estimate,1000,,545,requires matching runtime reference or guide
+silverstone_national,[Legacy] Silverstone Circuit - 2008 - National,\silverstone\national,layout,exact_map_valid,silverstone_national.json.gz,GPX distance estimate,1000,,546,requires matching runtime reference or guide
+silverstone_southern,[Legacy] Silverstone Circuit - 2008 - Southern,\silverstone\southern,layout,exact_map_valid,silverstone_southern.json.gz,GPX distance estimate,1000,,547,requires matching runtime reference or guide
+skidpad,Centripetal Circuit,\skidpad,layout,missing_exact_map,,,0,,76,requires matching runtime reference or guide
+slinger,Slinger Speedway,\slinger,container,container_not_layout,,,0,,430,requires matching runtime reference or guide
+slinger_figure8,Slinger Speedway - Figure Eight,\slinger\figure8,layout,exact_map_valid,slinger_figure8.json.gz,GPX distance estimate,1000,,431,requires matching runtime reference or guide
+slinger_oval,Slinger Speedway - Oval,\slinger\oval,layout,exact_map_valid,slinger_oval.json.gz,GPX distance estimate,1000,,432,requires matching runtime reference or guide
+snetterton,Snetterton Circuit,\snetterton,container,container_not_layout,,,0,,433,requires matching runtime reference or guide
+snetterton_100,Snetterton Circuit - 100,\snetterton\100,layout,exact_map_valid,snetterton_100.json.gz,GPX distance estimate,1000,,434,requires matching runtime reference or guide
+snetterton_200,Snetterton Circuit - 200,\snetterton\200,layout,exact_map_valid,snetterton_200.json.gz,GPX distance estimate,1000,,435,requires matching runtime reference or guide
+snetterton_300,Snetterton Circuit - 300,\snetterton\300,layout,exact_map_valid,snetterton_300.json.gz,GPX distance estimate,1000,,436,requires matching runtime reference or guide
+sonoma,Sonoma Raceway,\sonoma,container,container_not_layout,,,0,,437,requires matching runtime reference or guide
+sonoma_2025_irl05,Sonoma Raceway - Open Wheel pre-2008,\sonoma\2025\irl05,layout,missing_exact_map,,,0,,448,requires matching runtime reference or guide
+sonoma_2025_irl08,Sonoma Raceway - Open Wheel 2008-2011,\sonoma\2025\irl08,layout,missing_exact_map,,,0,,446,requires matching runtime reference or guide
+sonoma_2025_irl12,Sonoma Raceway - Open Wheel 2012-2018,\sonoma\2025\irl12,layout,missing_exact_map,,,0,,447,requires matching runtime reference or guide
+sonoma_2025_nascarlong,Sonoma Raceway - NASCAR Long,\sonoma\2025\nascarlong,layout,missing_exact_map,,,0,,444,requires matching runtime reference or guide
+sonoma_2025_nascarshort,Sonoma Raceway - NASCAR Short,\sonoma\2025\nascarshort,layout,missing_exact_map,,,0,,445,requires matching runtime reference or guide
+sonoma_cup,Sonoma Raceway - NASCAR Short,\sonoma\cup,layout,exact_map_valid,sonoma_cup.json.gz,surveyed lap fraction,1000,,439,requires matching runtime reference or guide
+sonoma_indycar,Sonoma Raceway - Open Wheel 2012-2018,\sonoma\indycar,layout,exact_map_valid,sonoma_indycar.json.gz,GPX distance estimate,1000,,441,requires matching runtime reference or guide
+sonoma_irl,Sonoma Raceway - Open Wheel pre-2008,\sonoma\irl,layout,exact_map_valid,sonoma_irl.json.gz,surveyed lap fraction,1000,,442,requires matching runtime reference or guide
+sonoma_irl2,Sonoma Raceway - Open Wheel 2008-2011,\sonoma\irl2,layout,exact_map_valid,sonoma_irl2.json.gz,surveyed lap fraction,1000,,440,requires matching runtime reference or guide
+sonoma_long,Sonoma Raceway - NASCAR Long,\sonoma\long,layout,exact_map_valid,sonoma_long.json.gz,surveyed lap fraction,1000,,438,requires matching runtime reference or guide
+sonoma_rallycross,Sonoma Raceway - Rallycross,\sonoma\rallycross,layout,exact_map_valid,sonoma_rallycross.json.gz,GPX distance estimate,1000,,443,requires matching runtime reference or guide
+southboston,South Boston Speedway,\southboston,layout,exact_map_valid,southboston.json.gz,surveyed lap fraction,1000,,449,requires matching runtime reference or guide
+southernnational,Southern National Motorsports Park,\southernnational,layout,exact_map_valid,southernnational.json.gz,GPX distance estimate,1000,,450,requires matching runtime reference or guide
+spa,Circuit de Spa-Francorchamps,\spa,container,container_not_layout,,,0,,111,requires matching runtime reference or guide
+spa_2024_bike,Circuit de Spa-Francorchamps - Bike,\spa\2024\bike,layout,exact_map_valid,spa_2024_bike.json.gz,GPX distance estimate,1000,,115,requires matching runtime reference or guide
+spa_2024_combined,Circuit de Spa-Francorchamps - Endurance,\spa\2024\combined,layout,exact_map_valid,spa_2024_combined.json.gz,GPX distance estimate,1000,,114,requires matching runtime reference or guide
+spa_2024_low,Circuit de Spa-Francorchamps - Classic Pits,\spa\2024\low,layout,exact_map_valid,spa_2024_low.json.gz,GPX distance estimate,1000,,113,requires matching runtime reference or guide
+spa_2024_up,Circuit de Spa-Francorchamps - Grand Prix Pits,\spa\2024\up,layout,exact_map_valid,spa_2024_up.json.gz,GPX distance estimate,1000,,112,requires matching runtime reference or guide
+spa_combined,Circuit de Spa-Francorchamps - Endurance - 2010,\spa\combined,layout,exact_map_valid,spa_combined.json.gz,GPX distance estimate,1000,,118,requires matching runtime reference or guide
+spa_low,Circuit de Spa-Francorchamps - Classic Pits - 2010,\spa\low,layout,exact_map_valid,spa_low.json.gz,GPX distance estimate,1000,,117,requires matching runtime reference or guide
+spa_up,Circuit de Spa-Francorchamps - Grand Prix Pits - 2010,\spa\up,layout,exact_map_valid,spa_up.json.gz,GPX distance estimate,1000,,116,requires matching runtime reference or guide
+spielberg,Red Bull Ring,\spielberg,container,container_not_layout,,,0,,401,requires matching runtime reference or guide
+spielberg_gp,Red Bull Ring - Grand Prix,\spielberg\gp,layout,exact_map_valid,spielberg_gp.json.gz,GPX distance estimate,1000,,402,requires matching runtime reference or guide
+spielberg_national,Red Bull Ring - National,\spielberg\national,layout,exact_map_valid,spielberg_national.json.gz,GPX distance estimate,1000,,403,requires matching runtime reference or guide
+spielberg_north,Red Bull Ring - North,\spielberg\north,layout,exact_map_valid,spielberg_north.json.gz,GPX distance estimate,1000,,404,requires matching runtime reference or guide
+stafford,Stafford Motor Speedway,\stafford,container,container_not_layout,,,0,,451,requires matching runtime reference or guide
+stafford_oval,Stafford Motor Speedway - Full Course,\stafford\oval,layout,exact_map_valid,stafford_oval.json.gz,surveyed lap fraction,1000,,452,requires matching runtime reference or guide
+stafford_short,Stafford Motor Speedway - Mini Mile,\stafford\short,layout,exact_map_valid,stafford_short.json.gz,surveyed lap fraction,1000,,453,requires matching runtime reference or guide
+summit,Summit Point Raceway,\summit,container,container_not_layout,,,0,,454,requires matching runtime reference or guide
+summit_jefferson,Summit Point Raceway - Jefferson Circuit,\summit\jefferson,container,container_not_layout,summit_jefferson.json.gz,surveyed lap fraction,1000,,455,requires matching runtime reference or guide
+summit_jefferson_rev,Summit Point Raceway - Jefferson Reverse,\summit\jefferson\rev,layout,exact_map_valid,summit_jefferson_rev.json.gz,surveyed lap fraction,1000,,456,requires matching runtime reference or guide
+summit_summit_oval,Summit Point Raceway - Oval,\summit\summit\oval,layout,missing_exact_map,,,0,,457,requires matching runtime reference or guide
+summit_summit_raceway,Summit Point Raceway - Summit Point Raceway,\summit\summit\raceway,container,container_not_layout,summit_summit_raceway.json.gz,surveyed lap fraction,1000,,460,requires matching runtime reference or guide
+summit_summit_raceway_school,Summit Point Raceway - School,\summit\summit\raceway\school,layout,exact_map_valid,summit_summit_raceway_school.json.gz,surveyed lap fraction,1000,,458,requires matching runtime reference or guide
+summit_summit_short,Summit Point Raceway - Short,\summit\summit\short,layout,exact_map_valid,summit_summit_short.json.gz,surveyed lap fraction,1000,,459,requires matching runtime reference or guide
+suzuka,Suzuka International Racing Course,\suzuka,container,container_not_layout,,,0,,461,requires matching runtime reference or guide
+suzuka_east,Suzuka International Racing Course - East,\suzuka\east,layout,exact_map_valid,suzuka_east.json.gz,GPX distance estimate,1000,,462,requires matching runtime reference or guide
+suzuka_grandprix,Suzuka International Racing Course - Grand Prix,\suzuka\grandprix,layout,exact_map_valid,suzuka_grandprix.json.gz,GPX distance estimate,1000,,463,requires matching runtime reference or guide
+suzuka_moto,Suzuka International Racing Course - Moto,\suzuka\moto,layout,exact_map_valid,suzuka_moto.json.gz,GPX distance estimate,1000,,464,requires matching runtime reference or guide
+suzuka_west,Suzuka International Racing Course - West,\suzuka\west,layout,exact_map_valid,suzuka_west.json.gz,GPX distance estimate,1000,,465,requires matching runtime reference or guide
+suzuka_westchicane,Suzuka International Racing Course - West w/chicane,\suzuka\westchicane,layout,exact_map_valid,suzuka_westchicane.json.gz,GPX distance estimate,1000,,466,requires matching runtime reference or guide
+talladega,Talladega Superspeedway,\talladega,layout,exact_map_valid,talladega.json.gz,surveyed lap fraction,1000,,467,requires matching runtime reference or guide
+texas,[Legacy] Texas Motor Speedway - 2009,\texas,container,container_not_layout,,,0,,548,requires matching runtime reference or guide
+texas_2020,Texas Motor Speedway,\texas\2020,container,container_not_layout,,,0,,468,requires matching runtime reference or guide
+texas_2020_legendsoval,Texas Motor Speedway - Legends Oval,\texas\2020\legendsoval,layout,exact_map_valid,texas_2020_legendsoval.json.gz,surveyed lap fraction,1000,,469,requires matching runtime reference or guide
+texas_2020_oval,Texas Motor Speedway - Oval,\texas\2020\oval,layout,exact_map_valid,texas_2020_oval.json.gz,surveyed lap fraction,1000,,470,requires matching runtime reference or guide
+texas_infieldrclong,[Legacy] Texas Motor Speedway - 2009 - Road Course Long,\texas\infieldrclong,layout,exact_map_valid,texas_infieldrclong.json.gz,surveyed lap fraction,1000,,552,requires matching runtime reference or guide
+texas_infieldrcshorta,[Legacy] Texas Motor Speedway - 2009 - Road Course Short A,\texas\infieldrcshorta,layout,exact_map_valid,texas_infieldrcshorta.json.gz,surveyed lap fraction,1000,,553,requires matching runtime reference or guide
+texas_infieldrcshortb,[Legacy] Texas Motor Speedway - 2009 - Road Course Short B,\texas\infieldrcshortb,layout,exact_map_valid,texas_infieldrcshortb.json.gz,surveyed lap fraction,1000,,554,requires matching runtime reference or guide
+texas_legendsoval,[Legacy] Texas Motor Speedway - 2009 - Legends Oval,\texas\legendsoval,layout,exact_map_valid,texas_legendsoval.json.gz,surveyed lap fraction,1000,,549,requires matching runtime reference or guide
+texas_oval,[Legacy] Texas Motor Speedway - 2009 - Oval,\texas\oval,layout,exact_map_valid,texas_oval.json.gz,surveyed lap fraction,1000,,550,requires matching runtime reference or guide
+texas_roadcourse,[Legacy] Texas Motor Speedway - 2009 - Road Course Combined,\texas\roadcourse,layout,exact_map_valid,texas_roadcourse.json.gz,surveyed lap fraction,1000,,551,requires matching runtime reference or guide
+thebend,Shell V-Power Motorsport Park at The Bend,\thebend,container,container_not_layout,,,0,,471,requires matching runtime reference or guide
+thebend_east,Shell V-Power Motorsport Park at The Bend - East Circuit,\thebend\east,layout,missing_exact_map,,,0,,475,requires matching runtime reference or guide
+thebend_gt,Shell V-Power Motorsport Park at The Bend - GT Circuit,\thebend\gt,layout,missing_exact_map,,,0,,473,requires matching runtime reference or guide
+thebend_international,Shell V-Power Motorsport Park at The Bend - International Circuit,\thebend\international,layout,missing_exact_map,,,0,,472,requires matching runtime reference or guide
+thebend_southwest,Shell V-Power Motorsport Park at The Bend - South-West Circuit,\thebend\southwest,layout,missing_exact_map,,,0,,476,requires matching runtime reference or guide
+thebend_sprint,Shell V-Power Motorsport Park at The Bend - Sprint Circuit,\thebend\sprint,layout,missing_exact_map,,,0,,474,requires matching runtime reference or guide
+thebend_west,Shell V-Power Motorsport Park at The Bend - West Circuit,\thebend\west,layout,missing_exact_map,,,0,,477,requires matching runtime reference or guide
+thebend_westplus,Shell V-Power Motorsport Park at The Bend - West Plus Circuit,\thebend\westplus,layout,missing_exact_map,,,0,,478,requires matching runtime reference or guide
+thompson,Thompson Speedway Motorsports Park,\thompson,layout,exact_map_valid,thompson.json.gz,surveyed lap fraction,1000,,482,requires matching runtime reference or guide
+thruxton,Thruxton Circuit,\thruxton,layout,missing_exact_map,,,0,,483,requires matching runtime reference or guide
+tsukuba,Tsukuba Circuit,\tsukuba,container,container_not_layout,,,0,,484,requires matching runtime reference or guide
+tsukuba_1kchicane,Tsukuba Circuit - 1000 - Chicane,\tsukuba\1kchicane,layout,exact_map_valid,tsukuba_1kchicane.json.gz,GPX distance estimate,1000,,485,requires matching runtime reference or guide
+tsukuba_1kfull,Tsukuba Circuit - 1000 - Full,\tsukuba\1kfull,layout,exact_map_valid,tsukuba_1kfull.json.gz,GPX distance estimate,1000,,486,requires matching runtime reference or guide
+tsukuba_1kouter,Tsukuba Circuit - 1000 - Outer,\tsukuba\1kouter,layout,exact_map_valid,tsukuba_1kouter.json.gz,GPX distance estimate,1000,,487,requires matching runtime reference or guide
+tsukuba_1kreverse,Tsukuba Circuit - 1000 - Reverse,\tsukuba\1kreverse,layout,identity_review_no_exact_map,,,0,tsukuba_1kfullreverse,488,requires matching runtime reference or guide
+tsukuba_2kchicane,Tsukuba Circuit - 2000 - Moto,\tsukuba\2kchicane,layout,exact_map_valid,tsukuba_2kchicane.json.gz,GPX distance estimate,1000,,490,requires matching runtime reference or guide
+tsukuba_2kfull,Tsukuba Circuit - 2000 - Full,\tsukuba\2kfull,layout,exact_map_valid,tsukuba_2kfull.json.gz,GPX distance estimate,1000,,489,requires matching runtime reference or guide
+tsukuba_2kshort,Tsukuba Circuit - 2000 - Short,\tsukuba\2kshort,layout,exact_map_valid,tsukuba_2kshort.json.gz,GPX distance estimate,1000,,491,requires matching runtime reference or guide
+twinring,Mobility Resort Motegi,\twinring,container,container_not_layout,,,0,,310,requires matching runtime reference or guide
+twinring_east,Mobility Resort Motegi - East,\twinring\east,layout,exact_map_valid,twinring_east.json.gz,surveyed lap fraction,1000,,311,requires matching runtime reference or guide
+twinring_fullrc,Mobility Resort Motegi - Grand Prix,\twinring\fullrc,layout,exact_map_valid,twinring_fullrc.json.gz,surveyed lap fraction,1000,,312,requires matching runtime reference or guide
+twinring_oval,Mobility Resort Motegi - Oval,\twinring\oval,layout,exact_map_valid,twinring_oval.json.gz,surveyed lap fraction,1000,,313,requires matching runtime reference or guide
+twinring_west,Mobility Resort Motegi - West,\twinring\west,layout,exact_map_valid,twinring_west.json.gz,surveyed lap fraction,1000,,314,requires matching runtime reference or guide
+vegas,Las Vegas Motor Speedway,\vegas,container,container_not_layout,,,0,,265,requires matching runtime reference or guide
+vegas_inflegends,Las Vegas Motor Speedway - Infield Legends Oval,\vegas\inflegends,layout,exact_map_valid,vegas_inflegends.json.gz,surveyed lap fraction,1000,,266,requires matching runtime reference or guide
+vegas_legends,Las Vegas Motor Speedway - Legends Oval,\vegas\legends,layout,exact_map_valid,vegas_legends.json.gz,surveyed lap fraction,1000,,267,requires matching runtime reference or guide
+vegas_oval,Las Vegas Motor Speedway - Oval,\vegas\oval,layout,exact_map_valid,vegas_oval.json.gz,surveyed lap fraction,1000,,268,requires matching runtime reference or guide
+vegas_roadcombined,Las Vegas Motor Speedway - Road Course Combined,\vegas\roadcombined,layout,exact_map_valid,vegas_roadcombined.json.gz,surveyed lap fraction,1000,,269,requires matching runtime reference or guide
+vegas_roadlong,Las Vegas Motor Speedway - Road Course Long,\vegas\roadlong,layout,exact_map_valid,vegas_roadlong.json.gz,surveyed lap fraction,1000,,270,requires matching runtime reference or guide
+vegas_roadshort,Las Vegas Motor Speedway - Road Course Short,\vegas\roadshort,layout,exact_map_valid,vegas_roadshort.json.gz,surveyed lap fraction,1000,,271,requires matching runtime reference or guide
+virginia_2022,Virginia International Raceway,\virginia\2022,container,container_not_layout,,,0,,495,requires matching runtime reference or guide
+virginia_2022_full,Virginia International Raceway - Full Course,\virginia\2022\full,layout,exact_map_valid,virginia_2022_full.json.gz,GPX distance estimate,1000,,496,requires matching runtime reference or guide
+virginia_2022_grand,Virginia International Raceway - Grand Course,\virginia\2022\grand,layout,exact_map_valid,virginia_2022_grand.json.gz,GPX distance estimate,1000,,497,requires matching runtime reference or guide
+virginia_2022_north,Virginia International Raceway - North Course,\virginia\2022\north,layout,exact_map_valid,virginia_2022_north.json.gz,GPX distance estimate,1000,,498,requires matching runtime reference or guide
+virginia_2022_patriot,Virginia International Raceway - Patriot Course,\virginia\2022\patriot,layout,exact_map_valid,virginia_2022_patriot.json.gz,GPX distance estimate,1000,,499,requires matching runtime reference or guide
+virginia_2022_south,Virginia International Raceway - South Course,\virginia\2022\south,layout,exact_map_valid,virginia_2022_south.json.gz,GPX distance estimate,1000,,500,requires matching runtime reference or guide
+volusia,Volusia Speedway Park,\volusia,layout,exact_map_valid,volusia.json.gz,GPX distance estimate,1000,,501,requires matching runtime reference or guide
+watkinsglen_2021,Watkins Glen International,\watkinsglen\2021,container,container_not_layout,,,0,,502,requires matching runtime reference or guide
+watkinsglen_2021_classic,Watkins Glen International - Classic,\watkinsglen\2021\classic,layout,exact_map_valid,watkinsglen_2021_classic.json.gz,surveyed lap fraction,1000,,504,requires matching runtime reference or guide
+watkinsglen_2021_cupcircuit,Watkins Glen International - Cup,\watkinsglen\2021\cupcircuit,layout,exact_map_valid,watkinsglen_2021_cupcircuit.json.gz,surveyed lap fraction,1000,,506,requires matching runtime reference or guide
+watkinsglen_2021_fullcourse,Watkins Glen International - Boot,\watkinsglen\2021\fullcourse,layout,exact_map_valid,watkinsglen_2021_fullcourse.json.gz,surveyed lap fraction,1000,,503,requires matching runtime reference or guide
+watkinsglen_2021_fullnoloop,Watkins Glen International - Classic Boot,\watkinsglen\2021\fullnoloop,layout,exact_map_valid,watkinsglen_2021_fullnoloop.json.gz,surveyed lap fraction,1000,,505,requires matching runtime reference or guide
+weedsport,Weedsport Speedway,\weedsport,layout,exact_map_valid,weedsport.json.gz,GPX distance estimate,1000,,510,requires matching runtime reference or guide
+wheatland,Lucas Oil Speedway - Dirt Oval,\wheatland,layout,exact_map_valid,wheatland.json.gz,GPX distance estimate,1000,,286;287,requires matching runtime reference or guide
+wheatland_road,Lucas Oil Speedway - Off Road,\wheatland\road,layout,missing_exact_map,,,0,,288,requires matching runtime reference or guide
+wildhorse,Firebird Motorsports Park,\wildhorse,layout,exact_map_valid,wildhorse.json.gz,GPX distance estimate,1000,,186,requires matching runtime reference or guide
+wildwest,Wild West Motorsports Park,\wildwest,layout,identity_review_no_exact_map,,,0,wildwest_full,511,requires matching runtime reference or guide
+williamsgrove,Williams Grove Speedway,\williamsgrove,layout,exact_map_valid,williamsgrove.json.gz,GPX distance estimate,1000,,512,requires matching runtime reference or guide
+willow,Willow Springs International Raceway,\willow,layout,identity_review_no_exact_map,,,0,willow_international,513,requires matching runtime reference or guide
+winton,Winton Motor Raceway,\winton,container,container_not_layout,,,0,,514,requires matching runtime reference or guide
+winton_club,Winton Motor Raceway - Club,\winton\club,layout,exact_map_valid,winton_club.json.gz,GPX distance estimate,1000,,515,requires matching runtime reference or guide
+winton_national,Winton Motor Raceway - National,\winton\national,layout,exact_map_valid,winton_national.json.gz,GPX distance estimate,1000,,516,requires matching runtime reference or guide
+winton_rallycross,Winton Motor Raceway - Rallycross,\winton\rallycross,layout,missing_exact_map,,,0,,517,requires matching runtime reference or guide
+zandvoort,Circuit Park Zandvoort,\zandvoort,container,container_not_layout,,,0,,127,requires matching runtime reference or guide
+zandvoort_2023,Circuit Zandvoort,\zandvoort\2023,container,container_not_layout,,,0,,133,requires matching runtime reference or guide
+zandvoort_2023_gp,Circuit Zandvoort - Grand Prix,\zandvoort\2023\gp,layout,exact_map_valid,zandvoort_2023_gp.json.gz,GPX distance estimate,1000,,134,requires matching runtime reference or guide
+zandvoort_2023_gpchicane,Circuit Zandvoort - Grand Prix w/2 Chicane,\zandvoort\2023\gpchicane,layout,exact_map_valid,zandvoort_2023_gpchicane.json.gz,GPX distance estimate,1000,,135,requires matching runtime reference or guide
+zandvoort_2023_nationaal,Circuit Zandvoort - Nationaal,\zandvoort\2023\nationaal,layout,exact_map_valid,zandvoort_2023_nationaal.json.gz,GPX distance estimate,1000,,136,requires matching runtime reference or guide
+zandvoort_2023_ostelijk,Circuit Zandvoort - Oostelijk,\zandvoort\2023\ostelijk,layout,identity_review_no_exact_map,,,0,zandvoort_2023_oostelijk,137,requires matching runtime reference or guide
+zandvoort_chicane,Circuit Park Zandvoort - Chicane - 2009,\zandvoort\chicane,layout,exact_map_valid,zandvoort_chicane.json.gz,GPX distance estimate,1000,,130,requires matching runtime reference or guide
+zandvoort_club,Circuit Park Zandvoort - Club - 2009,\zandvoort\club,layout,exact_map_valid,zandvoort_club.json.gz,GPX distance estimate,1000,,131,requires matching runtime reference or guide
+zandvoort_grandprix,Circuit Park Zandvoort - Grand Prix - 2009,\zandvoort\grandprix,layout,exact_map_valid,zandvoort_grandprix.json.gz,GPX distance estimate,1000,,128,requires matching runtime reference or guide
+zandvoort_national,Circuit Park Zandvoort - National - 2009,\zandvoort\national,layout,exact_map_valid,zandvoort_national.json.gz,GPX distance estimate,1000,,129,requires matching runtime reference or guide
+zandvoort_oostelijk,Circuit Park Zandvoort - Oostelijk - 2009,\zandvoort\oostelijk,layout,exact_map_valid,zandvoort_oostelijk.json.gz,GPX distance estimate,1000,,132,requires matching runtime reference or guide
+zolder,Circuit Zolder,\zolder,container,container_not_layout,,,0,,138,requires matching runtime reference or guide
+zolder_2024,Circuit Zolder,\zolder\2024,container,container_not_layout,,,0,,141,requires matching runtime reference or guide
+zolder_2024_alt,Circuit Zolder - Alternate,\zolder\2024\alt,layout,missing_exact_map,,,0,,143,requires matching runtime reference or guide
+zolder_2024_gp,Circuit Zolder - Grand Prix,\zolder\2024\gp,layout,missing_exact_map,,,0,,142,requires matching runtime reference or guide
+zolder_alt,Circuit Zolder - Alternate,\zolder\alt,layout,exact_map_valid,zolder_alt.json.gz,surveyed lap fraction,1000,,140,requires matching runtime reference or guide
+zolder_gp,Circuit Zolder - Grand Prix,\zolder\gp,layout,exact_map_valid,zolder_gp.json.gz,surveyed lap fraction,1000,,139,requires matching runtime reference or guide

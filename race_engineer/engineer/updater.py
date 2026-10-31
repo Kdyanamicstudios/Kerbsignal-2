@@ -2,7 +2,7 @@
 import hashlib,json,os,re,ssl,subprocess,sys,urllib.request,urllib.parse
 from pathlib import Path
 
-VERSION='0.15.0'
+VERSION='0.16.0'
 RELEASE_MANIFEST='https://kerbsignal-releases.fairylyric19.chatgpt.site/stable.json'
 MAX_SIZE=1024*1024*1024
 MAX_CHUNK=24*1024*1024

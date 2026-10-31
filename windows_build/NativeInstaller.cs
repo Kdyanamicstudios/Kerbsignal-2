@@ -13,8 +13,8 @@ using System.Windows.Forms;
 
 [assembly: AssemblyTitle("KerbSignal")]
 [assembly: AssemblyProduct("KerbSignal")]
-[assembly: AssemblyVersion("0.15.0.0")]
-[assembly: AssemblyFileVersion("0.15.0.0")]
+[assembly: AssemblyVersion("__APP_VERSION__.0")]
+[assembly: AssemblyFileVersion("__APP_VERSION__.0")]
 
 internal static class NativeInstaller {
     // Build tool replaces this token with the exact embedded archive digest.
@@ -63,7 +63,7 @@ internal static class NativeInstaller {
         Directory.CreateDirectory(versions);
         // Each repair gets a fresh runtime, including when the package is the
         // same version. Never reuse a folder that may have missing files.
-        string version = "0.15.0-" + PayloadHash.Substring(0, 12) + "-" + Guid.NewGuid().ToString("N").Substring(0, 8);
+        string version = "__APP_VERSION__-" + PayloadHash.Substring(0, 12) + "-" + Guid.NewGuid().ToString("N").Substring(0, 8);
         string runtime = Path.Combine(versions, version);
         if (!Directory.Exists(runtime)) {
             string staging = Path.Combine(versions, ".installing-" + Guid.NewGuid().ToString("N"));

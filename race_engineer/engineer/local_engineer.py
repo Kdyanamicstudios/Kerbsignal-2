@@ -54,7 +54,7 @@ class LocalEngineer:
         text=words(question).replace('breaking','braking')
         aliases={'trail':'Trail braking & release','weight':'Weight transfer & load sensitivity',
             'red string':'Red string / steering-pedal analogy','friction':'Red string / steering-pedal analogy',
-            'draft':'Slipstream / drafting','tire':'Tire management','tyre':'Tire management',
+            'draft':'Drafting / slipstream','tire':'Tire management','tyre':'Tire management',
             'late apex':'Racing line & late apex','threshold':'Threshold braking'}
         ranked=[]
         for lesson in LESSONS:

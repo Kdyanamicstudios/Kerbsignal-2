@@ -1,0 +1,22 @@
+{
+  "catalog_available": true,
+  "source_url": "https://support.iracing.com/support/solutions/articles/31000176962-filepath-for-active-iracing-tracks",
+  "source_modified": "2025-12-09",
+  "retrieved": "2026-10-31",
+  "source_rows": 536,
+  "distinct_paths": 523,
+  "layout_paths": 436,
+  "container_paths": 86,
+  "ambiguous_paths": 1,
+  "bundled_index_entries": 417,
+  "exact_layout_index_matches": 371,
+  "reference_status": "requires matching runtime reference or guide",
+  "bundled_valid_maps": 417,
+  "bundled_invalid_maps": 0,
+  "exact_layout_valid_maps": 371,
+  "layout_identity_reviews": 14,
+  "layout_missing_exact_maps": 51,
+  "layouts_with_invalid_maps": 0,
+  "catalog_sha256": "cf83649797c5c7072800b46986d4e4309cba4c17769ee794b0de44663049a868",
+  "map_source_url": "https://github.com/SIMRacingApps/SIMRacingAppsServer"
+}

@@ -1,31 +1,22 @@
-KERBSIGNAL 0.13 — NEW DESKTOP LAYOUT
+KERBSIGNAL 0.16 — SECONDARY TEST BUILD
 
-Close KerbSignal, then open KerbSignal.exe to update and launch it.
-No Python, coding or building is required. Windows 10/11 x64.
-Your history and settings are kept in the existing data location.
+Close KerbSignal, then open KerbSignal_0.16.exe to install and launch.
+No Python, coding, account or API key is required. Windows 10/11 x64.
+Your saved history and settings stay in the existing data location.
+Check the title bar: it should show 0.16.0.
 
-Check the title bar: it must say 0.13.
-Open DRIVE in the left rail. G-FORCE is a dedicated large circle beside the
-circuit map. It is visible even before connection; a moving dot requires
-fresh lateral/longitudinal acceleration telemetry. The compact overlay has
-its own smaller G circle.
+NEW IN THIS BUILD
+Settings: clear vertical sections, larger fields and readable On/Off switches.
+Racecraft: 22 detailed offline lessons with annotated diagrams, exercises,
+common mistakes and full-text search. The reader adapts to compact windows.
+Help: browse exact track/layout map coverage and see missing maps clearly.
+Earlier local voice/chat and minute-format fixes are retained.
 
-DRIVE: lap timing, best/delta, MPH/gear, full-width engineer call, circuit map,
-G-force circle and speed/brake/throttle/steering graph.
-ANALYZE: corner analysis, session recap, laps, racing line and references.
-RACECRAFT: searchable technique library.
-GARAGE: controlled setup tests.
-ENGINEER: voice studio, coaching/timing, YouTube and radio transcript.
-SETTINGS: general, voice/audio/microphone test, overlay, devices and updates.
-HELP: tutorial. Returning users start on Drive.
+Track maps are circuit geometry, not a library of fastest racing lines.
+Positioned corner calls still need a compatible reference lap or authored
+guide. Licensed racing photos, missing maps/guides and other open checklist
+features remain outstanding. See KerbSignal_Master_Checklist.md.
 
-Five new free local male voices are included. Critical calls use cached WAVs.
-Practice/qualifying/race and pit-stop reports use available telemetry.
-Exact corner calls still need a matching clean reference or authored guide;
-no universal expert-lap library is bundled. Tire readings retain their
-reported/pit freshness limits.
-
-This is a Windows test build. Live Windows/iRacing hardware and audio timing
-need validation. Native DLL checks and automated tests have passed.
-The in-app release feed is awaiting public-read authorization. For this
-update, close the old app and open the new KerbSignal.exe once.
+230 automated Windows checks and native UI checks pass. Actual driver speech,
+headset listening, live iRacing alignment and simulator timing still need
+acceptance. This is a test build; no public release feed was changed.

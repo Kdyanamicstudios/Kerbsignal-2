@@ -4,9 +4,11 @@
 
 Windows iRacing race engineer, local telemetry coach and driving-review app.
 
-**Windows/Python snapshot: 0.15 test build.** Includes the free local engineer, Windows speech repair, minute-format fix and native x64 installer source. Other checklist features remain incomplete. The built EXE is distributed separately from repository source.
+**Windows/Python snapshot: 0.16 test build.** Includes redesigned Settings and On/Off controls, 22 complete offline lessons with annotated diagrams, a searchable track-coverage browser, and the earlier local engineer/speech/minute-format work. Other checklist features remain incomplete. The built EXE is distributed separately from repository source.
 
 Start with [the development handoff](WORK_IN_PROGRESS.md) and [the full requirements checklist](KerbSignal_Master_Checklist.md). The checklist includes the latest screenshot findings, exact-turn labels, minute formatting and zero-cost local-chat requirement.
+
+Current native Windows screens: [Settings](previews/0.16_Settings_Dark.png), [Racecraft](previews/0.16_Racecraft.png), [Track coverage](previews/0.16_Track_Coverage.png).
 
 ## Included
 
@@ -18,7 +20,9 @@ Start with [the development handoff](WORK_IN_PROGRESS.md) and [the full requirem
 
 ## Current verification
 
-208 automated tests passed with the Windows/Python 3.14 packaged runtime. Qwen3 0.6B local inference was also exercised on Windows CPU. Native GUI and microphone capture were checked; live-driver/iRacing acceptance and free-model response quality remain open. Read `docs/VALIDATION.md` for limits.
+All 15 native pages and 132 lesson views were exercised in both themes and compact sizes. [Track coverage audit](docs/TRACK_COVERAGE.md): all 417 maps validate; 371 match exact layout paths in the official article snapshot, 14 need identity review and 51 are missing. The article is older than the audit and does not prove complete current service coverage. Licensed racing photos and live iRacing/driver acceptance remain open.
+
+230 automated tests passed with the Windows/Python 3.14 packaged runtime. Qwen3 0.6B local inference was also exercised on Windows CPU. Native GUI and microphone capture were checked; live-driver/iRacing acceptance and free-model response quality remain open. The 0.16 x64 installer passed isolated extraction/repair, all 6,973 file hashes, prior-runtime preservation and extracted-runtime/native UI checks. Read `docs/VALIDATION.md` for limits.
 
 ## Free chat
 
@@ -30,7 +34,7 @@ Repository: [Kdyanamicstudios/Kerbsignal-2](https://github.com/Kdyanamicstudios/
 
 See [DEVELOPMENT.md](docs/DEVELOPMENT.md), [BUILD.md](docs/BUILD.md) and [GITHUB_UPLOAD.md](docs/GITHUB_UPLOAD.md). The user is not expected to perform developer setup.
 
-No credentials, personal lap database, downloaded model weights, Windows runtime, installer EXE or previous Git history are in this repository. These are deliberately separate from source; asset URLs/hashes and existing restore scripts are retained. A native x64 0.15 test installer is available separately. See docs/BUILD.md for verified runtime extraction and rebuilding; a clean from-scratch dependency bootstrap is not yet complete.
+No credentials, personal lap database, downloaded model weights, Windows runtime, installer EXE or previous Git history are in this repository. These are deliberately separate from source; asset URLs/hashes and existing restore scripts are retained. A native x64 0.16 test installer is available separately. See docs/BUILD.md for verified runtime extraction and rebuilding; a clean from-scratch dependency bootstrap is not yet complete.
 
 ## Licence
 

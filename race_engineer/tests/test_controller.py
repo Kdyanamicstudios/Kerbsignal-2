@@ -36,7 +36,7 @@ def headless_services():
     with patch.object(app,'StartupAnimation'),patch.object(app,'Overlay',return_value=None), \
          patch.object(app.Speech,'refresh_voices'),patch.object(app.Speech,'say'), \
          patch.object(app.App,'scan_devices'),patch.object(app.CueAudio,'prepare'), \
-         patch.object(app.AudioOutput,'prepare'):
+         patch.object(app.AudioOutput,'prepare'),patch('engineer.racecraft_view.RacecraftLessonView'):
         yield
 
 

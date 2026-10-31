@@ -1,0 +1,187 @@
+{
+  "pages": [
+    {
+      "theme": "Dark",
+      "size": "1360x900",
+      "section": 0,
+      "width": 909,
+      "height": 629,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1360x900",
+      "section": 1,
+      "width": 909,
+      "height": 629,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1360x900",
+      "section": 2,
+      "width": 909,
+      "height": 629,
+      "scrollable": false
+    },
+    {
+      "theme": "Dark",
+      "size": "1360x900",
+      "section": 3,
+      "width": 909,
+      "height": 629,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1360x900",
+      "section": 4,
+      "width": 909,
+      "height": 629,
+      "scrollable": false
+    },
+    {
+      "theme": "Dark",
+      "size": "1050x760",
+      "section": 0,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1050x760",
+      "section": 1,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1050x760",
+      "section": 2,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1050x760",
+      "section": 3,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Dark",
+      "size": "1050x760",
+      "section": 4,
+      "width": 599,
+      "height": 489,
+      "scrollable": false
+    },
+    {
+      "theme": "Light",
+      "size": "1360x900",
+      "section": 0,
+      "width": 909,
+      "height": 629,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1360x900",
+      "section": 1,
+      "width": 909,
+      "height": 629,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1360x900",
+      "section": 2,
+      "width": 909,
+      "height": 629,
+      "scrollable": false
+    },
+    {
+      "theme": "Light",
+      "size": "1360x900",
+      "section": 3,
+      "width": 909,
+      "height": 629,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1360x900",
+      "section": 4,
+      "width": 909,
+      "height": 629,
+      "scrollable": false
+    },
+    {
+      "theme": "Light",
+      "size": "1050x760",
+      "section": 0,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1050x760",
+      "section": 1,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1050x760",
+      "section": 2,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1050x760",
+      "section": 3,
+      "width": 599,
+      "height": 489,
+      "scrollable": true
+    },
+    {
+      "theme": "Light",
+      "size": "1050x760",
+      "section": 4,
+      "width": 599,
+      "height": 489,
+      "scrollable": false
+    }
+  ],
+  "integrated_pages": 15,
+  "lesson_renders": 132,
+  "lesson_search": true,
+  "compact_lesson_stack": true,
+  "coverage_dialog": true,
+  "synthetic_demo_render": true,
+  "native_tk": true,
+  "boolean_controls": 15,
+  "keyboard_space": true,
+  "focus": true,
+  "disabled": true,
+  "external_variable_sync": true,
+  "settings_persistence": true,
+  "immediate_save_callbacks": true,
+  "dpi_switch_scaled": true,
+  "audio_capture": false,
+  "callback_errors": [],
+  "screenshots": [
+    "C:\\Users\\rakie\\Documents\\Codex\\2026-10-30\\go-x20\\outputs\\KerbSignal_Settings_Dark_0_1360x900.png",
+    "C:\\Users\\rakie\\Documents\\Codex\\2026-10-30\\go-x20\\outputs\\KerbSignal_Settings_Light_0_1360x900.png",
+    "C:\\Users\\rakie\\Documents\\Codex\\2026-10-30\\go-x20\\outputs\\KerbSignal_Settings_Dark_1_1360x900.png",
+    "C:\\Users\\rakie\\Documents\\Codex\\2026-10-30\\go-x20\\outputs\\KerbSignal_Settings_Light_2_1050x760.png"
+  ]
+}

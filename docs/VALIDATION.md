@@ -1,3 +1,17 @@
+# Windows 0.16 source and package checkpoint — October 31, 2026
+
+- 230 Windows regression checks pass with native Tk enabled and no skips.
+- Native integrated checks create all 15 actual pages, render synthetic demo telemetry and exercise 132 lesson views (22 topics × both themes × three window sizes), selection/search/clear, compact stacking and full scrolling.
+- All five Settings sections pass in Dark/Light at 1360×900 and 1050×760. All 15 switches retain keyboard/focus/disabled/shared-value and save-callback behavior; DPI indicators scale.
+- Help coverage browsing validates exact selected maps. The reproducible audit validates all 417 maps; older official filepath snapshot has 371 exact layout matches, 14 identity reviews, 51 other missing maps, 86 containers and one ambiguous path. This is not live alignment or exhaustive current service coverage.
+- LEARN-01/02/04 and UI-16/17 are implemented. LEARN-03 photos, remaining maps/guides, UI-18 onward, actual driver speech/listening and live iRacing acceptance remain open.
+- Final x64 installer passed fresh isolated extraction and repair: all 6,973 files matched SHA256, previous runtimes were preserved, launcher checks passed and assembly version is 0.16.0.0.
+- Extracted Python passed all 230 checks with zero skips plus the native integrated all-page/132-lesson checks with zero callback errors. See WINDOWS_0_16_INSTALLER.json, WINDOWS_0_16_PACKAGED_TESTS.json and WINDOWS_0_16_PACKAGED_GUI.json.
+- Native speech/capture evidence below belongs to the earlier 0.15 checkpoint. No physical-driver or iRacing acceptance is inferred from the UI tests. No public release feed or existing user installation was changed.
+- Final verification records accompany the source handoff after the installer is built; the embedded application-source archive contains the build-time source/checklist checkpoint.
+
+## Historical 0.15 Windows speech and delivery evidence
+
 # Windows continuation verification — October 31, 2026
 
 - 208 regression checks pass using the assembled Windows/Python 3.14 runtime.

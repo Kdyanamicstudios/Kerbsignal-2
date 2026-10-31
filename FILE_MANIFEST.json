@@ -1,5 +1,5 @@
 {
-  "version": "0.15-windows-test-source",
+  "version": "0.16.0-windows-test-source",
   "files": [
     {
       "path": ".gitattributes",
@@ -18,18 +18,18 @@
     },
     {
       "path": "docs/BUILD.md",
-      "bytes": 2476,
-      "sha256": "8b670bbbe28db26c7c27f2f11fdc0cc20cb6456fc5652fa77f871acce1393c9d"
+      "bytes": 2824,
+      "sha256": "6ef548dd87d51568541b9aa3a17acafbbb3d442aa75e7328864f3aba8e5729dd"
     },
     {
       "path": "docs/DEVELOPMENT.md",
-      "bytes": 1522,
-      "sha256": "9ba5f1e5d15003f544dec45ae683754512367d394cccb82c6a2e9382bbb9db7e"
+      "bytes": 1867,
+      "sha256": "139a6de33cf61e1fdd018505709d377700abb656e1067ea14ab739b1038292f6"
     },
     {
       "path": "docs/GITHUB_UPLOAD.md",
       "bytes": 797,
-      "sha256": "28ee08bad6e62ca59422ea82d1f4dda537718ba928d16e3f4ee2ad89532e150c"
+      "sha256": "adcfa69d9b5c00b3b648896322dc492a61541bb2381da04fc485d2656ba429dc"
     },
     {
       "path": "docs/LOCAL_AI_CHECK.json",
@@ -47,9 +47,24 @@
       "sha256": "b7ca7717be66b612b68fccdd69e76f8a1217faf89e4b978ecb15f9b5144f846c"
     },
     {
+      "path": "docs/TRACK_COVERAGE.csv",
+      "bytes": 95278,
+      "sha256": "dabf87417601dcd62884aeeab67bd22ed302d908573d5b2779a5d614fab3745e"
+    },
+    {
+      "path": "docs/TRACK_COVERAGE.json",
+      "bytes": 370866,
+      "sha256": "d14e4d9c7d8737ed41561a97fee25d5b139cd574f97254dc03b5b228866ca9f6"
+    },
+    {
+      "path": "docs/TRACK_COVERAGE.md",
+      "bytes": 12105,
+      "sha256": "7d802bb85bb496ca2bbb4a4c0b0c75927037c0274cda9767b290f996f659dd06"
+    },
+    {
       "path": "docs/VALIDATION.md",
-      "bytes": 2507,
-      "sha256": "01d779631ffbe9555b16285dbdb0fa701d2987f2cb8cff5cde5353d7ada6e732"
+      "bytes": 4436,
+      "sha256": "06901b6797072f268e875227526259bd484e2bde41b205d89f153618ca3f6ba1"
     },
     {
       "path": "docs/WINDOWS-AI-RESULT.JSON",
@@ -65,6 +80,31 @@
       "path": "docs/WINDOWS-SPEECH-RESULT.JSON",
       "bytes": 857,
       "sha256": "eb9f140b87378746962eb44c78ea9c1dc319bc65e550f9c4aba06a09c6bbf374"
+    },
+    {
+      "path": "docs/WINDOWS_0_16_GUI.json",
+      "bytes": 3928,
+      "sha256": "45724ffcef5cd825bfa5350a5b1bd8862031442fc9508c24bc90f610479f6952"
+    },
+    {
+      "path": "docs/WINDOWS_0_16_INSTALLER.json",
+      "bytes": 445,
+      "sha256": "a64b4169ed1e42bf4d08c82a3338871513868e465f3900fcdf37fb06aedc2b53"
+    },
+    {
+      "path": "docs/WINDOWS_0_16_PACKAGED_GUI.json",
+      "bytes": 3928,
+      "sha256": "45724ffcef5cd825bfa5350a5b1bd8862031442fc9508c24bc90f610479f6952"
+    },
+    {
+      "path": "docs/WINDOWS_0_16_PACKAGED_TESTS.json",
+      "bytes": 249,
+      "sha256": "d4ed462ab7f167cb5b7f25615056a0dd3d9ed1decb85cd3e93615cd1b64308ec"
+    },
+    {
+      "path": "docs/WINDOWS_0_16_SOURCE_TESTS.json",
+      "bytes": 217,
+      "sha256": "2efe252d553b42248580d4834f35524fb6981e7c7f6f9a16c460226256bad365"
     },
     {
       "path": "docs/WINDOWS_ASR_RATES.json",
@@ -84,6 +124,11 @@
     {
       "path": "docs/WINDOWS_PACKAGE.json",
       "bytes": 251,
+      "sha256": "1d6c9d4f72ef3924ab24e6d4359c06efc72c6c63a0d1883ccdb7f0ed2f100573"
+    },
+    {
+      "path": "docs/WINDOWS_PACKAGE_0_15.json",
+      "bytes": 251,
       "sha256": "cd58e190a8e957fc58138054579e23ce5192a228a3e66da4f9ab6ca9bc14b324"
     },
     {
@@ -93,13 +138,28 @@
     },
     {
       "path": "KerbSignal_Master_Checklist.md",
-      "bytes": 45537,
-      "sha256": "8dc87ac511a5dcbcd2b1d1ec7db6a6896234277fab6c5c98239b3581b7422365"
+      "bytes": 48571,
+      "sha256": "8a6ae9401b1fbd920d2bdb05fad30abf2bfd04704a557ab514d760d9f706eead"
     },
     {
       "path": "LICENSE",
       "bytes": 35142,
       "sha256": "d62f065830aa3739cc031156b9690805c7b2e811b4a178c8b4acd8725d561c94"
+    },
+    {
+      "path": "previews/0.16_Racecraft.png",
+      "bytes": 51045,
+      "sha256": "7eebec8299936d7ab661deb5d671a1219c07f942c860dac6d7c534d4c16ff2e5"
+    },
+    {
+      "path": "previews/0.16_Settings_Dark.png",
+      "bytes": 41319,
+      "sha256": "04053d3b99f93875ce79454036ca59125cb074c6930f63bb942fdc9b8380ede0"
+    },
+    {
+      "path": "previews/0.16_Track_Coverage.png",
+      "bytes": 26173,
+      "sha256": "21ff8d9c69f1261836afbf7a93b553b215b9e8ad6a7f3436b94a8fefdec22590"
     },
     {
       "path": "previews/KerbSignal_New_UI.png",
@@ -123,8 +183,8 @@
     },
     {
       "path": "race_engineer/app.py",
-      "bytes": 144789,
-      "sha256": "efb18a9eb5d63f034fb2c70b39d155b91665b11ffa5cefdc7bd451eaba79e4f4"
+      "bytes": 149831,
+      "sha256": "847fdd9e4a2987011324705f7f96cd47f277951698d48692673c675da02652f3"
     },
     {
       "path": "race_engineer/BRANDING.md",
@@ -182,6 +242,16 @@
       "sha256": "b9408a0be2bc353b7da76fadb1157f256225bb5ac464f5982adf968fb88e360b"
     },
     {
+      "path": "race_engineer/engineer/catalog/iracing_tracks_2025-12-09.json",
+      "bytes": 67752,
+      "sha256": "cf83649797c5c7072800b46986d4e4309cba4c17769ee794b0de44663049a868"
+    },
+    {
+      "path": "race_engineer/engineer/catalog/map_coverage_summary.json",
+      "bytes": 833,
+      "sha256": "42e7be9193db2e10b740a820b474de28ad0218f4b5de8e8f4c8e552b2115a1e2"
+    },
+    {
       "path": "race_engineer/engineer/cockpit.py",
       "bytes": 6134,
       "sha256": "1084a264274df9402308e0b1ef010640b22384453c91df2660def3457cf3ddc5"
@@ -190,6 +260,11 @@
       "path": "race_engineer/engineer/core.py",
       "bytes": 17216,
       "sha256": "56f8145ab14ad84a0e57d5ec792a6d4f697d9a52185fb88e00e39dd070228eb6"
+    },
+    {
+      "path": "race_engineer/engineer/coverage_view.py",
+      "bytes": 5035,
+      "sha256": "bd09732b988a296df880a49ecfdcd461904945c5a4267f4bf0ae04717b72cb8b"
     },
     {
       "path": "race_engineer/engineer/cue_audio.py",
@@ -264,12 +339,12 @@
     {
       "path": "race_engineer/engineer/local_engineer.py",
       "bytes": 7754,
-      "sha256": "2bf8edd5bcc3050960f0c12c174ba9ef5c8547793e0a78f678864ef35feef5cd"
+      "sha256": "6520b42dcef91ae82b753d7d7e0ff98a5e391ba97595ab43d594d00c6027a452"
     },
     {
       "path": "race_engineer/engineer/map_atlas.py",
-      "bytes": 688,
-      "sha256": "1e8e5b76aa558c5713d9ef778b3972dae6faa83888f258e51b0ce2ae289990c2"
+      "bytes": 4440,
+      "sha256": "606dc8c57e2f150be2c8bd34c4b18b0ab0fd6d35e53dc39cd69cee99e353e942"
     },
     {
       "path": "race_engineer/engineer/maps/algarve_gp.json.gz",
@@ -2408,8 +2483,13 @@
     },
     {
       "path": "race_engineer/engineer/racecraft.py",
-      "bytes": 11052,
-      "sha256": "7c297c36fe4947053a4b3e11b58a1afa1606a85e6b7a87f81f39d78b04c66ca3"
+      "bytes": 39140,
+      "sha256": "23c0a457fd0d6fd9caff265fa7367d4b858da99265b5451e3bc35d9416f6479f"
+    },
+    {
+      "path": "race_engineer/engineer/racecraft_view.py",
+      "bytes": 19591,
+      "sha256": "b554af1a8cad6e7a4d262060df8be17dd7c8a03b1d91d1910560f89b9eeae586"
     },
     {
       "path": "race_engineer/engineer/realtime_voice.py",
@@ -2488,8 +2568,8 @@
     },
     {
       "path": "race_engineer/engineer/theme.py",
-      "bytes": 4282,
-      "sha256": "b7c876cf9a3f9b96b1ea922d46abf7ee4480c979da4a43938cfa59822b307ff8"
+      "bytes": 8118,
+      "sha256": "dc9564ff43291241f32473b885677586999f1d0262bb2fa78202b20bb6624924"
     },
     {
       "path": "race_engineer/engineer/third_party/__init__.py",
@@ -2512,6 +2592,11 @@
       "sha256": "4fb827a02864dd03f3bfd8f5b11ccb7181673e88834acf7f346c7aa5d7893402"
     },
     {
+      "path": "race_engineer/engineer/track_coverage.py",
+      "bytes": 10788,
+      "sha256": "75620566d8d97f0080444b9fb59bfac933624ca8f2cb398256725279e1ff42b8"
+    },
+    {
       "path": "race_engineer/engineer/ui_behavior.py",
       "bytes": 2552,
       "sha256": "0d6a7d5b998670e085107febcbfb1561af162b66485a9ad3aeff84d8d0d6e9c7"
@@ -2519,7 +2604,7 @@
     {
       "path": "race_engineer/engineer/updater.py",
       "bytes": 6385,
-      "sha256": "86f8dca1dd544328d9a2fca1103fc25468818a6eb2e3b2466fc5a890b94f3135"
+      "sha256": "f3b01ba265dbd8d8d0719a5a907576b89beffae92bf1c1dd6ffe672e31b17ae5"
     },
     {
       "path": "race_engineer/engineer/voice.py",
@@ -2548,8 +2633,8 @@
     },
     {
       "path": "race_engineer/MASTER_CHECKLIST.md",
-      "bytes": 45537,
-      "sha256": "8dc87ac511a5dcbcd2b1d1ec7db6a6896234277fab6c5c98239b3581b7422365"
+      "bytes": 48571,
+      "sha256": "8a6ae9401b1fbd920d2bdb05fad30abf2bfd04704a557ab514d760d9f706eead"
     },
     {
       "path": "race_engineer/README.md",
@@ -2578,8 +2663,13 @@
     },
     {
       "path": "race_engineer/tests/test_controller.py",
-      "bytes": 6806,
-      "sha256": "f3cf380779b53d0b58274de4611d86eaa7ab38df405c3bb451b2aebe790d3b9c"
+      "bytes": 6859,
+      "sha256": "610857af386c91788dd64c70eec0297d801bebef98d2c388f9727528104b0d12"
+    },
+    {
+      "path": "race_engineer/tests/test_coverage_view.py",
+      "bytes": 1870,
+      "sha256": "96ddd506eab36132e0221202853df891ebc15fbc0eab94ec173a48c4d80df20e"
     },
     {
       "path": "race_engineer/tests/test_cues.py",
@@ -2588,8 +2678,8 @@
     },
     {
       "path": "race_engineer/tests/test_drive_workspace.py",
-      "bytes": 5770,
-      "sha256": "dd9b0f3c52ac25c0f406ee81a4b2b592021907ca1efd93fcc0f292f6a768581f"
+      "bytes": 5876,
+      "sha256": "0b37a8b58d9b4bb6a395db99ae9dcabe49b01c8a3de5ac72fc9e8a2bc4763db4"
     },
     {
       "path": "race_engineer/tests/test_driving_features.py",
@@ -2618,8 +2708,8 @@
     },
     {
       "path": "race_engineer/tests/test_local_engineer.py",
-      "bytes": 4607,
-      "sha256": "461c6f6d32df5ece1a65523b0597ab9ca85246dec8f58152df4eaea24bb365b7"
+      "bytes": 4840,
+      "sha256": "8a21aaa6b93481ad2e4dcf91f96cccbd6b5a13356a274bd4db8fe436053ff39c"
     },
     {
       "path": "race_engineer/tests/test_local_recognition.py",
@@ -2662,6 +2752,11 @@
       "sha256": "869d2ac3a1a4d2f9ea49de41e49b3004f2bb8afeda9a7810868484afa8dc4255"
     },
     {
+      "path": "race_engineer/tests/test_racecraft_lessons.py",
+      "bytes": 4639,
+      "sha256": "b0c55463d165dc9e146585842f656a16fcb2238fe4d539dc8ce3298aa467f4ad"
+    },
+    {
       "path": "race_engineer/tests/test_realtime_voice.py",
       "bytes": 2818,
       "sha256": "602016a3bd100bf922ce909938aa25254ef3c4efcdd0be481b11c7df65608e21"
@@ -2682,6 +2777,11 @@
       "sha256": "08bbed1cd6f6485ce020cdc750018793de8a80d5039d52951eb889c11965727a"
     },
     {
+      "path": "race_engineer/tests/test_settings_controls.py",
+      "bytes": 3392,
+      "sha256": "cb6e208c60d9c852955ab431449f679196c146d499b93d2b39c0f3d631d32468"
+    },
+    {
       "path": "race_engineer/tests/test_setup.py",
       "bytes": 2059,
       "sha256": "781db6d33f3ee1e1d77118a109add7edd14f4b41d17e188a183108e2eb363e9d"
@@ -2695,6 +2795,11 @@
       "path": "race_engineer/tests/test_time_format.py",
       "bytes": 1489,
       "sha256": "c5d4ede13a2fc2a7007197b64732ac783d19b6dc7e0db77b666a59326641fc85"
+    },
+    {
+      "path": "race_engineer/tests/test_track_coverage.py",
+      "bytes": 8608,
+      "sha256": "5ae9d99c9e513f703d21dbd85a3831f9e968e35280f188382028e22cc64fd93f"
     },
     {
       "path": "race_engineer/tests/test_ui_behavior.py",
@@ -2723,13 +2828,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 3223,
-      "sha256": "f5e3120bb1175630e64550a700feae9742737b2c9e35fdcd1bea95db8147fe48"
+      "bytes": 4063,
+      "sha256": "7503e8118e8fb0852c2effc4919569a7093370aac0eaa7b2c5abc3bb50ab7f80"
     },
     {
       "path": "windows_build/assemble_payload.py",
       "bytes": 8149,
       "sha256": "d06de7962e638adbb2b0617453984e94d112df59ef6f02fad1900ecd2e3b86fe"
+    },
+    {
+      "path": "windows_build/audit_track_coverage.py",
+      "bytes": 9251,
+      "sha256": "92c1c83b59193b543de6370d2dd338be64626b566fba81c645266695376e2a83"
     },
     {
       "path": "windows_build/build_checklist.py",
@@ -2753,8 +2863,8 @@
     },
     {
       "path": "windows_build/build_windows_native.py",
-      "bytes": 3370,
-      "sha256": "35f2b82846e005f60034e8517981675fbff64be726fece3d9b4b6c7be3e708af"
+      "bytes": 4317,
+      "sha256": "481bddac72901c9c8fe19ee3af60678e634fe0b72eb8bebbd05d58495782d685"
     },
     {
       "path": "windows_build/DEVELOPMENT_CHECKS.json",
@@ -2763,8 +2873,8 @@
     },
     {
       "path": "windows_build/export_github.py",
-      "bytes": 2818,
-      "sha256": "87b27fecba926c86c57cfc884f7b168023a29cc2e414664f2970f46c7d25fcbd"
+      "bytes": 3581,
+      "sha256": "ad42436bd82826723bef82bffe8278200f7b8c53708d2355c10c8d4b077437f3"
     },
     {
       "path": "windows_build/fetch_speech_assets.py",
@@ -2783,13 +2893,13 @@
     },
     {
       "path": "windows_build/NativeInstaller.cs",
-      "bytes": 9719,
-      "sha256": "45d34ce19a15afb570c70db596d3a811f9d7a4eef62d599ce15f67ee1f7ad97f"
+      "bytes": 9746,
+      "sha256": "7fbb3abbc1ba4be909e3e153893123c60dd90e9e9a4f697b929a873d473670ce"
     },
     {
       "path": "windows_build/NativeLauncher.cs",
-      "bytes": 1839,
-      "sha256": "b9e341d05d6c495b600ae871763871834ebef047ba34117f5140645a93c7be20"
+      "bytes": 1857,
+      "sha256": "c13ecbe88e4108d07729415b4fb84a4d7661091451b9cf9beff63da4c7ae604d"
     },
     {
       "path": "windows_build/neural_assets/clips/am_michael/brake.wav",
@@ -7582,19 +7692,24 @@
       "sha256": "b2e65af70ca92276a62febaf618a4a5f0bc16f4545d65b5ae9484bc15a85c9e1"
     },
     {
+      "path": "windows_build/verify_windows_native.py",
+      "bytes": 3442,
+      "sha256": "17d142e8630ffc1577238e8c8f6b30ab4a229d2ffef23afe669b59ee3cb8bb04"
+    },
+    {
       "path": "windows_build/VOICE_CLIP_CHECKS.json",
       "bytes": 14350,
       "sha256": "25197202c075913fffaa7d95b9e2a012f7ac806b53f82d2ed5a7e3a86582fc3c"
     },
     {
       "path": "WINDOWS_START_HERE.txt",
-      "bytes": 1618,
-      "sha256": "1616e01fbee90aeae8f6982222be065f4224cf11c583b4dc546544d75363a746"
+      "bytes": 1193,
+      "sha256": "69981daf6a9fa4c9ae0f80337bf4cc52ac35a770613dc2761e648974e1b16a38"
     },
     {
       "path": "WORK_IN_PROGRESS.md",
-      "bytes": 2331,
-      "sha256": "391b7b5825a311967e0d8be9e3c589f8a051a8ff4f17f66b4d3a47f14100c667"
+      "bytes": 3108,
+      "sha256": "658ae4a34b836072809d1d68a1baac4c55cc591002ec23a3e2bbbcd7a3f284c6"
     }
   ]
 }

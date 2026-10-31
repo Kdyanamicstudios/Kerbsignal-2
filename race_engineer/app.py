@@ -74,7 +74,7 @@ def data_directory():
 class App:
     def __init__(self, root):
         self.root = root
-        root.title('KerbSignal | Live Race Engineer | 0.15')
+        root.title('KerbSignal | Live Race Engineer | '+updater.VERSION)
         try:
             screen_w=int(root.winfo_screenwidth());screen_h=int(root.winfo_screenheight())
             width=min(1360,max(800,screen_w-60));height=min(900,max(560,screen_h-90))
@@ -197,7 +197,7 @@ class App:
         self.footer=ttk.Frame(content);self.footer.pack(side='bottom',fill='x',pady=(8,0))
         self.footer_status=tk.StringVar(value='LOCAL TELEMETRY  /  Waiting for iRacing')
         ttk.Label(self.footer,textvariable=self.footer_status,style='Subtitle.TLabel').pack(side='left')
-        ttk.Label(self.footer,text='v0.15 · PIT WALL',style='Subtitle.TLabel').pack(side='right')
+        ttk.Label(self.footer,text='v'+updater.VERSION+' · PIT WALL',style='Subtitle.TLabel').pack(side='right')
         workspace=ttk.Frame(content);workspace.pack(fill='both',expand=True)
         self.tabs=ttk.Notebook(workspace,style='Workspace.TNotebook');self.nav_buttons={}
         self.tabs.bind('<<NotebookTabChanged>>',lambda event:self.highlight_nav())
@@ -283,7 +283,7 @@ class App:
         ttk.Label(radio_page,text='Engineer radio & live details',style='Title.TLabel').pack(anchor='w',pady=(0,12))
         for var in (self.coach_status,self.technique_status,self.steering_status,self.situation_status,self.tire_status,self.scout_status,self.position_status,self.hardware_status):
             ttk.Label(radio_page,textvariable=var,wraplength=900).pack(fill='x',pady=3)
-        ttk.Checkbutton(radio_page,text='Detailed coaching',variable=self.auto_coaching,command=self.save_detail_feedback).pack(anchor='w',pady=8)
+        self.boolean_control(radio_page,'Detailed coaching',self.auto_coaching,self.save_detail_feedback).pack(fill='x',pady=8)
         self.radio=tk.Text(radio_page,height=8,wrap='word',font=('Segoe UI',10),relief='flat',padx=14,pady=10,state='disabled');self.radio.pack(fill='both',expand=True,pady=(8,0));self.radio.tag_configure('time',foreground='#93a5bc')
         timing_row=ttk.Frame(guide_tab);timing_row.pack(fill='x',pady=8)
         ttk.Label(timing_row,text='Audio lead (milliseconds)').pack(side='left')
@@ -334,7 +334,7 @@ class App:
         ttk.Label(row,text='Change actually tested',width=28).pack(side='left')
         ttk.Entry(row,textvariable=self.change_note,width=65).pack(side='left')
         self.controlled=tk.BooleanVar(value=False)
-        ttk.Checkbutton(setup_tab,text='I used comparable tire condition and fuel loads, clear traffic, and changed only the recorded setting.',variable=self.controlled,command=self.update_setup_report).pack(anchor='w',pady=8)
+        self.boolean_control(setup_tab,'I used comparable tire condition and fuel loads, clear traffic, and changed only the recorded setting.',self.controlled,self.update_setup_report).pack(fill='x',pady=8)
         row=ttk.Frame(setup_tab);row.pack(fill='x',pady=10)
         for text,cmd in [('Start fresh baseline',lambda:self.begin_setup('baseline')),('Start changed run',lambda:self.begin_setup('test')),('Recommend / compare',self.update_setup_report),('Export test report',self.export_setup)]:
             ttk.Button(row,text=text,command=cmd).pack(side='left',padx=(0,6))
@@ -399,7 +399,7 @@ class App:
         ttk.Label(ref_tab,text='FAST REFERENCE LAPS',style='Title.TLabel').pack(anchor='w')
         ttk.Label(ref_tab,text='Use your own clean laps or import recordings for this exact car and layout. Reference imports do not require an API key or account.',wraplength=1000,padding=(0,12)).pack(anchor='w')
         self.reference_match=tk.BooleanVar(value=False)
-        ttk.Checkbutton(ref_tab,text='I have matched the reference conditions, tires, car setup and ABS/TC settings.',variable=self.reference_match).pack(anchor='w',pady=10)
+        self.boolean_control(ref_tab,'I have matched the reference conditions, tires, car setup and ABS/TC settings.',self.reference_match).pack(fill='x',pady=10)
         ttk.Label(ref_tab,text='NATIVE IRACING RECORDINGS',font=('Segoe UI',15,'bold')).pack(anchor='w',pady=(18,6))
         ttk.Label(ref_tab,text='Import an .ibt recording from Documents/iRacing/telemetry. The app selects its fastest complete clean lap using recorded timestamps and exact SDK identity.',wraplength=1000).pack(anchor='w')
         self.ibt_status=tk.StringVar(value='Local recordings stay on your PC. Import while stopped, then inspect and activate the candidate.')
@@ -412,22 +412,98 @@ class App:
         ttk.Label(ref_tab,textvariable=self.external_status,wraplength=1000,padding=(0,12),foreground='#99b8d5').pack(anchor='w')
         ttk.Label(ref_tab,text='An imported clean lap is not a verified world record. Track and car IDs must match exactly. No private or paid telemetry is redistributed in this download. Imported CSV timing is reconstructed and checked against its declared lap time.',wraplength=1000).pack(anchor='w')
         self.build_tutorial(help_tab)
+        ttk.Button(help_tab,text='Browse track & layout coverage',command=self.show_track_coverage).pack(anchor='w',pady=12)
+
+    def show_track_coverage(self):
+        from engineer.coverage_view import show_coverage
+        return show_coverage(self.root,self.meta,self.options.get('theme','Dark'))
+
+    def boolean_control(self,parent,text,variable,command=None):
+        """A full-row native switch with a spoken/readable state and keyboard focus."""
+        control=ttk.Checkbutton(parent,variable=variable,command=command,style='Switch.TCheckbutton',takefocus=True)
+        def refresh(*args):
+            control.configure(text=f'{text}  ·  {"On" if variable.get() else "Off"}')
+        refresh()
+        # Updating the shared variable elsewhere also updates this view. Traces
+        # never run the command, preserving explicit-save and immediate-save rules.
+        if hasattr(variable,'trace_add'):
+            token=variable.trace_add('write',refresh)
+            def cleanup(event):
+                if event.widget is control:variable.trace_remove('write',token)
+            control.bind('<Destroy>',cleanup,add='+')
+        # ttk's label does not wrap on Windows. Reflow its words to the current
+        # row width instead of letting long conditions clip on compact displays.
+        def reflow(event):
+            try:
+                import tkinter.font as tkfont
+                font=tkfont.Font(root=self.root,font=('Segoe UI',11))
+                available=max(100,event.width-90);lines=[];line=''
+                for word in f'{text}  ·  {"On" if variable.get() else "Off"}'.split():
+                    proposed=f'{line} {word}'.strip()
+                    if line and font.measure(proposed)>available:lines.append(line);line=word
+                    else:line=proposed
+                lines.append(line);control.configure(text='\n'.join(lines))
+            except (tk.TclError,AttributeError,TypeError):pass
+        control.bind('<Configure>',reflow,add='+')
+        if not hasattr(self,'boolean_controls'):self.boolean_controls=[]
+        self.boolean_controls.append(control)
+        return control
 
     def build_app_settings(self,parent):
-        ttk.Label(parent,text='Make it yours',style='Title.TLabel').pack(anchor='w',pady=(0,12))
-        self.settings_tabs=ttk.Notebook(parent);self.settings_tabs.pack(fill='both',expand=True)
-        pages=[]
-        for name in ('General','Voice & audio','Overlay','Devices','Updates'):
-            frame=ttk.Frame(self.settings_tabs,padding=8);self.settings_tabs.add(frame,text=name);pages.append(self.scrollable(frame))
-        general,audio,overlay,devices,updates=pages
-        ttk.Label(general,text='Appearance',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=10)
+        ttk.Label(parent,text='Make it yours',style='Title.TLabel').pack(anchor='w')
+        ttk.Label(parent,text='Your preferences, devices and engineer. Choose a section on the left.',style='Subtitle.TLabel',wraplength=680).pack(anchor='w',pady=(4,18))
+        layout=ttk.Frame(parent);layout.pack(fill='both',expand=True)
+        rail=ttk.Frame(layout,style='SettingsRail.TFrame',padding=(6,8),width=156)
+        self.settings_rail=rail
+        rail.pack(side='left',fill='y',padx=(0,16));rail.pack_propagate(False)
+        self.settings_tabs=ttk.Notebook(layout,style='Workspace.TNotebook');self.settings_tabs.pack(side='left',fill='both',expand=True)
+        self.settings_pages=[];self.settings_buttons=[]
+        for index,name in enumerate(('General','Voice & audio','Overlay','Devices','Updates')):
+            frame=ttk.Frame(self.settings_tabs);self.settings_tabs.add(frame,text=name)
+            page=self.scrollable(frame);self.settings_pages.append(page)
+            button=ttk.Button(rail,text=name,style='SettingsNav.TButton',command=lambda i=index:self.settings_tabs.select(i),takefocus=True)
+            button.pack(fill='x',pady=3);self.settings_buttons.append(button)
+        def select_section(event=None):
+            try:selected=self.settings_tabs.index(self.settings_tabs.select())
+            except (tk.TclError,TypeError):return
+            for index,button in enumerate(self.settings_buttons):button.configure(style='SelectedSettingsNav.TButton' if index==selected else 'SettingsNav.TButton')
+        self.settings_tabs.bind('<<NotebookTabChanged>>',select_section,add='+')
+        select_section()
+        # Native notebook traversal remains available with Ctrl+Tab, even though
+        # the visible section controls sit vertically beside the content.
+        if isinstance(self.settings_tabs,ttk.Notebook):self.settings_tabs.enable_traversal()
+        general,audio,overlay,devices,updates=self.settings_pages
+        def text(parent,value=None,variable=None,muted=False):
+            label=ttk.Label(parent,text=value,textvariable=variable,style='SettingsMuted.TLabel' if muted else 'SettingsText.TLabel',wraplength=460,justify='left')
+            label.pack(fill='x',anchor='w',pady=(4,8))
+            parent.bind('<Configure>',lambda event:label.configure(wraplength=max(120,event.width-40)),add='+')
+            return label
+        def intro(parent,title,description):
+            ttk.Label(parent,text=title,font=('Segoe UI',19,'bold')).pack(anchor='w',pady=(2,4))
+            label=ttk.Label(parent,text=description,style='Subtitle.TLabel',wraplength=460,justify='left');label.pack(fill='x',pady=(0,16))
+            parent.bind('<Configure>',lambda event:label.configure(wraplength=max(120,event.width-12)),add='+')
+        def section(parent,title,description=None):
+            card=ttk.Frame(parent,style='SettingsCard.TFrame',padding=(18,14));card.pack(fill='x',pady=(0,14),padx=(0,8))
+            ttk.Label(card,text=title,style='SettingsSection.TLabel').pack(anchor='w',pady=(0,8))
+            if description:text(card,description,muted=True)
+            return card
+        def field(parent,title,variable,values,readonly=True):
+            ttk.Label(parent,text=title,style='SettingsText.TLabel').pack(anchor='w',pady=(10,5))
+            combo=ttk.Combobox(parent,textvariable=variable,values=values,state='readonly' if readonly else 'normal',width=1,font=('Segoe UI',11),style='Settings.TCombobox')
+            combo.pack(fill='x',pady=(0,6));return combo
+        def action(parent,title,command,primary=False):
+            button=ttk.Button(parent,text=title,command=command,style='Accent.TButton' if primary else 'TButton')
+            button.pack(anchor='w',pady=(6,2));return button
+
+        intro(general,'General','Appearance and driving preferences. Save this section to apply your changes.')
+        appearance=section(general,'Appearance')
         self.theme_choice=tk.StringVar(value=self.options.get('theme','Dark'))
-        ttk.Combobox(general,textvariable=self.theme_choice,values=['Dark','Light'],state='readonly',width=18).pack(anchor='w')
+        field(appearance,'Color theme',self.theme_choice,['Dark','Light'])
         self.setting_startup=tk.BooleanVar(value=bool(self.options.get('startup_animation',True)))
-        ttk.Checkbutton(general,text='Show the startup animation',variable=self.setting_startup).pack(anchor='w',pady=6)
+        self.boolean_control(appearance,'Show startup animation',self.setting_startup).pack(fill='x',pady=(8,0))
+        coaching=section(general,'Engineer & coaching','Choose which calls you hear. Safety and spotter calls retain their priority.')
         self.radio_verbosity=tk.StringVar(value=self.options.get('radio_verbosity','Chatty'))
-        ttk.Label(general,text='Engineer chattiness').pack(anchor='w',pady=(12,4))
-        ttk.Combobox(general,textvariable=self.radio_verbosity,values=['Quiet','Standard','Chatty'],state='readonly',width=22).pack(anchor='w')
+        field(coaching,'Engineer chattiness',self.radio_verbosity,['Quiet','Standard','Chatty'])
         self.setting_straights=tk.BooleanVar(value=bool(self.options.get('straight_briefings',True)))
         self.setting_details=tk.BooleanVar(value=bool(self.options.get('detailed_feedback',True)))
         self.setting_auto=tk.BooleanVar(value=bool(self.options.get('auto_coach',True)))
@@ -435,90 +511,87 @@ class App:
         self.setting_situations=tk.BooleanVar(value=bool(self.options.get('situational',True)))
         self.setting_inputs=tk.BooleanVar(value=bool(self.options.get('input_feedback',True)))
         self.spotter_enabled=tk.BooleanVar(value=bool(self.options.get('spotter',True)))
-        for text,var in (('Detailed straightaway briefings',self.setting_straights),('Automatic driving coach',self.setting_auto),('Detailed corner reviews on straights',self.setting_details),('Praise milestones only (minimum 90 seconds apart)',self.setting_praise),('Session / tire briefings, traffic gaps and passing opportunities',self.setting_situations),('Observed input feedback while learning corner markers',self.setting_inputs),('Left / right audio traffic spotter',self.spotter_enabled)):
-            ttk.Checkbutton(general,text=text,variable=var).pack(anchor='w',pady=8)
-        ttk.Button(general,text='Save general settings',style='Accent.TButton',command=self.apply_settings).pack(anchor='w',pady=14)
-        ttk.Button(general,text='Replay the guided tutorial',command=self.show_tutorial).pack(anchor='w')
-        ttk.Label(audio,text='Your engineer',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=10)
+        for label,variable in (('Automatic driving coach',self.setting_auto),('Detailed straightaway briefings',self.setting_straights),('Detailed corner reviews on straights',self.setting_details),('Praise milestones · at least 90 seconds apart',self.setting_praise),('Session, tire, traffic-gap and passing briefings',self.setting_situations),('Observed input feedback while learning markers',self.setting_inputs),('Left / right audio traffic spotter',self.spotter_enabled)):
+            self.boolean_control(coaching,label,variable).pack(fill='x',pady=3)
+        action(general,'Save general settings',self.apply_settings,True)
+        action(general,'Replay guided tutorial',self.show_tutorial)
+
+        intro(audio,'Voice & audio','Pick your engineer, check your devices and calibrate timed calls. All speech stays local.')
+        engineer=section(audio,'Your engineer')
         label=next((label for label,v in FREE_VOICES.items() if v[0]==self.free_voice),next(iter(FREE_VOICES)))
         self.settings_voice=tk.StringVar(value=label);self.settings_style=tk.StringVar(value=self.personality.style)
-        ttk.Combobox(audio,textvariable=self.settings_voice,values=list(FREE_VOICES),width=48,state='readonly').pack(anchor='w',pady=5)
-        ttk.Combobox(audio,textvariable=self.settings_style,values=list(STYLES),width=25,state='readonly').pack(anchor='w',pady=5)
-        ttk.Label(audio,text='Volume (%)').pack(anchor='w',pady=(15,4))
+        field(engineer,'Voice',self.settings_voice,list(FREE_VOICES))
+        field(engineer,'Language style',self.settings_style,list(STYLES))
         self.settings_volume=tk.StringVar(value=str(self.options.get('volume',80)))
-        ttk.Combobox(audio,textvariable=self.settings_volume,values=[str(i) for i in range(0,101,10)],width=8).pack(anchor='w')
-        ttk.Label(audio,text='Output device').pack(anchor='w',pady=(15,4))
+        field(engineer,'Volume (%)',self.settings_volume,[str(i) for i in range(0,101,10)],False)
         self.settings_output=tk.StringVar(value=self.options.get('output','System default'))
-        self.audio_devices=ttk.Combobox(audio,textvariable=self.settings_output,values=['System default'],width=60,state='readonly');self.audio_devices.pack(anchor='w')
-        self.audio_status=tk.StringVar(value='Preparing audio…')
-        ttk.Label(audio,textvariable=self.audio_status,wraplength=760).pack(anchor='w',pady=8)
-        ttk.Label(audio,text='Device selection and volume apply to free neural speech and timed calls. Installed Windows voices use their own system output.',wraplength=760,foreground='#8295ad').pack(anchor='w',pady=5)
-        row=ttk.Frame(audio);row.pack(fill='x',pady=10)
-        ttk.Button(row,text='Save voice & audio',style='Accent.TButton',command=self.save_audio_settings).pack(side='left')
-        ttk.Button(row,text='Test engineer voice',command=self.preview_free_voice).pack(side='left',padx=8)
-        ttk.Button(audio,text='Play timed brake sample',command=self.test_timed_audio).pack(anchor='w',pady=6)
-        ttk.Label(audio,text='Microphone & recognition test',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=(16,6))
+        self.audio_devices=field(engineer,'Output device',self.settings_output,['System default'])
+        self.audio_status=tk.StringVar(value='Preparing audio…');text(engineer,variable=self.audio_status)
+        text(engineer,'Output and volume apply to local neural speech and timed calls. Installed Windows voices use their system output.',muted=True)
+        action(engineer,'Save voice & audio',self.save_audio_settings,True)
+        action(engineer,'Test engineer voice',self.preview_free_voice)
+        action(engineer,'Play timed brake sample',self.test_timed_audio)
+        microphone=section(audio,'Microphone & recognition','Test your input here before enabling driving commands.')
         self.settings_mic=tk.StringVar(value=self.options.get('microphone','System default'))
-        self.mic_devices=ttk.Combobox(audio,textvariable=self.settings_mic,values=['System default'],width=60,state='readonly');self.mic_devices.pack(anchor='w')
+        self.mic_devices=field(microphone,'Microphone input',self.settings_mic,['System default'])
         self.settings_gain=tk.StringVar(value=str(self.options.get('mic_gain',1)))
-        ttk.Label(audio,text='Microphone gain (0.1–3.0)').pack(anchor='w',pady=(8,4))
-        ttk.Combobox(audio,textvariable=self.settings_gain,values=['0.5','1','1.5','2','3'],width=8).pack(anchor='w')
-        self.mic_meter=tk.Canvas(audio,width=440,height=28,highlightthickness=0,bg='#101925');self.mic_meter.pack(anchor='w',pady=8)
+        field(microphone,'Microphone gain (0.1–3.0)',self.settings_gain,['0.5','1','1.5','2','3'],False)
+        self.mic_meter=tk.Canvas(microphone,width=1,height=28,highlightthickness=0,bg='#101925');self.mic_meter.pack(fill='x',pady=8)
         self.mic_test_status=tk.StringVar(value='Start test and say “Engineer microphone check”. Audio stays local. Test mode does not execute driving commands.')
-        ttk.Label(audio,textvariable=self.mic_test_status,wraplength=760).pack(anchor='w')
-        self.mic_input_status=tk.StringVar(value='Input is stopped.')
-        self.mic_transcript=tk.StringVar(value='Recognized speech will appear here.')
-        ttk.Label(audio,textvariable=self.mic_input_status,wraplength=760).pack(anchor='w',pady=(6,0))
-        ttk.Label(audio,textvariable=self.mic_transcript,wraplength=760,font=('Segoe UI',11)).pack(anchor='w',pady=6)
-        microw=ttk.Frame(audio);microw.pack(fill='x',pady=8)
-        ttk.Button(microw,text='Start microphone test',command=self.test_microphone).pack(side='left')
-        ttk.Button(microw,text='Stop test',command=self.stop_microphone).pack(side='left',padx=8)
-        ttk.Button(microw,text='Rescan devices',command=self.scan_devices).pack(side='left')
+        text(microphone,variable=self.mic_test_status)
+        self.mic_input_status=tk.StringVar(value='Input is stopped.');self.mic_transcript=tk.StringVar(value='Recognized speech will appear here.')
+        text(microphone,variable=self.mic_input_status,muted=True);text(microphone,variable=self.mic_transcript)
+        action(microphone,'Start microphone test',self.test_microphone)
+        action(microphone,'Stop test',self.stop_microphone)
+        action(microphone,'Rescan devices',self.scan_devices)
         self.setting_wake=tk.BooleanVar(value=bool(self.options.get('wake_enabled',True)))
-        ttk.Checkbutton(audio,text='Respond to Hey Kerby while the microphone is enabled',variable=self.setting_wake,command=self.save_wake_setting).pack(anchor='w',pady=8)
-        ttk.Button(audio,text='Local AI chat & installation',command=self.open_local_chat).pack(anchor='w',pady=8)
-        ttk.Button(audio,text='Advanced voice / microphone options',command=lambda:self.tabs.select(7)).pack(anchor='w',pady=8)
-        ttk.Label(audio,text='Timing calibration',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=(20,6))
+        self.boolean_control(microphone,'Respond to Hey Kerby while microphone is enabled',self.setting_wake,self.save_wake_setting).pack(fill='x',pady=10)
+        text(microphone,'Wake-word changes save immediately. Voice, volume and device choices use Save voice & audio above.',muted=True)
+        action(microphone,'Local AI chat & installation',self.open_local_chat)
+        action(microphone,'Advanced microphone options',lambda:self.tabs.select(7))
+        timing=section(audio,'Timing calibration','Adjust for your audio device and reaction preference.')
         self.settings_lead=tk.StringVar(value=str(round(self.cues.lead_seconds*1000)))
-        ttk.Combobox(audio,textvariable=self.settings_lead,values=[str(i) for i in range(0,1001,50)],width=10,state='readonly').pack(anchor='w',pady=8)
-        ttk.Label(audio,text='Audio lead includes your device and reaction preference. Use the +50 / −50 controls in Engineer → Coaching & timing after testing the exact car/layout.',wraplength=760).pack(anchor='w')
-        ttk.Button(audio,text='Open corner timing controls',command=lambda:self.tabs.select(9)).pack(anchor='w',pady=8)
-        ttk.Label(overlay,text='Compact driving overlay',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=10)
-        ttk.Label(overlay,text='Coaching, lap timer, MPH / gear and a 2 g lateral / longitudinal circle.\nUse borderless / windowed iRacing. Exclusive fullscreen and VR are unsupported.',wraplength=760).pack(anchor='w',pady=8)
-        row=ttk.Frame(overlay);row.pack(fill='x')
-        ttk.Button(row,text='Show',command=lambda:self.overlay_action(True)).pack(side='left')
-        ttk.Button(row,text='Hide',command=lambda:self.overlay_action(False)).pack(side='left',padx=8)
-        ttk.Button(row,text='Reset / unlock',command=self.reset_overlay).pack(side='left')
+        field(timing,'Audio lead (milliseconds)',self.settings_lead,[str(i) for i in range(0,1001,50)])
+        text(timing,'Use the +50 / −50 controls in Engineer → Coaching & timing after testing the exact car/layout.',muted=True)
+        action(timing,'Open corner timing controls',lambda:self.tabs.select(9))
+
+        intro(overlay,'Overlay','A compact view of coaching, lap timer, MPH / gear and the 2 g lateral / longitudinal circle.')
+        overlay_card=section(overlay,'Display & position')
+        text(overlay_card,'Use borderless / windowed iRacing. Exclusive fullscreen and VR are unsupported.',muted=True)
+        for label,command in (('Show overlay',lambda:self.overlay_action(True)),('Hide overlay',lambda:self.overlay_action(False)),('Reset / unlock overlay',self.reset_overlay)):action(overlay_card,label,command)
         prefs=self.overlay.prefs if self.overlay else dict(locked=False,opacity=.9,width=360)
         self.overlay_locked=tk.BooleanVar(value=prefs['locked'])
-        ttk.Checkbutton(overlay,text='Lock and let mouse clicks pass through (unlock here)',variable=self.overlay_locked).pack(anchor='w',pady=14)
-        ttk.Label(overlay,text='Width in pixels (160–1200)').pack(anchor='w')
+        self.boolean_control(overlay_card,'Lock overlay and pass mouse clicks through',self.overlay_locked).pack(fill='x',pady=(14,4))
+        text(overlay_card,'Unlock here to move the overlay again.',muted=True)
         self.overlay_size=tk.StringVar(value=str(prefs['width']))
-        ttk.Combobox(overlay,textvariable=self.overlay_size,values=['160','180','200','220','240','280','320','360','420','480','520','650','780'],width=12).pack(anchor='w',pady=5)
-        ttk.Label(overlay,text='Opacity (%)').pack(anchor='w')
+        field(overlay_card,'Width in pixels (160–1200)',self.overlay_size,['160','180','200','220','240','280','320','360','420','480','520','650','780'],False)
         self.overlay_opacity=tk.StringVar(value=str(round(prefs['opacity']*100)))
-        ttk.Combobox(overlay,textvariable=self.overlay_opacity,values=['35','50','65','80','90','100'],width=12,state='readonly').pack(anchor='w',pady=5)
-        ttk.Button(overlay,text='Save overlay',style='Accent.TButton',command=self.apply_overlay).pack(anchor='w',pady=12)
-        ttk.Label(devices,text='Connected racing controls',font=('Segoe UI',16,'bold')).pack(anchor='w',pady=10)
-        self.device_status=tk.StringVar(value='Scanning Windows controllers…')
-        ttk.Label(devices,textvariable=self.device_status,wraplength=760).pack(anchor='w',pady=8)
-        ttk.Label(devices,text='Read-only detection identifies attached controllers. iRacing does not expose which Windows device is bound to each input. Pedals connected through a wheel base may appear as one combined device.',wraplength=760,foreground='#8295ad').pack(anchor='w',pady=8)
-        self.device_tree=self.table(devices,('name','role','source'),(340,230,150),height=6)
+        field(overlay_card,'Opacity (%)',self.overlay_opacity,['35','50','65','80','90','100'])
+        action(overlay_card,'Save overlay',self.apply_overlay,True)
+
+        intro(devices,'Devices','Identify your racing controls and save the wheel and pedal names you use.')
+        devices_card=section(devices,'Connected racing controls')
+        self.device_status=tk.StringVar(value='Scanning Windows controllers…');text(devices_card,variable=self.device_status)
+        text(devices_card,'Read-only detection identifies attached controllers. iRacing does not expose Windows input bindings. Pedals through a wheel base may appear as one combined device.',muted=True)
+        self.device_tree=self.table(devices_card,('name','role','source'),(260,200,130),height=6)
         self.wheel_choice=tk.StringVar(value=self.options.get('wheel','Auto'));self.pedal_choice=tk.StringVar(value=self.options.get('pedals','Auto'))
         self.device_assignments=[]
-        for title,var in (('Wheel base',self.wheel_choice),('Pedals',self.pedal_choice)):
-            ttk.Label(devices,text=title).pack(anchor='w',pady=(10,2))
-            combo=ttk.Combobox(devices,textvariable=var,values=['Auto'],width=60,state='readonly');combo.pack(anchor='w');self.device_assignments.append(combo)
-        ttk.Button(devices,text='Save assignments',command=self.save_device_settings).pack(anchor='w',pady=10)
-        ttk.Button(devices,text='Rescan controllers / audio',command=self.scan_devices).pack(anchor='w',pady=6)
+        for title,variable in (('Wheel base',self.wheel_choice),('Pedals',self.pedal_choice)):
+            self.device_assignments.append(field(devices_card,title,variable,['Auto']))
+        action(devices_card,'Save assignments',self.save_device_settings,True)
+        action(devices_card,'Rescan controllers / audio',self.scan_devices)
+
+        intro(updates,'Updates','Keep KerbSignal current while retaining your lap history and saved settings.')
+        update_card=section(updates,'App updates')
         self.update_status=tk.StringVar(value='Updates are checked through the KerbSignal release feed. Your history and settings are retained.')
         self.auto_updates=tk.BooleanVar(value=bool(self.options.get('auto_update_check',True)))
-        ttk.Checkbutton(updates,text='Check for new versions when the app starts',variable=self.auto_updates,command=self.save_update_preferences).pack(anchor='w',pady=6)
-        ttk.Label(updates,textvariable=self.update_status,wraplength=760).pack(anchor='w',pady=10)
-        ttk.Button(updates,text='Check for updates',command=self.check_updates).pack(anchor='w',pady=6)
-        ttk.Button(updates,text='Install update and restart',command=self.install_update).pack(anchor='w',pady=6)
-        ttk.Button(updates,text='Pause download',command=self.update_cancel.set).pack(anchor='w',pady=6)
-        ttk.Label(updates,text='Interrupted downloads reuse verified parts. Installation waits until recording is stopped.',wraplength=760).pack(anchor='w',pady=8)
+        self.boolean_control(update_card,'Check for new versions at startup',self.auto_updates,self.save_update_preferences).pack(fill='x',pady=6)
+        text(update_card,'This preference saves immediately.',muted=True)
+        text(update_card,variable=self.update_status)
+        action(update_card,'Check for updates',self.check_updates,True)
+        action(update_card,'Install update and restart',self.install_update)
+        action(update_card,'Pause download',self.update_cancel.set)
+        text(update_card,'Interrupted downloads reuse verified parts. Installation waits until recording is stopped.',muted=True)
 
     def build_recap_ui(self):
         page=ttk.Frame(self.tabs,padding=22);self.tabs.add(page,text='Session recap')
@@ -559,6 +632,7 @@ class App:
 
     def build_racecraft_ui(self):
         from engineer.racecraft import LESSONS
+        from engineer.racecraft_view import RacecraftLessonView
         self.racecraft_lessons=LESSONS
         page=ttk.Frame(self.tabs,padding=22);self.tabs.add(page,text='Racecraft')
         ttk.Label(page,text='THE RACECRAFT LIBRARY',style='Title.TLabel').pack(anchor='w')
@@ -566,28 +640,46 @@ class App:
         self.racecraft_search=tk.StringVar(value='')
         ttk.Entry(page,textvariable=self.racecraft_search,width=54).pack(anchor='w',pady=8)
         ttk.Button(page,text='Search topics',command=self.filter_racecraft).pack(anchor='w')
+        ttk.Button(page,text='Open selected topic’s official learning resource',command=self.open_racecraft_source).pack(side='bottom',anchor='w',pady=(8,0))
         body=ttk.Frame(page);body.pack(fill='both',expand=True,pady=14)
-        self.racecraft_index=ttk.Treeview(body,columns=('topic','category'),show='headings',height=18)
-        self.racecraft_index.heading('topic',text='TECHNIQUE');self.racecraft_index.column('topic',width=280)
-        self.racecraft_index.heading('category',text='CATEGORY');self.racecraft_index.column('category',width=120)
-        self.racecraft_index.pack(side='left',fill='y',padx=(0,16));self.racecraft_index.bind('<<TreeviewSelect>>',lambda event:self.select_racecraft())
-        self.racecraft_text=tk.Text(body,wrap='word',font=('Segoe UI',12),padx=22,pady=18,relief='flat',width=60,state='disabled');self.racecraft_text.pack(side='left',fill='both',expand=True)
-        ttk.Button(page,text='Open selected topic’s official learning resource',command=self.open_racecraft_source).pack(anchor='w')
+        index_frame=ttk.Frame(body,width=330,height=145);index_frame.pack_propagate(False)
+        self.racecraft_index=ttk.Treeview(index_frame,columns=('topic','category'),show='headings',height=18,selectmode='browse')
+        self.racecraft_index.heading('topic',text='TECHNIQUE');self.racecraft_index.column('topic',width=220,minwidth=140)
+        self.racecraft_index.heading('category',text='CATEGORY');self.racecraft_index.column('category',width=90,minwidth=80)
+        index_scroll=ttk.Scrollbar(index_frame,orient='vertical',command=self.racecraft_index.yview)
+        self.racecraft_index.configure(yscrollcommand=index_scroll.set)
+        index_scroll.pack(side='right',fill='y');self.racecraft_index.pack(side='left',fill='both',expand=True)
+        self.racecraft_index.bind('<<TreeviewSelect>>',lambda event:self.select_racecraft())
+        self.racecraft_view=RacecraftLessonView(body,theme=self.options.get('theme','Dark'))
+        self.racecraft_text=self.racecraft_view.text
+        layout_state={'stacked':None}
+        def layout(event):
+            stacked=event.width<740
+            if layout_state['stacked'] is stacked:return
+            layout_state['stacked']=stacked
+            index_frame.pack_forget();self.racecraft_view.pack_forget()
+            index_frame.pack(side='top' if stacked else 'left',fill='x' if stacked else 'y',padx=(0,0 if stacked else 14),pady=(0,10 if stacked else 0))
+            self.racecraft_view.pack(side='top' if stacked else 'left',fill='both',expand=True)
+        body.bind('<Configure>',layout)
+        index_frame.pack(side='left',fill='y',padx=(0,14));self.racecraft_view.pack(side='left',fill='both',expand=True)
         self.filter_racecraft()
 
     def filter_racecraft(self):
+        from engineer.racecraft import search_lessons
         self.racecraft_index.delete(*self.racecraft_index.get_children())
-        term=self.racecraft_search.get().strip().lower()
+        matches={lesson[0] for lesson in search_lessons(self.racecraft_search.get())}
         for n,lesson in enumerate(self.racecraft_lessons):
-            if not term or term in ' '.join(lesson[:5]).lower():self.racecraft_index.insert('','end',iid=str(n),values=lesson[:2])
+            if lesson[0] in matches:self.racecraft_index.insert('','end',iid=str(n),values=lesson[:2])
+        found=self.racecraft_index.get_children()
+        if found:
+            self.racecraft_index.selection_set(found[0]);self.select_racecraft()
+        else:self.racecraft_view.clear()
 
     def select_racecraft(self):
         selected=self.racecraft_index.selection()
         if not selected:return
         lesson=self.racecraft_lessons[int(selected[0])]
-        self.racecraft_text.configure(state='normal');self.racecraft_text.delete('1.0','end')
-        self.racecraft_text.insert('end',lesson[0]+'\n'+lesson[1].upper()+'\n\n'+lesson[2]+'\n\n'+lesson[3]+'\n\n'+lesson[4]+'\n\nFurther learning: '+lesson[5])
-        self.racecraft_text.configure(state='disabled')
+        self.racecraft_view.show_lesson(lesson)
 
     def open_racecraft_source(self):
         selected=self.racecraft_index.selection()
@@ -618,6 +710,11 @@ class App:
     def apply_theme(self):
         name=self.options.get('theme','Dark');theme.apply(self.root,ttk.Style(self.root),name)
         if hasattr(self,'dashboard'):self.dashboard.set_theme(name)
+        if hasattr(self,'racecraft_view'):self.racecraft_view.set_theme(name)
+        if hasattr(self,'settings_rail'):
+            self.root.update_idletasks()
+            widths=[button.winfo_reqwidth() for button in self.settings_buttons]
+            if widths and all(isinstance(width,int) for width in widths):self.settings_rail.configure(width=max(156,max(widths)+12))
 
     def apply_settings(self):
         self.options.update(radio_verbosity=self.radio_verbosity.get(),startup_animation=bool(self.setting_startup.get()),straight_briefings=bool(self.setting_straights.get()),detailed_feedback=bool(self.setting_details.get()),theme=self.theme_choice.get(),praise=bool(self.setting_praise.get()),situational=bool(self.setting_situations.get()),input_feedback=bool(self.setting_inputs.get()),spotter=bool(self.spotter_enabled.get()))
@@ -843,7 +940,7 @@ class App:
             ttk.Entry(row,textvariable=var,width=65 if key=='video' else 24).pack(side='left')
             if key not in ('name','video'):ttk.Button(row,text='Use current position',command=lambda k=key:self.capture_marker(k)).pack(side='left',padx=5)
         self.guide_match=tk.BooleanVar(value=False)
-        ttk.Checkbutton(tab,text='These markers are aligned to the detected car/layout and current conditions.',variable=self.guide_match).pack(anchor='w',pady=6)
+        self.boolean_control(tab,'These markers are aligned to the detected car/layout and current conditions.',self.guide_match).pack(fill='x',pady=6)
         row=ttk.Frame(tab);row.pack(fill='x',pady=5)
         for label,command in [('Save corner / activate guide',self.save_corner),('Import positioned guide',self.import_guide),('Export active guide',self.export_guide),('Use learned markers instead',self.use_learned_markers)]:
             ttk.Button(row,text=label,command=command).pack(side='left',padx=(0,5))
@@ -1298,9 +1395,10 @@ class App:
         capture=self.speech.capture
         db=capture.level_db if capture else -80
         self.mic_meter.delete('all')
-        self.mic_meter.create_rectangle(0,0,max(0,min(440,(db+80)/80*440)),28,fill='#58d7a8' if db< -3 else '#ff6978',outline='')
+        meter_width=max(1,self.mic_meter.winfo_width())
+        self.mic_meter.create_rectangle(0,0,max(0,min(meter_width,(db+80)/80*meter_width)),28,fill=theme.palette(self.options.get('theme','Dark'))['green' if db< -3 else 'brake'],outline='')
         clipping=bool(capture and capture.clipping)
-        self.mic_meter.create_text(12,14,anchor='w',text=f'INPUT  {db:.0f} dBFS'+('  •  CLIPPING' if clipping else ''),fill='white')
+        self.mic_meter.create_text(12,14,anchor='w',text=f'INPUT  {db:.0f} dBFS'+('  •  CLIPPING' if clipping else ''),fill=theme.palette(self.options.get('theme','Dark'))['text'])
         fresh=self.mode!='LIVE' or time.monotonic()-self.last_seen<.35
         target=live_target(self.data,self.coach.reference) if self.data and fresh else None
         steering=live_steering(self.data,self.coach.reference) if self.data and fresh else None

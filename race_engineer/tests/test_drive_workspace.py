@@ -72,8 +72,9 @@ class DriveWorkspaceTests(unittest.TestCase):
 
     def test_production_controller_routes_telemetry_to_the_new_driving_canvas(self):
         from test_driving_features import IntegrationFeatures
+        fixture=IntegrationFeatures();self.addCleanup(fixture.doCleanups)
         with tempfile.TemporaryDirectory() as folder:
-            ui=IntegrationFeatures().make_app(folder);ui.start('LIVE')
+            ui=fixture.make_app(folder);ui.start('LIVE')
             ui.ingest({**frame(160),'LatAccel':9.80665,'LongAccel':-19.6133},dict(META));ui.render()
             self.assertEqual(ui.dashboard.model['g_force'],(1.,-2.))
             self.assertTrue(ui.dashboard.model['fresh'])
@@ -89,12 +90,13 @@ class DriveWorkspaceTests(unittest.TestCase):
         from test_driving_features import IntegrationFeatures
         from test_controller import Widget
         from unittest.mock import patch
+        fixture=IntegrationFeatures();self.addCleanup(fixture.doCleanups)
         def after(root,ms,callback):root.__dict__.setdefault('scheduled',[]).append(ms)
         with tempfile.TemporaryDirectory() as folder,patch.object(Widget,'after',after,create=True):
-            first=IntegrationFeatures().make_app(folder)
+            first=fixture.make_app(folder)
             self.assertIn(800,first.root.scheduled)
             first.close()
-            returning=IntegrationFeatures().make_app(folder)
+            returning=fixture.make_app(folder)
             self.assertFalse(returning.options.get('tutorial_completed'))
             self.assertNotIn(800,returning.root.scheduled)
             returning.close()
