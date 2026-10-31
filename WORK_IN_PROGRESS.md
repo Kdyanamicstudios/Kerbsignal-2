@@ -1,4 +1,6 @@
-# KerbSignal continuation — October 31, 2026
+# KerbSignal secondary work — October 31, 2026
+
+**Status: Secondary work.** This repository contains the secondary Windows/Python work. [Main work: InvectedGaming/KerbSignal](https://github.com/InvectedGaming/KerbSignal).
 
 Continue from this 0.15 Windows test-build source. Keep the canonical 134-item checklist synchronized; preserve Pit Wall option 1 and left navigation. The user confirmed **fully local and free**: no Codex sign-in, paid API or ChatGPT/Codex allowance.
 
@@ -12,4 +14,4 @@ A native x64 installer is built with build_windows_native.py and verified throug
 
 Next: user-facing Windows/iRacing acceptance of this test build, then track/layout coverage audit, UI-16–23 and remaining backlog. Do not infer exact-car traits from a brand, official turn numbers from braking-zone order or world-record pace from personal references. Superseded cloud code remains historical and is not imported by app.py.
 
-Source delivery: https://github.com/Kdyanamicstudios/Kerbsignal-2 is the user-selected separate Windows/Python repository. The existing repository was not modified.
+Source delivery: https://github.com/Kdyanamicstudios/Kerbsignal-2 is the user-selected secondary Windows/Python repository. The existing repository was not modified.

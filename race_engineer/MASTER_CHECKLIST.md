@@ -1,5 +1,7 @@
 # KerbSignal — master requirements checklist
 
+**Status: Secondary work.** This repository contains the secondary Windows/Python work. [Main work: InvectedGaming/KerbSignal](https://github.com/InvectedGaming/KerbSignal).
+
 Owner: Rakiem Eddy. Canonical selection: **Pit Wall, option 1, with navigation down the left side.**
 
 Updated: October 31, 2026. This is the working checklist for the app, not a claim that every requested feature is complete. A source implementation, a rendered preview, a packaged build and a test inside iRacing are separate evidence.
@@ -262,9 +264,11 @@ An off-track model can estimate performance. Proving that a setup is faster requ
 | ☐ FREE-02 | Local chat with typed questions, racing context and optional speech | **0.15 SOURCE IMPLEMENTED — NOT RELEASED** | LocalAI, LocalEngineer and app UI; 203 regression tests pass. Actual Qwen3 0.6B Linux CPU inference completed in 9.93 s including startup. Small-model answer quality remains limited; Windows/device tests pending. One-time model/runtime download about 632 MiB, then inference stays on this PC. No coding-agent tools; extended chat pauses while driving. |
 | ☐ FREE-03 | In-app free-model installation, cancellation and offline inference | **0.15 SOURCE IMPLEMENTED — NOT RELEASED** | LocalAI, LocalEngineer and app UI; 203 regression tests pass. Actual Qwen3 0.6B Linux CPU inference completed in 9.93 s including startup. Small-model answer quality remains limited; Windows/device tests pending. One-time model/runtime download about 632 MiB, then inference stays on this PC. No coding-agent tools; extended chat pauses while driving. |
 | ☑ GH-01 | Supply all project source for colleague / GitHub upload. | **HANDOFF ARCHIVE VERIFIED** | GitHub-ready source, tests, build scripts, all current requirements, asset manifests/restoration scripts, previews, licences, checksums and handoff notes included. Runtime EXE and large downloaded models are separate release assets. Source also uploaded to Kdyanamicstudios/Kerbsignal-2 at the user’s request. |
-| ☑ GH-02 | Upload this Windows version to a separate GitHub repository. | **SOURCE UPLOADED AND VERIFIED** | [Kdyanamicstudios/Kerbsignal-2](https://github.com/Kdyanamicstudios/Kerbsignal-2) contains the complete Windows/Python source, maps, voice clips, build tooling, checklist and validation records. Installer/runtime binaries remain separate distribution assets. The existing repository was not modified. |
+| ☑ GH-02 | Upload this Windows version to a separate GitHub repository. | **SECONDARY WORK — SOURCE UPLOADED AND VERIFIED** | [Kdyanamicstudios/Kerbsignal-2](https://github.com/Kdyanamicstudios/Kerbsignal-2) contains the complete Windows/Python source, maps, voice clips, build tooling, checklist and validation records. Installer/runtime binaries remain separate distribution assets. The existing repository was not modified. |
 
 ## Update log
+
+- October 31, 2026: GH-02 repository label updated at the user’s request: Kerbsignal-2 is **Secondary work**, with the main work linked at InvectedGaming/KerbSignal. The README, handoff and both checklist copies use the same status. Documentation only; installer and Windows/iRacing acceptance status are unchanged. Validation: published documentation and synchronized checklist copies checked. Next app task remains Windows/iRacing acceptance, then the coverage/UI backlog.
 
 - October 31, 2026: GH-02 delivery checkpoint: uploaded this Windows/Python snapshot to the user-selected new repository, https://github.com/Kdyanamicstudios/Kerbsignal-2. All 1,520 source files were checked against their local Git object fingerprints. Runtime/model binaries and the installer remain outside repository source. The original repository and its Rust/Assetto Corsa work were not modified.
 

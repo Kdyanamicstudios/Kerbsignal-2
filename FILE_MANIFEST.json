@@ -93,8 +93,8 @@
     },
     {
       "path": "KerbSignal_Master_Checklist.md",
-      "bytes": 44865,
-      "sha256": "6e1090f99c883158b633e01e6e9acd47290978f457fc818c250c996a5448340f"
+      "bytes": 45537,
+      "sha256": "8dc87ac511a5dcbcd2b1d1ec7db6a6896234277fab6c5c98239b3581b7422365"
     },
     {
       "path": "LICENSE",
@@ -2548,8 +2548,8 @@
     },
     {
       "path": "race_engineer/MASTER_CHECKLIST.md",
-      "bytes": 44865,
-      "sha256": "6e1090f99c883158b633e01e6e9acd47290978f457fc818c250c996a5448340f"
+      "bytes": 45537,
+      "sha256": "8dc87ac511a5dcbcd2b1d1ec7db6a6896234277fab6c5c98239b3581b7422365"
     },
     {
       "path": "race_engineer/README.md",
@@ -2723,8 +2723,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3029,
-      "sha256": "1c6bd12d9c91d6212acb0fbcff49952eb5c439db71a55f34154431d9f087245d"
+      "bytes": 3223,
+      "sha256": "f5e3120bb1175630e64550a700feae9742737b2c9e35fdcd1bea95db8147fe48"
     },
     {
       "path": "windows_build/assemble_payload.py",
@@ -7593,8 +7593,8 @@
     },
     {
       "path": "WORK_IN_PROGRESS.md",
-      "bytes": 2153,
-      "sha256": "2a00af11c6c383b6daceb320fb67b7f057999cd69a423567a47d490bd2efee68"
+      "bytes": 2331,
+      "sha256": "391b7b5825a311967e0d8be9e3c589f8a051a8ff4f17f66b4d3a47f14100c667"
     }
   ]
 }

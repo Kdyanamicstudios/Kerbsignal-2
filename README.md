@@ -1,4 +1,6 @@
-# KerbSignal
+# KerbSignal — Secondary work
+
+**Status: Secondary work.** This repository contains the secondary Windows/Python work. [Main work: InvectedGaming/KerbSignal](https://github.com/InvectedGaming/KerbSignal).
 
 Windows iRacing race engineer, local telemetry coach and driving-review app.
 
